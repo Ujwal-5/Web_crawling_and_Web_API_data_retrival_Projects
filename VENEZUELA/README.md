@@ -1,11 +1,4 @@
-<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->---
-name: VENEZUELA Web Crawling Project
-description: A project for automated data extraction from Venezuelan websites, with results stored in HTML and CSV formats.
-author: UJWAL S
-tags: [web crawling, data extraction, Python, automation, Venezuela, CSV, HTML]
----
-
-
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#venezuela-web-crawling-project)
 
 # ➤ VENEZUELA Web Crawling Project
