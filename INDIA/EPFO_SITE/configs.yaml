@@ -1,0 +1,9 @@
+batch_size: 64
+height: 50
+learning_rate: 0.001
+max_text_length: 7
+model_path: Models/02_captcha_to_text/202312271844
+train_epochs: 10
+train_workers: 20
+vocab: "LRFACOW_QUYE3\u20756JDZSN8I+2V1TK4PMB07X59\xCDGH"
+width: 200

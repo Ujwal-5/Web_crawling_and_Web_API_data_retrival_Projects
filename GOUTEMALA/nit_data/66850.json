@@ -1,0 +1,251 @@
+{
+    "data": {
+        "type": "sesionrtu",
+        "id": "66850",
+        "attributes": {
+            "id": "66850",
+            "datos": {
+                "tipoContribuyente": {
+                    "value": "705",
+                    "valueDesc": "SUCURSAL EMPRESA EXTRANJERA"
+                },
+                "empresa": {
+                    "tipoPersoneria": 705,
+                    "descPersoneria": "SUCURSAL EMPRESA EXTRANJERA",
+                    "razonSocial": "INGENIEROS CIVILES ASOCIADOS, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
+                    "fechaConstitucion": "1947-07-04",
+                    "anioDoctoConstitucion": 1947,
+                    "fechaInscripcion": 134805600000,
+                    "participacionGremial": false,
+                    "participacionEmpresarial": false,
+                    "marcas": [
+                        {
+                            "codigoMarca": 916,
+                            "nombreCodigoMarca": "NO RATIFICADO",
+                            "estado": 1020,
+                            "fechaEstado": 1436076000000,
+                            "vigenciaDesde": 1436076000000
+                        }
+                    ],
+                    "gremiales": [],
+                    "camarasEmpresariales": [],
+                    "estado": 1020,
+                    "estadoDesc": "ACTIVO"
+                },
+                "establecimiento": [
+                    {
+                        "nombreEstablecimiento": "ICA S A",
+                        "idActividadEconomica": "0000.00",
+                        "nombreActividadEconomica": "",
+                        "nombreActividadComercial": "",
+                        "idClasificacionEstablecimento": "885",
+                        "nombreClasificacionEstablecimiento": "AFECTO",
+                        "fechaInicioOperaciones": 537602400000,
+                        "numeroSecuenciaEstablecimiento": 1,
+                        "obligacionesEstablecimiento": {},
+                        "estado": 1020,
+                        "estadoDesc": "ACTIVO",
+                        "fechaEstado": 429253200000
+                    }
+                ],
+                "representante": [
+                    {
+                        "nit": "4523067",
+                        "nombre": "SERGIO TULIO PAREDES VELIZ",
+                        "fechaNombramiento": 953272800000,
+                        "estado": "1020",
+                        "descEstado": "ACTIVO"
+                    },
+                    {
+                        "nit": "1529501",
+                        "nombre": "OSMAN ANTONIO GUZMAN SANTOS",
+                        "fechaNombramiento": 1093932000000,
+                        "estado": "1020",
+                        "descEstado": "ACTIVO"
+                    },
+                    {
+                        "nit": "6565786",
+                        "nombre": "RAUL GUILLERMO REYES COLON",
+                        "fechaNombramiento": 1255327200000,
+                        "estado": "1020",
+                        "descEstado": "ACTIVO"
+                    }
+                ],
+                "contador": {
+                    "nitContador": "1963952K",
+                    "nombresApellidos": "CARLOS ENRIQUE COLINDRES MARTINEZ",
+                    "estado": "1020",
+                    "estadoDesc": "ACTIVO",
+                    "establecimientosActivos": false,
+                    "facturasAutVigentes": false,
+                    "omisoIVA": false,
+                    "fechaFallecimiento": false,
+                    "estadoNIT": false
+                },
+                "afiliacionImpuesto": {
+                    "isr": {
+                        "codigoImpuesto": 10,
+                        "nombreImpuesto": "IMPUESTO SOBRE LA RENTA",
+                        "periodoImpositivo": "1003",
+                        "periodoImpositivoDesc": "ANUAL: ENERO-DICIEMBRE",
+                        "tipoContribuyente": 821,
+                        "tipoContribuyenteDesc": "PERSONA JURÍDICA COMERCIO",
+                        "tipoRenta": 844,
+                        "tipoRentaDesc": "RENTAS DE ACTIVIDADES LUCRATIVAS",
+                        "regimen": 848,
+                        "regimenDesc": "RÉGIMEN SOBRE LAS UTILIDADES DE ACTIVIDADES LUCRATIVAS",
+                        "formaCalculo": 1567,
+                        "formaCalculoDesc": "RENTA IMPONIBLE POR 25%",
+                        "indicadorObligacion": 885,
+                        "indicadorObligacionDesc": "AFECTO",
+                        "estatusDeAfiliacion": 1020,
+                        "estatusDeAfiliacionDesc": "ACTIVO",
+                        "obligaciones": [
+                            {
+                                "idDetalleObligacion": 314,
+                                "idAsociacionImpuesto": 248,
+                                "codPeriodoImpositivo": 1764,
+                                "descripcionPeriodoImpositivo": "TRIMESTRAL",
+                                "codNombreObligacion": 2028,
+                                "descripcionNombreObligacion": "DECLARACIÓN JURADA Y PAGO TRIMESTRAL",
+                                "codFormulario": 1800,
+                                "descripcionCodFormulario": "136 - IMPUESTO SOBRE LA RENTA. RÉGIMEN SOBRE LAS UTILIDADES DE ACTIVIDADES LUCRATIVAS. DECLARACIÓN JURADA Y PAGO TRIMESTRAL.",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            },
+                            {
+                                "idDetalleObligacion": 315,
+                                "idAsociacionImpuesto": 248,
+                                "codPeriodoImpositivo": 1765,
+                                "descripcionPeriodoImpositivo": "SEMESTRAL",
+                                "codNombreObligacion": 2030,
+                                "descripcionNombreObligacion": "INFORME SEMESTRAL DE SALDOS DE INVENTARIOS",
+                                "codFormulario": 1802,
+                                "descripcionCodFormulario": "139 - IMPUESTO SOBRE LA RENTA. INFORME DE INVENTARIOS. PRESENTACIÓN Y PAGO SEMESTRAL.",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            },
+                            {
+                                "idDetalleObligacion": 316,
+                                "idAsociacionImpuesto": 248,
+                                "codPeriodoImpositivo": 1766,
+                                "descripcionPeriodoImpositivo": "ANUAL",
+                                "codNombreObligacion": 2029,
+                                "descripcionNombreObligacion": "DECLARACIÓN JURADA Y PAGO ANUAL",
+                                "codFormulario": 1804,
+                                "descripcionCodFormulario": "141 - IMPUESTO SOBRE LA RENTA PARA LOS REGÍMENES SOBRE LAS UTILIDADES DE ACTIVIDADES LUCRATIVAS, OPCIONAL SIMPLIFICADO SOBRE INGRESOS DE ACTIVIDADES LUCRATIVAS Y CONTRIBUYENTES EXENTOS.",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            },
+                            {
+                                "idDetalleObligacion": 313,
+                                "idAsociacionImpuesto": 248,
+                                "codPeriodoImpositivo": 1763,
+                                "descripcionPeriodoImpositivo": "MENSUAL",
+                                "codNombreObligacion": 1773,
+                                "descripcionNombreObligacion": "DECLARACIÓN JURADA Y PAGO MENSUAL",
+                                "codFormulario": 1797,
+                                "descripcionCodFormulario": "133 - IMPUESTO SOBRE LA RENTA, RETENCIONES EFECTUADAS A RESIDENTES Y NO RESIDENTES CON ESTABLECIMIENTO PERMANENTE.",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            }
+                        ],
+                        "fechaDesde": 1420092000000,
+                        "sistemaContable": 857,
+                        "sistemaInventario": 854,
+                        "sistemaInventarioDesc": "PROMEDIO PONDERADO",
+                        "sistemaContableDesc": "DEVENGADO"
+                    },
+                    "iso": {
+                        "codigoImpuesto": "27",
+                        "tipoContribuyente": "821",
+                        "tipoContribuyenteDesc": "PERSONA JURÍDICA COMERCIO",
+                        "periodoImpositivoDesc": "TRIMESTRAL",
+                        "nombreImpuesto": "IMPUESTO DE SOLIDARIDAD",
+                        "formaAcreditamiento": 1531,
+                        "formaAcreditamientoDesc": "ISR ACREDITABLE AL IMPUESTO DE SOLIDARIDAD",
+                        "estatusDeAfiliacion": 1020,
+                        "estatusDeAfiliacionDesc": "ACTIVO",
+                        "obligaciones": [
+                            {
+                                "idDetalleObligacion": 317,
+                                "idAsociacionImpuesto": 249,
+                                "codPeriodoImpositivo": 1764,
+                                "descripcionPeriodoImpositivo": "TRIMESTRAL",
+                                "codNombreObligacion": 1776,
+                                "descripcionNombreObligacion": "PAGOS TRIMESTRALES",
+                                "codFormulario": 1826,
+                                "descripcionCodFormulario": "160 - FORMULARIO DE PAGO DEL IMPUESTO DE SOLIDARIDAD",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            }
+                        ],
+                        "fechaDesde": 1418796000000
+                    },
+                    "iva": {
+                        "codigoImpuesto": "11",
+                        "nombreImpuesto": "IMPUESTO AL VALOR AGREGADO",
+                        "tipoContribuyente": "821",
+                        "tipoContribuyenteDesc": "PERSONA JURÍDICA COMERCIO",
+                        "tipoEstablecimiento": 885,
+                        "tipoEstablecimientoDesc": "AFECTO",
+                        "codigoRegimen": "817",
+                        "codigoRegimenDesc": "GENERAL",
+                        "periodoImpositivo": "1002",
+                        "periodoImpositivoDesc": "MENSUAL",
+                        "formaCalculo": 1466,
+                        "formaCalculoDesc": "12% DIFERENCIA CRÉDITOS / DÉBITOS",
+                        "exento": false,
+                        "estatusDeAfiliacion": 1028,
+                        "estatusDeAfiliacionDesc": "INACTIVO",
+                        "obligaciones": [
+                            {
+                                "idDetalleObligacion": 306,
+                                "idAsociacionImpuesto": 245,
+                                "codPeriodoImpositivo": 1763,
+                                "descripcionPeriodoImpositivo": "MENSUAL",
+                                "codNombreObligacion": 1767,
+                                "descripcionNombreObligacion": "IVA PERSONA JURÍDICA",
+                                "codFormulario": 1822,
+                                "descripcionCodFormulario": "223 - DECLARACION Y RECIBO DE PAGO MENSUAL DEL IMPUESTO AL VALOR AGREGADO",
+                                "generaEtiquetaOmiso": true,
+                                "obligacionRequerida": true,
+                                "estado": 2,
+                                "descripcionEstado": "ACTIVO",
+                                "descripcionObligacion": ""
+                            }
+                        ],
+                        "fechaDesde": 999756000000,
+                        "motivo": "SUSPENSIÓN POR OMISIÓN IVA / NO LOCALIZADO, ARTÍCULO 120 DEL DECRETO NO. 6-91 CÓDIGO TRIBUTARIO"
+                    }
+                },
+                "caracteristicasEspeciales": [
+                    {
+                        "codigoCaracteristica": 986,
+                        "nombreCaracteristica": "IMPORTADOR",
+                        "estado": 1028,
+                        "nombreEstado": "INACTIVO",
+                        "fechaEstado": 1645806582000,
+                        "fechaDesde": "2022-02-25",
+                        "fechaHasta": "2020-02-27"
+                    }
+                ]
+            }
+        }
+    }
+}

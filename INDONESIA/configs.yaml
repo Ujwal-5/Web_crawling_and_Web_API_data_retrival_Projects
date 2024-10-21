@@ -1,0 +1,9 @@
+batch_size: 64
+height: 50
+learning_rate: 0.001
+max_text_length: 13
+model_path: Models/02_captcha_to_text\202405022012
+train_epochs: 10
+train_workers: 20
+vocab: "REqUL47FwBukKDvNZHh2WmAnxCIraelc3PjVJifdpXQMzb"
+width: 200

@@ -1,0 +1,473 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr" >
+<head id="Head1"><title>
+	Registraire des entreprises - Recherche simple
+</title>
+<link rel="stylesheet" href="/K1Ressources/FeuilleStyle/importGR.css" type="text/css" />
+
+<link rel="stylesheet" href="/K1Ressources/FeuilleStyle/BandeauGR.css" type="text/css" />
+
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="/K1Ressources/FeuilleStyle/ie-only.css" type="text/css" />
+
+<![endif]-->
+<link rel="stylesheet" href="/K1Ressources/FeuilleStyle/bidon.css" type="text/css" />
+
+</head>
+<body>
+    <div class="contenucentre">
+        <form method="post" action="./PageRechSimple.aspx?T1.JetonStatic=65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&amp;T1.CodeService=S00436" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ9kFgJmD2QWBgIBDxYCHgRUZXh0BRd4bWw6bGFuZz0iZnIiIGxhbmc9ImZyImQCAw9kFgICAQ8WAh8ABZEDDQo8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Ii9LMVJlc3NvdXJjZXMvRmV1aWxsZVN0eWxlL2ltcG9ydEdSLmNzcyIgdHlwZT0idGV4dC9jc3MiIC8+DQoNCjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL0sxUmVzc291cmNlcy9GZXVpbGxlU3R5bGUvQmFuZGVhdUdSLmNzcyIgdHlwZT0idGV4dC9jc3MiIC8+DQoNCjwhLS1baWYgbHRlIElFIDZdPg0KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvSzFSZXNzb3VyY2VzL0ZldWlsbGVTdHlsZS9pZS1vbmx5LmNzcyIgdHlwZT0idGV4dC9jc3MiIC8+DQoNCjwhW2VuZGlmXS0tPg0KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSIvSzFSZXNzb3VyY2VzL0ZldWlsbGVTdHlsZS9iaWRvbi5jc3MiIHR5cGU9InRleHQvY3NzIiAvPg0KDQpkAgUPZBYIAgUPZBYCZg9kFgRmD2QWAmYPDxYEHghJbWFnZVVybAUgL0sxUmVzc291cmNlcy9JbWFnZXMvMzAxNTZfMS5naWYeDUFsdGVybmF0ZVRleHQFJlJlZ2lzdHJhaXJlIGRlcyBlbnRyZXByaXNlcyBkdSBRdcOpYmVjZGQCAQ9kFgJmD2QWAgICDw8WBB8ABUFGZXJtZXIgbGEgc2Vzc2lvbiA8aW1nIHNyYz0iL0sxUmVzc291cmNlcy9JbWFnZXMvMjM3NTZfMV9mLmdpZiIgPh4HVG9vbFRpcAURRmVybWVyIGxhIHNlc3Npb25kZAITD2QWAgIBD2QWAgIBDw8WBB8BBSAvSzFSZXNzb3VyY2VzL0ltYWdlcy8yMzc2NF8xLmdpZh8CBRBJbXByaW1lciBsYSBwYWdlZGQCIw9kFgICAQ9kFgJmD2QWBGYPDxYGHghDc3NDbGFzcwUQY2hhbXBvYmxpZ2F0b2lyZR4EXyFTQgICHgdWaXNpYmxlaGRkAgEPZBYCZg9kFggCBA9kFgICAQ9kFgICAQ9kFgYCAg9kFgJmDw8WCB4JRm9yZUNvbG9yDB4HRGlzcGxheQsqKlN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuVmFsaWRhdG9yRGlzcGxheQIeDEVycm9yTWVzc2FnZQVXTGEgcmVjaGVyY2hlIG5lIHBldXQgw6p0cmUgbGFuY8OpZSBzaSBsYSB6b25lIGRlIHRleHRlIGVzdCB2aWRlLjxzcGFuPiAoMzE0MjYpIDwvc3Bhbj4gHwUCBGRkAgUPFgIfBmhkAgoPDxYIHglNYXhMZW5ndGgC+gEeBVdpZHRoGwAAAAAAwIJAAQAAAB4ETW9kZQsqJVN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuVGV4dEJveE1vZGUAHwUCgAIWAh4FdGl0bGUFA05vbWQCBg9kFgICAQ9kFgJmDxBkZBYAZAIIDxYCHhxLUkJUUmVjaFNpbXBsZV9SZWNoZXJjaGVyX2N2aGQCCg8PFgIfAAUSUmVjaGVyY2hlIGF2YW5jw6llZGQCKQ9kFgICAQ9kFgICCw8PFgQfAQUgL0sxUmVzc291cmNlcy9JbWFnZXMvMjMzMzhfMS5naWYfAgUiUG9ydGFpbCBkdSBnb3V2ZXJuZW1lbnQgZHUgUXXDqWJlY2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYDBVFjdGwwMCRDUEhfSzFab25lQ29udGVudTFfQ2FkciRJZFNlY3Rpb25SZWNoU2ltcGxlJElkU2VjdGlvblJlY2hTaW1wbGUkSzFGaWVsZHNldDEFamN0bDAwJENQSF9LMVpvbmVDb250ZW51MV9DYWRyJElkU2VjdGlvblJlY2hTaW1wbGUkSWRTZWN0aW9uUmVjaFNpbXBsZSRDb25kVXRpbCRDYXNlQ29uZGl0aW9uc1V0aWxpc2F0aW9uJDAFamN0bDAwJENQSF9LMVpvbmVDb250ZW51MV9DYWRyJElkU2VjdGlvblJlY2hTaW1wbGUkSWRTZWN0aW9uUmVjaFNpbXBsZSRDb25kVXRpbCRDYXNlQ29uZGl0aW9uc1V0aWxpc2F0aW9uJDCdDdyX01JuxeIyIUBoostXznDmQA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/RQAnonymeGR/GR/GR03/GR03A2_19A_PIU_RechEnt_PC/WebResource.axd?d=VClfmi4oJ2s5kwIyAOCaX5a1weyqx5mXfi3WT1nIdiXZx6fC5SV2OmsbmsKLkiHXbs551d3L_s0s6iSurj6QXqyz-hc1&amp;t=638343939423008439" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.name = 'FenetrePrincipale';//]]>
+</script>
+
+<script src="/RQAnonymeGR/GR/GR03/GR03A2_19A_PIU_RechEnt_PC/WebResource.axd?d=AVS_LL7DKJoeckGhY8lFGWSl-kQNsbbQ9c_Ry0KWIvRj-iyBdpU3q3gkfO3NCzlt1YthvU-2wIq8rMM9d3wBnXQbIHo1&amp;t=638343939423008439" type="text/javascript"></script> <input type="hidden" name="IdCtrlPatientez" id="IdCtrlPatientez" value=""> 
+ <script language=JavaScript type="text/javascript"> 
+ var IndPatientez; 
+ var old__doPostBack; 
+ var old__onsubmit; 
+ 
+ IndPatientez = 0; 
+ function K1__doPostBack(eventTarget, eventArgument) { 
+    if (IndPatientez == '0') {
+       IndPatientez = '1'; 
+       K1Objet_PatientezPage(eventTarget);
+       return old__doPostBack(eventTarget, eventArgument);
+    }
+    else {
+       return false;
+    }
+ }
+ function cancelSubmitPatientez () {
+    var codRet; 
+    if (old__onsubmit) { codRet = old__onsubmit(); } 
+    else { codeRet = true; } 
+    if (codRet == undefined) { codRet = true; } 
+    if (codRet == true) { 
+       if (IndPatientez == '0') { 
+          IndPatientez = '1'; 
+          K1Objet_PatientezPage(document.getElementById('IdCtrlPatientez').value); 
+          return true; 
+       }
+       else { return false; } 
+    }
+    else { return false; } 
+ } 
+ 
+ old__onsubmit = document.forms[0].onsubmit; 
+ document.forms[0].onsubmit = cancelSubmitPatientez; 
+ if (typeof(cancelClick) != 'function') { 
+    function cancelClick () {
+       return false;
+    }
+ }
+ function K1Objet_PatientezPage(objet) {
+    var el, lnk, all; 
+    GenererImagePatientez();  
+    window.setTimeout("AfficherImagePatientez()", 3);  
+    if (document.getElementsByTagName("*")) { 
+       all = document.getElementsByTagName("input"); 
+       for (i = 0; i < all.length; i++) { 
+          el = all[i]; 
+          if (el.getAttribute('id') != 'Patientez_Div_Page' ) {   
+             if (el.type) {
+                if (el.type.toUpperCase() != 'HIDDEN' && el.id != objet) {
+                   if ((el.type.substr(0,4) == 'text') || (el.type == 'password')) { 
+                      el.readOnly = true; 
+                   } 
+                   else if ((el.type != 'radio') && (el.type != 'checkbox' ) && (el.type.substr(0,6) != 'select')  && (el.type != 'file') ) { 
+                      el.disabled = true; 
+                   } 
+                } 
+             } 
+          } 
+          if (all[i].getAttribute('onclick') != 'null') { 
+             all[i].setAttribute('onclick', 'cancelClick'); 
+          } 
+       } 
+       all = document.getElementsByTagName("button"); 
+       for (i = 0; i < all.length; i++) { 
+          el = all[i]; 
+          if (el.getAttribute('id') != 'Patientez_Div_Page' ) {   
+             if (el.type) {
+                if (el.type.toUpperCase() != 'HIDDEN' && el.id != objet) {
+                   if ((el.type.substr(0,4) == 'text') || (el.type == 'password')) { 
+                      el.readOnly = true; 
+                   } 
+                   else if ((el.type != 'radio') && (el.type != 'checkbox' ) && (el.type.substr(0,6) != 'select')  && (el.type != 'file') ) { 
+                      el.disabled = true; 
+                   } 
+                } 
+             } 
+          } 
+          if (all[i].getAttribute('onclick') != 'null') { 
+             all[i].setAttribute('onclick', 'cancelClick'); 
+          } 
+       } 
+       all = document.getElementsByTagName("textarea"); 
+       for (i = 0; i < all.length; i++) { 
+          el = all[i]; 
+          if (el.getAttribute('id') != 'Patientez_Div_Page' ) {   
+             if (el.type) {
+                if (el.type.toUpperCase() != 'HIDDEN' && el.id != objet) {
+                   if ((el.type.substr(0,4) == 'text') || (el.type == 'password')) { 
+                      el.readOnly = true; 
+                   } 
+                   else if ((el.type != 'radio') && (el.type != 'checkbox' ) && (el.type.substr(0,6) != 'select')  && (el.type != 'file') ) { 
+                      el.disabled = true; 
+                   } 
+                } 
+             } 
+          } 
+          if (all[i].getAttribute('onclick') != 'null') { 
+             all[i].setAttribute('onclick', 'cancelClick'); 
+          } 
+       } 
+    } 
+    else if (document.forms[0].all) { 
+       for (i = 0; i < document.forms[0].all.length; i++) { 
+          el = document.forms[0].all[i]; 
+          if (el.id != 'Patientez_Div_Page' ) {
+             if (el.type) {
+                if (el.type.toUpperCase() != 'HIDDEN' && el.id != objet) {
+                   if ((el.type.substr(0,4) == 'text') || (el.type == 'password')) { 
+                      el.readOnly = true; 
+                   }
+                   else if ((el.type != 'radio') && (el.type != 'checkbox' ) && (el.type.substr(0,6) != 'select')  && (el.type != 'file') ) { 
+                      el.disabled = true;
+                   } 
+                }
+             }
+          }
+          if (navigator.appName != 'Opera') { 
+             if (el.attributes ) { 
+                if ((el.attributes('onclick')) && (el.attributes('onclick') != 'undefined') && (el.attributes('onclick')) != null) { 
+                   if ((el.attributes('onclick').value) && (el.attributes('onclick').value != 'undefined') && (el.attributes('onclick').value != null)) { 
+                      el.attributes('onclick').value = cancelClick;
+                   } 
+                   else { el.setAttribute('onclick','cancelClick'); } 
+                } 
+             } 
+          } 
+       } 
+    } 
+   for(i = 0; i < window.document.links.length; i++) { 
+      lnk = window.document.links[i]; 
+      lnk.disabled = true; 
+      lnk.style.cursor = 'default'; 
+      lnk.href = '#'; 
+      lnk.target = ''; 
+      lnk.oldOnClick = lnk.onclick; 
+      lnk.onclick = cancelClick; 
+   } 
+ return true; 
+ } 
+</script> 
+<div id="Patientez_Div_Page" style='DISPLAY: none; VISIBILITY: hidden;' class="veuillezpatienter" tabindex="-1"> <IMG id="Patientez_Img" name="Patientez_Img" alt="Veuillez patienter" src="/K1Ressources/Images/26863_1_f.gif" tabindex="-1" /> <p>Veuillez patienter...</p> </div><SCRIPT language='JavaScript' type="text/javascript">
+  function GenererImagePatientez () { 
+  }
+  function AfficherImagePatientez () { 
+      var objDiv = document.getElementById('Patientez_Div_Page'); 
+      var imgVp = document.getElementById("Patientez_Img"); 
+      objDiv.style.visibility = 'visible';
+      objDiv.style.display = 'inline';
+      objDiv.tabIndex = "0"; 
+      if (imgVp) { imgVp.tabIndex = "0"; } 
+      window.setTimeout(function() {
+         try { 
+            document.getElementById('Patientez_Div_Page').blur(); 
+            document.getElementById('Patientez_Div_Page').focus(); 
+         } 
+         catch(e) { } 
+      }, 250); 
+      window.scroll(0, 0); 
+  }
+</SCRIPT>
+ <script language=JavaScript type="text/javascript">                  
+/* Retourne le paramètre et la valeur de celui-ci */                   
+   function GetParam(NomParam) {                                       
+       var paramHref = location.search;                                
+       var debParam = paramHref.indexOf(NomParam);                     
+       var finParam;                                                   
+       var strParam = '';                                              
+       if (debParam != -1) {                                           
+           finParam = paramHref.indexOf('&',paramHref.indexOf(NomParam));
+           if (finParam != -1)                                         
+               {strParam = paramHref.substring(debParam,finParam);}    
+           else                                                        
+               {strParam = paramHref.substring(debParam,paramHref.length);}
+       }                                                               
+       return strParam;                                                
+   }                                                                   
+   /* FIX pour enlever les doublons et conserver certains paramètre pour des pages particulières pour PIWIK */
+   var _paq = _paq || [];                                              
+   var pathname = location.pathname.toLowerCase();                     
+   var T1CSHref = -1;                                                  
+   var intPosAMR;                                                      
+   var strParam = '';                                                  
+   if (location.search != '')                                          
+   {                                                                   
+       T1CSHref = location.search.indexOf('T1.CodeService');           
+       if (T1CSHref != -1){                                            
+           strParam = GetParam('T1.CodeService');                      
+       }                                                               
+       else {                                                          
+           intPosAMR = pathname.indexOf('/K2W3AB01_I_ValiderAMR/SaisieValidationAMR.aspx')
+           if (intPosAMR != -1){                                       
+               strParam = GetParam('resultat');}                       
+       }                                                               
+   }                                                                   
+   var lowerHref = (location.protocol + '//' + location.host + pathname + '?' + strParam + location.hash).toLowerCase();
+   _paq.push(['setCustomUrl', lowerHref]);                             
+   _paq.push(['trackPageView']);                                       
+   _paq.push(['enableLinkTracking']);                                  
+   (function() {                                                       
+       var u="https://statistiques.gestionexterne.com/piwik/";                                       
+       _paq.push(['setTrackerUrl', u+'piwik.php']);                    
+       _paq.push(['setSiteId', 11]);                          
+       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+   })();                                                               
+</script>                                                              
+<noscript><p><img src="https://statistiques.gestionexterne.com/piwik/piwik.php?idsite=11" style="border:0;" alt="" /></p></noscript>
+<script src="/RQAnonymeGR/GR/GR03/GR03A2_19A_PIU_RechEnt_PC/WebResource.axd?d=TH6AXjZN8SvawnsoGdBCweinRvvAodxGK8gGhpHMfj4_oXRrMWuBCg4m2ynncsy-oTqIKebJB1LKpnWVg3oX2XIU2o41&amp;t=638343939423008439" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="3D6FEA2F" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAdRblSos8PrLEpKu0Cdk0Qcd8SxQ19CiFhV3chxleb3VCO/6lJHGyJTWQ8nM7lZSqbycW7kAmtGDV7C/AmXDWkShIeQjNWIcrrnRFMYxnx9bFWoM969LD7N6ZOl67e1FSGIK6acDAICMN5FOBJteo/mSE4KqIwnqplKtiARjH4RDFpIyZ0=" />
+</div>
+            
+            <div class=" menuaccessibilite">
+	<ul><li id="K1MenuAccessibilite1_Cadr1"><a href="#K1Acc_Contenu">Passer au contenu</a></li><li id="K1MenuAccessibilite1_Cadr2"><a href="#K1Acc_menu">Passer au menu</a></li></ul>
+</div>
+            
+            <div class="bandeau">
+	<div class="gauche">
+		<img src="/K1Ressources/Images/30156_1.gif" alt="Registraire des entreprises du Québec" />
+	</div><div class="droite">
+		<div class="bouton">
+			<ul><li><a id="K1Bandeau1_Cadr_ctl00_btnQuitter" title="Fermer la session" href="javascript:__doPostBack(&#39;ctl00$K1Bandeau1_Cadr$ctl00$btnQuitter&#39;,&#39;&#39;)">Fermer la session <img src="/K1Ressources/Images/23756_1_f.gif" ></a></li></ul>
+		</div>
+	</div><div class="centre">
+
+	</div>
+</div>
+            
+            
+            
+            <div class="contenubackgroundvert">
+                <div class="sectiongauche" id="K1Acc_menu">
+                    <div class="sectiongaucheinner">
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+                <div class="sectiondroite" id="K1Acc_Contenu">
+                    <div class="titresujet">
+                        <div>
+                            <p class="titre">
+                                Rechercher une entreprise au registre
+                            </p>
+                        </div>
+                    </div>
+                    <div class="zonecontenu">
+                        
+                        <div class="impression">
+	<a href="javascript:window.print();"><img src="/K1Ressources/Images/23764_1.gif" alt="Imprimer la page" /></a>
+</div>
+                        
+                        
+                        <div class="etape">
+	<div>
+
+	</div><h1 tabindex="0" id="K1TitrePage1_Cadr"><span class="nomservice">&nbsp;</span>Recherche simple</h1>
+</div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            <div id="CPH_K1ZoneContenu1_Cadr_K1ZoneContenu1_Cadr">
+	
+<div class="consigne" tabindex="0">
+		<p>La recherche simple permet de vérifier l'utilisation d'un nom au registre des entreprises avant de procéder à une demande de constitution ou à une déclaration d'immatriculation. Les résultats de cette recherche peuvent être acceptés à titre de rapport de recherche.</p><p>Inscrivez le nom ou le <a href="../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=4115&amp;ParametreAideUrl=33456,33458&amp;IdTitrePage=33456" target="_blank" id="hl_3z4aizglmb_1" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=4115&amp;ParametreAideUrl=33456,33458&amp;IdTitrePage=33456&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=4115&amp;ParametreAideUrl=33456,33458&amp;IdTitrePage=33456&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">numéro associé à l'entreprise<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a> que vous recherchez, puis cliquez sur <span class="titrerubrique">Rechercher</span>.</p><p>Cliquez sur Recherche avancée pour<ul><li>trouver un nom qui désigne une autorité publique ou une entreprise qui est uniquement inscrite au fichier central des entreprises (FCE);</li><li>effectuer une recherche par nom ou par mots apparentés;</li><li>préciser le domaine, le type ou l'étendue de la recherche.</li></ul><p>Consultez les <a href="https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises" target="_blank" id="hl_nodexbm59i_2" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;https://www.quebec.ca/entreprises-et-travailleurs-autonomes/obtenir-renseignements-entreprise/recherche-registre-entreprises&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">instructions relatives à la recherche<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a> pour obtenir plus d'information.</p></p>
+	</div>
+
+
+<h2 tabindex="0">Objet de la recherche</h2>
+
+<fieldset class="zonelibellechamp">
+		<legend>
+			Légende par défaut
+		</legend>
+    
+    <div class="composantform k1champsaisie k1champsanslibelle">
+			<label for="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__cs"><span class="msgerreur"><span id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco" style="display:none;">La recherche ne peut être lancée si la zone de texte est vide.<span> (31426) </span> </span></span>
+<span class="libelle cache"  ControleAFocuser='CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__cs'   ValidateursAssocies='CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco' >Nom<span>*</span></span>
+</label><input name="ctl00$CPH_K1ZoneContenu1_Cadr$IdSectionRechSimple$IdSectionRechSimple$K1Fieldset1$ChampRecherche$_cs" type="text" maxlength="250" id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__cs" title="Nom" style="width:600px;" />
+		</div>
+
+    
+    <input name="ctl00$CPH_K1ZoneContenu1_Cadr$IdSectionRechSimple$IdSectionRechSimple$K1Fieldset1$InputACauseBugIExplorer" type="text" id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_InputACauseBugIExplorer" style="VISIBILITY:hidden" />
+
+	</fieldset>
+
+
+<div id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_CondUtil_ConditionsUtilisation"><table id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_CondUtil_CaseConditionsUtilisation">
+		<tr>
+			<td><input id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_CondUtil_CaseConditionsUtilisation_0" type="checkbox" name="ctl00$CPH_K1ZoneContenu1_Cadr$IdSectionRechSimple$IdSectionRechSimple$CondUtil$CaseConditionsUtilisation$0" value="UtilisateurAccepteConditionsUtilisation" /><label for="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_CondUtil_CaseConditionsUtilisation_0">Je reconnais avoir lu, compris et accepté les <a href="../../../K1/K102/K102A1_08C_PIU_PagesCommunes_PC/P_AideSimple.aspx?IdPage=3058&amp;IdTitrePage=58234&amp;IDsTextes=58221" target="_blank" id="hl_ncvxltn62r_1" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K102/K102A1_08C_PIU_PagesCommunes_PC/P_AideSimple.aspx?IdPage=3058&amp;IdTitrePage=58234&amp;IDsTextes=58221&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K102/K102A1_08C_PIU_PagesCommunes_PC/P_AideSimple.aspx?IdPage=3058&amp;IdTitrePage=58234&amp;IDsTextes=58221&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">conditions d'utilisation<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a> du service en ligne Rechercher une entreprise au registre.</label></td>
+		</tr>
+	</table></div>
+
+<div class="rubanboutonssec"><span class="bouton boutondefaut"><input type="submit" name="ctl00$CPH_K1ZoneContenu1_Cadr$IdSectionRechSimple$IdSectionRechSimple$KRBTRechSimple$btnRechercher" value="Rechercher" onclick=" document.getElementById(&#39;IdCtrlPatientez&#39;).value= this.id ; if (typeof(K1InitBlockSubmit) == &#39;function&#39;) K1InitBlockSubmit(); ;" id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_KRBTRechSimple_btnRechercher" /></span></div>
+
+<a id="CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_LienRechercheAvancee" href="javascript:__doPostBack(&#39;ctl00$CPH_K1ZoneContenu1_Cadr$IdSectionRechSimple$IdSectionRechSimple$LienRechercheAvancee&#39;,&#39;&#39;)">Recherche avancée</a>
+    <p>&nbsp;</p>
+
+</div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div id="K1PiedPage1_Cadr_K1PiedPage1_Cadr" class="piedpage">
+	<ul class="assistancetechnique"><li><a href="../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35715,35709&amp;IdTitrePage=35715&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e" target="_blank" id="K1PiedPage_357181" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35715,35709&amp;IdTitrePage=35715&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=760px,     height=640px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35715,35709&amp;IdTitrePage=35715&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=760px,     height=640px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;"><img name="K1PiedPage_357181" src="/K1Ressources/Images/26050_1_f.gif"" alt="Assistance technique" border=0 ><img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a></li></ul><ul><li><a href="../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35747,35748&amp;IdTitrePage=35747&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e" target="_blank" id="K1PiedPage_357511" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35747,35748&amp;IdTitrePage=35747&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35747,35748&amp;IdTitrePage=35747&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">Sécurité<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a></li><li><a href="../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35752,35753&amp;IdTitrePage=35752&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e" target="_blank" id="K1PiedPage_357561" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35752,35753&amp;IdTitrePage=35752&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35752,35753&amp;IdTitrePage=35752&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">Confidentialité<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a></li><li><a href="../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35757,35758&amp;IdTitrePage=35757&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e" target="_blank" id="K1PiedPage_357611" class="hyperlienpopup" OnClick="javascript:(window.showModalDialog) ? MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35757,35758&amp;IdTitrePage=35757&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenLeft+0)+&#39;px,        top=&#39; + (window.screenTop+0)+&#39;px&#39;) : MyWindow=window.open(&#39;../../../K1/K1E/K1E2A_I_Communs/P_Aide.aspx?ParametreIdPage=3058&amp;ParametreAideUrl=35757,35758&amp;IdTitrePage=35757&amp;Variables=CodeService:S00436,JetonStatic:65fbe0fc-66fb-487d-9eea-0a4b0fa5de0e&#39;,&#39;MRQ&#39;,&#39;directories=No,    toolbar=No,   location=No,     status=No,    menubar=No, scrollbars=Yes,  resizable=Yes,       help=no ,      width=400px,     height=300px,       left=&#39; + (window.screenX+4+0)+&#39;px,        top=&#39; + (window.screenY+4+0)+&#39;px&#39;); return false;">Configuration nécessaire<img class="imgsurplus" alt="Ce lien permettra d'ouvrir une nouvelle fenêtre." src="/K1Ressources/Images/24143_1_f.gif"></a></li></ul><img src="/K1Ressources/Images/23338_1.gif" alt="Portail du gouvernement du Québec" /><br /><span class="copyright">© Gouvernement du Québec</span>
+</div>
+        
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco = document.all ? document.all["CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco"] : document.getElementById("CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco");
+CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco.controltovalidate = "CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__cs";
+CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco.errormessage = "La recherche ne peut être lancée si la zone de texte est vide.<span> (31426) </span> ";
+CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco.display = "Dynamic";
+CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__vco.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+function K1InitBlockSubmit(){
+   if (typeof(Page_BlockSubmit) == 'boolean'){
+         Page_BlockSubmit = false;
+   }
+}
+function K1DeclencherValidationsUnitaires() {
+  var flag = true;
+  if (typeof(Page_ClientValidate) == 'function') { 
+    flag = Page_ClientValidate(); 
+    if (typeof(K1AfficherErreursUnitaires) == 'function') {
+       K1AfficherErreursUnitaires();
+    }
+  }
+  return flag;
+}
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+<script language=JavaScript type="text/javascript">              
+   history.forward();                     
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function K1BloquerPrecedentClavier(e) {
+   var evt = e || window.event;
+   var kc, el, altKeyPressed;
+   altKeyPressed = evt.altKey;
+   if (document.all) { kc = evt.keyCode; }
+   else { kc = evt.which; }
+   if (document.activeElement) { el = document.activeElement; }
+   else { el = evt.srcElement; }
+   if ((altKeyPressed && (kc == 37 || kc == 39)) ||
+      kc == 8 && el.type != "text" && el.type != "textarea" && el.type != "password" && el.type != "file") {
+      if (document.all) { evt.returnValue = false; }
+      return false;
+   }
+}
+function K1CapturerTouchesClavier(e) {
+   var r; 
+   r = K1BloquerPrecedentClavier(e); 
+   if (r == false) return false; 
+}
+document.onkeydown = K1CapturerTouchesClavier; 
+document.onkeypress = K1CapturerTouchesClavier; 
+//]]>
+</script>
+
+<script language='JavaScript' type="text/javascript" >
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('CPH_K1ZoneContenu1_Cadr_IdSectionRechSimple_IdSectionRechSimple_K1Fieldset1_ChampRecherche__cs');//]]>
+</script>
+</form>
+    </div>
+</body>
+</html>
+

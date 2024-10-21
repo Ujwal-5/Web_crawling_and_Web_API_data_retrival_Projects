@@ -1,0 +1,1618 @@
+<!doctype html>
+
+
+
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="https://www.ilsos.gov/assets/ico/favicon.ico">
+		<title>Business Entity Search</title>
+		<link href="https://www.ilsos.gov/dist/bs3-3-5/css/bootstrap.css" rel="stylesheet"> 
+		<link href="https://www.ilsos.gov/css/bs3-3-5/custom.css" rel="stylesheet">  
+		<link href="https://www.ilsos.gov/dist/data-tables/css/dataTables.bootstrap.min.css" rel="stylesheet">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://www.ilsos.gov/assets/js/html5shiv.js"></script>
+			<script src="https://www.ilsos.gov/assets/js/respond.min.js"></script>
+		<![endif]--> 
+		<!-- scripts -->
+		<script src="https://www.ilsos.gov/scripts/bs3-3-5/nav.js"></script>
+		<script src="https://www.ilsos.gov/scripts/googlytics.js"></script> 
+	</head>  
+	<body>  
+		<nav id="navigation" class="navbar navbar-default container" role="navigation"> 
+			<noscript>  
+				<div class="container">      		
+					JavaScript Required: For a secure web experience, this site uses JavaScript to complete web applications. Please turn on JavaScript in your browser to continue.
+				</div>
+			</noscript>           	
+		</nav>
+<!--		<div class="container-main" style="width:75%;"> -->
+		<div class="container container-main"> 
+			<div id="banner-second"> 
+				<div class="prod"></div>
+			</div>
+			<div id="search-bar" class="homesearch">  
+			</div>
+			<form action="/businessentitysearch/businessentitysearch" method="post" name="results" id="results">
+			<input type="hidden" id="command" name="command" value="entitySearch">
+        	<input type="hidden" id="method" name="method" value="getDetails">
+        	<input type="hidden" id="transId" name="transId" value="">
+        	<input type="hidden" id="resultspage" name="resultspage" value="">
+			<div class="content">
+					<h3>Business Entity Search</h3>
+					<div class="heading-underline"></div>
+					
+					<br>
+					<div class="form-group" id = "radiobtn">
+                      <label class="radio-inline">
+                          <input type="radio" name="searchMethod" value="s"  autofocus> Business Name 
+                      </label>
+                      <label class="radio-inline">
+						<input type="radio" name="searchMethod" id="agentsearch" value="a"> Registered Agent
+					 </label>
+				 	<label class="radio-inline">
+						<input type="radio" name="searchMethod" id="presidentsearch" value="r"> President
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="searchMethod" id="secretarysearch" value="c"> Secretary
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="searchMethod" id="managersearch" value="m"> Manager
+					</label>
+                     <label class="radio-inline">
+                         <input type="radio" name="searchMethod" value="e"> Keyword
+                     </label>
+                     <label class="radio-inline">
+                          <input type="radio" name="searchMethod" value="p"> Partial Word 
+                      </label><label class="radio-inline">
+                           <input type="radio" name="searchMethod" value="f">File Number
+                        </label>
+                    </div>
+					 <div class="row">	
+						<div class="col-md-6">
+							<div class="form-group" id="searchDiv">
+								<label for="searchValue" class="required">
+									Start a New Search
+								</label>
+								<input type="text" id="searchValue" name="searchValue" value="" maxlength="30" class="form-control">
+							</div>
+						</div> 	
+					</div>
+				  <div class="row" >
+					<div class="col-md-4" >
+						<div class="form-group hidden" id="maLast1" >
+							<label for="maLastName" class="required">
+								Last Name
+							</label>
+							<input type="text" id="maLastName" name="maLastName" value="" maxlength="40" class="form-control" disabled>
+							<br>
+							Or
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group hidden" id="maFirst1" >
+							<label for="maFirstName"">
+								First Name
+							</label>
+							<input type="text" id="maFirstName" name="maFirstName"  value="" maxlength="15" class="form-control" disabled>
+						</div>  
+					</div> 
+					<div class="col-md-2">
+						<div class="form-group hidden" id="maMiddle1" >
+							<label for="maMiddleIni"">
+								 Middle Initial
+							</label>
+							<input type="text" id="maMiddleIni" name="maMiddleIni"  value="" maxlength="1" class="form-control" disabled>
+						</div>  
+					</div> 
+				</div>
+				<div class="row" >
+					<div class="col-md-6" >
+						<div class="form-group hidden" id="maBusinessName1" >
+							<label for="maBusinessName" class="required">
+								Business Name
+							</label>
+							<input type="text" id="maBusinessName" name="maBusinessName" value="" maxlength="30" class="form-control" disabled>
+						</div>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col-md-3 col-md-4 m-t-25">
+						<input type="submit" id="btnSearch" name="btnSearch" value="Submit" class="btn btn-default"> 
+					</div>
+					<div class="col-md-4 pull-right">
+	                      	<label>Filter by Entity</label> <div id="filter"></div>
+	                     	</div>
+                  </div>
+					<br>
+					<div class="table-responsive">
+						<div class="visible-xs visible-sm  bg-error">
+                        	<p> On a mobile device, swipe left or right to view the full data</p>
+                    	</div>
+						<table class="table table-striped" id="sortTable">
+							<thead>
+								<tr>
+									<th>File Number</th>
+									<th>Entity Type</th>
+									<th></th>
+									<th>Entity Name</th>
+									<th>Entity Status</th>
+									<th>Registered<br>Effective Date</th>
+							  		
+							  			
+							  			
+							  			
+							  			
+							  				<th>Registered Agent</th>
+							  			
+							  		
+								</tr>
+							</thead>
+						 	<tbody>
+								
+		                          	<tr>
+									  <td>59472054</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225442"><a href="#getDetails">AAAA - AMERICAN ACCOUNTING & BKKEEPING - TAX SERVICES, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>06-24-1997</td>
+									  <td>VINOD K SINGH</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>61637915</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225443"><a href="#getDetails">AAAA AMERICAN DOORS, INCORPORATED</a></td>
+									  <td>DISSOLVED</td>
+									  <td>05-10-2001</td>
+									  <td>RICHARD D. CRUZ</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>60375402</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (OLD)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225444"><a href="#getDetails">AAAA AUTO CARE, INC.</a></td>
+									  <td>ACTIVE</td>
+									  <td>03-02-1999</td>
+									  <td>WIESLAW SNIEZYNSKI</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>62305258</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225445"><a href="#getDetails">AAAA AUTO REPAIR, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>07-01-2002</td>
+									  <td>GILBERT HANNA</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>56808833</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225446"><a href="#getDetails">AAAA BUILDING MAINTENANCE, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>04-21-1992</td>
+									  <td>DAVID H PAUKER</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>65962977</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225447"><a href="#getDetails">AAAA CHARTER TAXI & LIMO SERVICE, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>01-15-2008</td>
+									  <td>MARK L KARNO</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>67302303</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225448"><a href="#getDetails">AAAA CONSTRUCTION SERVICES INC.,</a></td>
+									  <td>DISSOLVED</td>
+									  <td>08-25-2009</td>
+									  <td>SANJAY ASIJA</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>09093834</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225449"><a href="#getDetails">AAAA CONSULTING LLC</a></td>
+									  <td>INVOLUNTARY DISSOLUTION</td>
+									  <td>08-06-2020</td>
+									  <td>ARCHANA MISHRA</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>58277614</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225450"><a href="#getDetails">AAAA, CORP.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>04-04-1995</td>
+									  <td>ASHRAF JEHAN AHMED</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>62556102</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (ASE)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225451"><a href="#getDetails">AAAA DRAINS INC. PLUMBING, SEWER AND DRAINAGE</a></td>
+									  <td>ACTIVE</td>
+									  <td>12-06-2002</td>
+									  <td>TIMOTHY BENFORD ROBERTS</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>56119701</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225452"><a href="#getDetails">AAAA ENTERPRISES, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>09-26-1990</td>
+									  <td>TERRY HEIM</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>14007202</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225453"><a href="#getDetails">AAAA FOOD MARKET LLC</a></td>
+									  <td>ACTIVE</td>
+									  <td>11-20-2023</td>
+									  <td>NIANG H DIM</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>06058183</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225454"><a href="#getDetails">AAAA HY N TOWING LLC</a></td>
+									  <td>INVOLUNTARY DISSOLUTION</td>
+									  <td>11-15-2016</td>
+									  <td>RICHARD F WEEKES</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>69524478</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225455"><a href="#getDetails">AAAA INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>07-08-2014</td>
+									  <td>ABINASH TULUKDER</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>06283314</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225456"><a href="#getDetails">AAAA INVESTMENTS LLC</a></td>
+									  <td>INVOLUNTARY DISSOLUTION</td>
+									  <td>05-02-2017</td>
+									  <td>ARCHANA MISHRA</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>74086837</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225457"><a href="#getDetails">AAAA LOGISTICS INC.</a></td>
+									  <td>NOT GOOD STANDING</td>
+									  <td>02-10-2023</td>
+									  <td>KRISTINA KUBILIUTE</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>59357174</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225458"><a href="#getDetails">AAAA NATURSCAPE LANDSCAPING, CO.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>04-15-1997</td>
+									  <td>BILL SCHWAB</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>59661426</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225459"><a href="#getDetails">AAAA O'HARE TAXI SERVICE, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>11-07-1997</td>
+									  <td>FAHMI ALAJHOUNI</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>66791068</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225460"><a href="#getDetails">AAAA REVERSE MORTGAGE REFERRAL SERVICE INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>08-21-2008</td>
+									  <td>EUGNE J SPARING</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>61925694</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225461"><a href="#getDetails">AAAA ROOFING, COMPANY.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>11-30-2001</td>
+									  <td>VINCENT E GUNTER</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>05424704</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225462"><a href="#getDetails">AAAA RP PROPERTIES LLC</a></td>
+									  <td>ACTIVE</td>
+									  <td>08-24-2015</td>
+									  <td>ANTHONY BOYD</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>12782349</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225463"><a href="#getDetails">AAAA SALES & SERVICES LLC</a></td>
+									  <td>NGS</td>
+									  <td>02-02-2023</td>
+									  <td>AARON HAROON WILSON</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>56527893</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225464"><a href="#getDetails">AAAA SERVICES, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>09-10-1991</td>
+									  <td>AMRISH MAHAJAN</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>60436762</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (OLD)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225465"><a href="#getDetails">AAAA SERVICES, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>04-08-1999</td>
+									  <td>KEVIN T  FLYNN</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>64669982</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225466"><a href="#getDetails">AAAA SHOOTING STAR LIMO, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>01-11-2006</td>
+									  <td>ABRAHAM T MARANO</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>74509614</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225467"><a href="#getDetails">AAAA SOLAR INC.</a></td>
+									  <td>ACTIVE</td>
+									  <td>12-02-2023</td>
+									  <td>MUQHEET SYED</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>53093329</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (OLD)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225468"><a href="#getDetails">AAAA TOWING, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>05-17-1983</td>
+									  <td>TERRY L HEIM</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>61200363</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225469"><a href="#getDetails">AAAAA COMPANY</a></td>
+									  <td>DISSOLVED</td>
+									  <td>08-04-2000</td>
+									  <td>JEFFREY L NEVIUS</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>69756689</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225470"><a href="#getDetails">AAAAA , INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>11-18-2014</td>
+									  <td>CHEN LIU</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>66779068</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225471"><a href="#getDetails">AAAAA LIMOUSINE CORP.,</a></td>
+									  <td>DISSOLVED</td>
+									  <td>07-25-2008</td>
+									  <td>PHILLIP WELLS</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>61872892</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225472"><a href="#getDetails">AAAAA LIMOUSINE SERVICE INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>11-07-2001</td>
+									  <td>HAZAA ABOULTAIF</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>67277635</td>
+									  
+									  	
+									  	
+									  		
+									  			
+													<td>NFP (MST)</td>
+									  			
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+													<td>NFP</td>
+									  			
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225473"><a href="#getDetails">AAAAAAA WELLS LEASING CONTRUCTION MFG, NFP</a></td>
+									  <td>NOT GOOD STANDING</td>
+									  <td>12-28-2010</td>
+									  <td>WALTER WELLS</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>61654127</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225474"><a href="#getDetails">AAAAAAMERICAN WHITE CAB CORPORATION</a></td>
+									  <td>DISSOLVED</td>
+									  <td>05-30-2001</td>
+									  <td>KARIM FAHMI</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>62892099</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225475"><a href="#getDetails">AAAAACTION BOARD UP & GLASS, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>05-13-2003</td>
+									  <td>GARY L ANDERSON</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>63773565</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225476"><a href="#getDetails">AAAAAUTOEXPORT, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>09-08-2004</td>
+									  <td>LINAS KEVLICIUS</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>58650501</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (OLD)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225477"><a href="#getDetails">AAAABACO SERVICES, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>12-28-1995</td>
+									  <td>DOMINIC S MADURI</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>66487784</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (ASE)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225478"><a href="#getDetails">AAAACCURATE SCREENING</a></td>
+									  <td>ACTIVE</td>
+									  <td>01-21-2009</td>
+									  <td>HSK AGENT SERVICES INC</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>70393018</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225479"><a href="#getDetails">AAAACES MARKETING, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>10-23-2015</td>
+									  <td>TAMARA JILL NORTON</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>58632694</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225480"><a href="#getDetails">AAAAFFILATED GLASS & BOARD-UP, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>12-15-1995</td>
+									  <td>JOSEPH S KAYNE</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>58632694</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (OLD)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225481"><a href="#getDetails">AAAAFILIATED GLASS & BOARD-UP, INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>12-15-1995</td>
+									  <td>JOSEPH S KAYNE</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>73683068</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225482"><a href="#getDetails">AAAAM INC.</a></td>
+									  <td>ACTIVE</td>
+									  <td>03-24-2022</td>
+									  <td>SAFETY DEPARTMENT INC.</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>13300097</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225483"><a href="#getDetails">AAAAUTO REPEAR LLC</a></td>
+									  <td>ACTIVE</td>
+									  <td>05-25-2023</td>
+									  <td>REGISTERED AGENTS INC.</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>65177641</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225484"><a href="#getDetails">AAAAZ LIMOUSINE SERVICE INC.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>09-29-2006</td>
+									  <td>ALEKSANDAR PAVICEVIC</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>01944584</td>
+									  
+									  	
+									  		<td>LLC (MST)</td>
+									  	
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  		<td>LLC</td>
+									  	
+									  	
+									  	
+									  
+									  <td id="140225485"><a href="#getDetails">CHICAGO AAAAEOROZCO, LLC</a></td>
+									  <td>INVOLUNTARY DISSOLUTION</td>
+									  <td>08-16-2006</td>
+									  <td>ABADESA CORTES</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>64273752</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225486"><a href="#getDetails">RREEF AMERICA REIT II CORP. AAAA</a></td>
+									  <td>WITHDRAWN</td>
+									  <td>06-13-2005</td>
+									  <td>C T CORPORATION SYSTEM</td> 
+								  </tr>
+								
+		                          	<tr>
+									  <td>57698756</td>
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP (MST)</td>
+									  			
+									  		
+									  	
+									  	
+									  	
+									  
+									  
+									  	
+									  	
+									  		
+									  			
+									  			
+									  				<td>CORP</td>
+									  			
+									  		
+									  	
+									  	
+									  
+									  <td id="140225487"><a href="#getDetails">10-AAAAAAAAAA, LTD.</a></td>
+									  <td>DISSOLVED</td>
+									  <td>02-28-1994</td>
+									  <td>THEODORE CURTIS</td> 
+								  </tr>
+								
+							</tbody> 
+						</table>
+					</div>
+				</div>  
+			</form>   
+		</div>
+		<footer id="footer">
+			<noscript>
+				<div class="container">
+					JavaScript Required: This site uses JavaScript to display common navigation items.
+				</div>
+			</noscript>
+		</footer> 
+		<script src="https://www.ilsos.gov/assets/js/jquery.min.js"></script>
+		<script src="https://www.ilsos.gov/dist/bs3-3-5/js/bootstrap.min.js"></script> 
+		<script src="https://www.ilsos.gov/dist/bs3-3-5/validate/jquery.validate.min.js"></script>
+		<script src="https://www.ilsos.gov/dist/bs3-3-5/validate/additional-methods.min.js"></script>
+		<script src="https://www.ilsos.gov/dist/data-tables/js/jquery.dataTables.min.js"></script>
+		<script src="https://www.ilsos.gov/dist/data-tables/js/dataTables.bootstrap.min.js"></script>
+		<script src="/businessentitysearch/js/results.js"></script>
+	<script type="text/javascript" nonce="d2c79288f2d214b2b60bfca79cca32f6" src="/EGmp2/vBdRK/ExTS/ZRYi/D9/1YfOb8kVwz/dDY_FQE/LhlvbSZK/eRE"></script></body>
+</html>

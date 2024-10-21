@@ -1,0 +1,35 @@
+## All required modules to be added on poetry
+## To add RUN "cat requirements.txt | xargs poetry add"
+
+## Requirements for Scraper service
+#selenium-recaptcha-solver==1.9.0
+DrissionPage
+#selenium
+#undetected-chromedriver
+#faster-whisper
+SpeechRecognition
+pydub
+
+## Requirements for Service
+botocore
+certifi
+chardet
+dnspython
+idna
+jmespath
+mysql-connector-python
+pika
+protobuf
+python-dateutil
+requests
+s3transfer
+six
+urllib3
+beautifulsoup4
+
+## common on both
+psutil
+#mltu
+lxml
+#opencv-python
+python-dotenv

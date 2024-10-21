@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "olddetails": []
+    },
+    {
+      "registrant": []
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "E283_1366",
+          "doc_count": 1,
+          "din": "E283_1366",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC ARTICLES/FOR PROFIT",
+          "tran_code": "ARF",
+          "charter_num": "499383",
+          "effect_date": "06/10/1977"
+        },
+        {
+          "processing_id": "000000145519",
+          "doc_count": 2,
+          "din": "000000145519",
+          "img_status": "NO IMAGES",
+          "tran_code_desc": "CANCELLED BY TAX DEPT W/NOTIFICATION",
+          "tran_code": "XTD",
+          "charter_num": "499383",
+          "effect_date": "03/31/1981"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "JOYCE A STACHOWIAK"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "E283_1366",
+          "doc_id": "STANDARD",
+          "business_name": "BRA, INC.",
+          "business_type": "CORPORATION FOR PROFIT",
+          "corp_status": "Y",
+          "business_locationcountystate": "TOLEDO",
+          "business_location_name": "TOLEDO",
+          "business_state": "OH",
+          "status": "Cancelled",
+          "tran_code": "ARF",
+          "charter_num": "499383",
+          "expiry_date": "-",
+          "effect_date": "06/10/1977",
+          "county_name": "LUCAS",
+          "state_name": "OHIO"
+        }
+      ]
+    }
+  ]
+}

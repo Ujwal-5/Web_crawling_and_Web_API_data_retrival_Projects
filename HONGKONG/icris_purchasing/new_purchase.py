@@ -1,0 +1,57 @@
+import lxml.html
+
+def  new_tab_purchase(EC, By, wait, DriverConf, time, driver, brn, logger):
+    original_tab_handle = driver.current_window_handle
+    driver = DriverConf().open_new_tab(driver, 'https://www.icris.cr.gov.hk/csci/cart_shoppingcartmaintenance.do')
+    time.sleep(4)
+    logger.info('Opening new tab')
+    cart = wait.until(EC.element_to_be_clickable((By.XPATH, '''//i[@class="icn cart"]''')))
+    driver.execute_script("arguments[0].click();", cart)
+    time.sleep(4)
+    logger.info("Opening the cart to process order")
+    cart_check = wait.until(EC.element_to_be_clickable((By.XPATH, '''//li[@class="iconBG icon-cart"]/a[contains(., 'Check Out Shopping Cart')]''')))
+    DriverConf().take_sceenshot(driver=driver, name='cart_check', folder=brn)
+    driver.execute_script("arguments[0].click();", cart_check)
+    time.sleep(4)
+    save_and_check = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@type="button"]/span[contains(text(), "Save and Checkout")]')))
+    DriverConf().take_sceenshot(driver=driver, name='save_and_check', folder=brn)
+    driver.execute_script("arguments[0].click();", save_and_check)
+    logger.info("Clicked save and checkout button")
+    time.sleep(4)
+    proceed_charge = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@type="button"]/span[contains(text(), "Proceed to Charge")]')))
+    DriverConf().take_sceenshot(driver=driver, name='proceed_charge', folder=brn)
+    driver.execute_script("arguments[0].click();", proceed_charge)
+    logger.info("Clicked proceed_charge button")
+    time.sleep(4)
+    pay = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@type="button"]/span[contains(text(), "Pay")]')))
+    DriverConf().take_sceenshot(driver=driver, name='pay', folder=brn)
+    driver.execute_script("arguments[0].click();", pay)
+    logger.info("Clicked pay button")
+    time.sleep(4)
+    confirm = wait.until(EC.element_to_be_clickable((By.XPATH, '//button[@type="button"]/span[contains(text(), "Confirm")]')))
+    DriverConf().take_sceenshot(driver=driver, name='confirm', folder=brn)
+    # driver.execute_script("arguments[0].click();", confirm)
+    logger.info("Clicked confirm button")
+    time.sleep(5)
+    html = driver.page_source
+    tree = lxml.html.fromstring(html=html)
+    order_no = tree.xpath("//th[contains(., 'Order No')]/following-sibling::td/text()")
+    print("Order Number: ", order_no[0])
+    left_balance = tree.xpath("//th[contains(., 'Balance after Payment')]/following-sibling::td/text()")
+    print("Remaining balance: ", left_balance[0])
+    payment_status = tree.xpath("//th[contains(., 'Payment Status')]/following-sibling::td/text()")
+    print("Payment Status: ", payment_status[0])
+    time.sleep(2)
+
+    # try:
+    #     time.sleep(2)
+    #     driver.close()
+    #     time.sleep(2)
+    #     driver.switch_to.window(original_tab_handle)
+    #     time.sleep(2)
+    #     print("Webpage is closed")
+    #     logger.info("Opened tab for purchasing has been closed")
+    # except:
+    #     print("Occured error while closing the webpage")
+    #     pass
+    return driver, order_no[0], left_balance[0], payment_status[0]

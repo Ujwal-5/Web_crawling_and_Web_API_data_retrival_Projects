@@ -1,0 +1,86 @@
+{
+    "FileNumber": "0000000033",
+    "InformaciÃ³n General": [
+        {
+            "Circunscripción Registral": "CORTES / SAN PEDRO SULA ",
+            "Ubicación de la Empresa": "SAN PEDRO SULA, CORTES ",
+            "Tipo de Comerciante": "COMERCIANTE INDIVIDUAL ",
+            "Tipo de Capital": "- ",
+            "Razón Social": "CAFETERIA Y REPOSTERIA LAS DELICIAS ",
+            "Denominación Social": null,
+            "Nombre Comercial": "- ",
+            "Siglas": "- ",
+            "Dirección de la Empresa": "SEGUNDA CALLE SUROESTE ENTRE OCHO Y NUEVE AVENIDAS, N 38, BARRIO EL CENTRO ",
+            "Domicilio": "SAN PEDRO SULA, CORTES, PERO SE PODRA ESTABLECER SUCURSALES EN EL RESTO DEL PAIS ",
+            "Objeto Social de la Empresa": "- ",
+            "Vigencia": "10/11/1983 ",
+            "Inscrito CCI": "- ",
+            "Finalidad": "LA FABRICACION, DECORACION Y ELABORACION DE PRODUCTOS DE PANADERIA, GALLETERIA Y REPOSTERIA EN GENERAL ",
+            "Estado": "EN FORMACION ",
+            "Observaciones": "ESTABLECIMIENTO MERCANTIL EN NOTA MARGINAL #43 TOMO 9 R.E.M. "
+        }
+    ],
+    "Antecedentes": [
+        {
+            "Tipo Libro": "REGISTRO COMERCIANTE INDIVIDUAL",
+            "Tomo": "16",
+            "Tomo Bis": "INSCRIPCION BASE",
+            "Libro": "LIBRO A",
+            "Libro Bis": "INSCRIPCION BASE",
+            "Inscripción": "1",
+            "Inscripción Bis": "INSCRIPCION BASE"
+        }
+    ],
+    "Asientos de Presentación": null,
+    "Resúmenes": [
+        {
+            "No. Asiento": "1 ",
+            "Inscripción": "1 ",
+            "No. Presentación": "- ",
+            "Clasificación": "INSCRIPCION ",
+            "Transacción": "TRASLADO DE INSCRIPCION ",
+            "Fecha InscripciÃ³n": "10/01/2012 ",
+            "Estado": "- ",
+            "Rel": "- "
+        }
+    ],
+    "Derechos": null,
+    "Capital": [
+        {
+            "Capital MÃanimo": "5000",
+            "Capital Maximus": null,
+            "Capital SusCrit": null,
+            "Capital Suscrito": null,
+            "Capital Pagado": null,
+            "Valor Nominal": null,
+            "Historial de Aumentos": null
+        }
+    ],
+    "Sucursales/Establecimiento Mercantil": [
+        {
+            "CÃ³digo": "2 ",
+            "Nombre Sucursal": "CAFETERIA Y REPOSTERIA LAS DELICIAS ",
+            "UbicaciÃ³n": "SAN PEDRO SULA, CORTES ",
+            "DirecciÃ³n": "SEGUNDA CALLE SUROESTE ENTRE OCHO Y NUEVE AVENIDAS, N38, BARRIO EL CENTRO ",
+            "Encargado": "MATILDE CHAVARRIA DE CARACCIOLI ",
+            "Capital Sucursal": "- ",
+            "Giro Principal": "- "
+        }
+    ],
+    "Representante": null,
+    "Poderes": null,
+    "Antecedente Poderes": null,
+    "Gravámenes": null,
+    "Restricciones": [
+        {
+            "No. de Asiento": "",
+            "Tipo de Restricción": null,
+            "Fecha de Inicio": null,
+            "Fecha de Fin": null,
+            "Plazo": null,
+            "Sobre Derechos": null,
+            "Observaciones": null,
+            "Estado": null
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "FileNumber": "0000000025",
+    "InformaciÃ³n General": [
+        {
+            "Circunscripción Registral": "CORTES / SAN PEDRO SULA ",
+            "Ubicación de la Empresa": "CAÃAVERAL, SAN FRANCISCO DE YOJOA, CORTES ",
+            "Tipo de Comerciante": "COMERCIANTE INDIVIDUAL ",
+            "Tipo de Capital": "- ",
+            "Razón Social": "IMPORTACIONES RODRIGUEZ ",
+            "Denominación Social": null,
+            "Nombre Comercial": "- ",
+            "Siglas": "- ",
+            "Dirección de la Empresa": "CAÃAVERAL, SAN FRANCISCO DE YOJOA, CORTES ",
+            "Domicilio": "CAÃAVERAL, SAN FRANCISCO DE YOJOA, CORTES, PERO PODRÃ ESTABLECER AGENCIAS, SUCURSALES U OFICINAS EN CUALQUIER PARTE LA REPÃBLICA O FUERA DE ELLA EN SU CASO. ",
+            "Objeto Social de la Empresa": "- ",
+            "Vigencia": "16/03/2000 ",
+            "Inscrito CCI": "- ",
+            "Finalidad": "LA COMPRA Y VENTA DE VEHÃCULOS, YA SEAN NUEVOS O USADOS, REPUESTOS PARA LOS MISMOS Y SUS ACCESORIOS EN LAS MISMAS CONDICIONES; A SU IMPORTACIÃN Y DISTRIBUCIÃN; Y A CUALQUIER ACTO DE LICITO COMERCIO. ",
+            "Estado": "EN FORMACION ",
+            "Observaciones": "INSCRITO EL ESTABLECIMIENTO MERCANTIL DENOMINADO IMPORTACIONES RODRIGUEZ VA #67 T.95  R.E.M.  S.P.S. 16-3-2000 "
+        }
+    ],
+    "Antecedentes": [
+        {
+            "Tipo Libro": "REGISTRO COMERCIANTE INDIVIDUAL",
+            "Tomo": "161",
+            "Tomo Bis": "INSCRIPCION BASE",
+            "Libro": "LIBRO B",
+            "Libro Bis": "INSCRIPCION BASE",
+            "Inscripción": "96",
+            "Inscripción Bis": "INSCRIPCION BASE"
+        }
+    ],
+    "Asientos de Presentación": null,
+    "Resúmenes": [
+        {
+            "No. Asiento": "1 ",
+            "Inscripción": "1 ",
+            "No. Presentación": "- ",
+            "Clasificación": "INSCRIPCION ",
+            "Transacción": "TRASLADO DE INSCRIPCION ",
+            "Fecha InscripciÃ³n": "01/03/2012 ",
+            "Estado": "- ",
+            "Rel": "- "
+        }
+    ],
+    "Derechos": null,
+    "Capital": [
+        {
+            "Capital MÃanimo": "5000",
+            "Capital Maximus": null,
+            "Capital SusCrit": null,
+            "Capital Suscrito": null,
+            "Capital Pagado": null,
+            "Valor Nominal": null,
+            "Historial de Aumentos": null
+        }
+    ],
+    "Sucursales/Establecimiento Mercantil": [
+        {
+            "CÃ³digo": "8465 ",
+            "Nombre Sucursal": "IMPORTACIONES RODRIGUEZ ",
+            "UbicaciÃ³n": "CAÃAVERAL, SAN FRANCISCO DE YOJOA, CORTES ",
+            "DirecciÃ³n": "CAÃAVERAL, SAN FRANCISCO DE YOJOA, CORTES ",
+            "Encargado": "RODRIGUEZ, JOSE DIMAS ",
+            "Capital Sucursal": "- ",
+            "Giro Principal": "- "
+        }
+    ],
+    "Representante": null,
+    "Poderes": null,
+    "Antecedente Poderes": null,
+    "Gravámenes": null,
+    "Restricciones": [
+        {
+            "No. de Asiento": "",
+            "Tipo de Restricción": null,
+            "Fecha de Inicio": null,
+            "Fecha de Fin": null,
+            "Plazo": null,
+            "Sobre Derechos": null,
+            "Observaciones": null,
+            "Estado": null
+        }
+    ]
+}

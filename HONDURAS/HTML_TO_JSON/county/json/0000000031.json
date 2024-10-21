@@ -1,0 +1,76 @@
+{
+    "FileNumber": "0000000031",
+    "InformaciÃ³n General": [
+        {
+            "Circunscripción Registral": "CORTES / SAN PEDRO SULA ",
+            "Ubicación de la Empresa": "SAN PEDRO SULA, CORTES ",
+            "Tipo de Comerciante": "COMERCIANTE INDIVIDUAL ",
+            "Tipo de Capital": "- ",
+            "Razón Social": "CENTRO TECNICO ESPECIALIZADO EDUNET ",
+            "Denominación Social": null,
+            "Nombre Comercial": "- ",
+            "Siglas": "C. T. E. E. ",
+            "Dirección de la Empresa": "SAN PEDRO SULA, CORTES ",
+            "Domicilio": "SAN PEDRO SULA, CORTES, PUDIENDO ESTABLECER EN EL FUTURO, AGENCIAS, SUCURSALES U OTROS ESTABLECIMIENTOS EN CUALESQUIERA OTRO LUGAR DE LA REPUBLICA ",
+            "Objeto Social de la Empresa": "- ",
+            "Vigencia": "12/09/2000 ",
+            "Inscrito CCI": "- ",
+            "Finalidad": "A LA COMPRA VENTA, MATENIMIENTO, REPARACION Y ALQUILER DE EQUIPO DE COMPUTACION, CAPACITACION DE PERSONAL EN EL AREA TECNICA, DESARROLLO DE SOFT-WARE Y TODOS LOS SERVICIOS RELACIONADOS CON EL AREA DE LA INFORMATICA, COMPUTACION Y CIENCIAS TECNICAS, SUSCRIBIR, COMPRAR, NEGOCIOS E INVERTIR EN ACCIONES, PARTES SOCIALES, OBLIGACIONES Y CUALQUIER TITULO VALOR EN TODA CLASE DE SOCIEDADES MERCANTILES ",
+            "Estado": "EN FORMACION ",
+            "Observaciones": "- "
+        }
+    ],
+    "Antecedentes": [
+        {
+            "Tipo Libro": "REGISTRO COMERCIANTE INDIVIDUAL",
+            "Tomo": "171",
+            "Tomo Bis": "INSCRIPCION BASE",
+            "Libro": "LIBRO A",
+            "Libro Bis": "INSCRIPCION BASE",
+            "Inscripción": "4",
+            "Inscripción Bis": "INSCRIPCION BASE"
+        }
+    ],
+    "Asientos de Presentación": null,
+    "Resúmenes": [
+        {
+            "No. Asiento": "1 ",
+            "Inscripción": "1 ",
+            "No. Presentación": "- ",
+            "Clasificación": "INSCRIPCION ",
+            "Transacción": "TRASLADO DE INSCRIPCION ",
+            "Fecha InscripciÃ³n": "01/03/2012 ",
+            "Estado": "- ",
+            "Rel": "- "
+        }
+    ],
+    "Derechos": null,
+    "Capital": [
+        {
+            "Capital MÃanimo": "5000",
+            "Capital Maximus": null,
+            "Capital SusCrit": null,
+            "Capital Suscrito": null,
+            "Capital Pagado": null,
+            "Valor Nominal": null,
+            "Historial de Aumentos": null
+        }
+    ],
+    "Sucursales/Establecimiento Mercantil": null,
+    "Representante": null,
+    "Poderes": null,
+    "Antecedente Poderes": null,
+    "Gravámenes": null,
+    "Restricciones": [
+        {
+            "No. de Asiento": "",
+            "Tipo de Restricción": null,
+            "Fecha de Inicio": null,
+            "Fecha de Fin": null,
+            "Plazo": null,
+            "Sobre Derechos": null,
+            "Observaciones": null,
+            "Estado": null
+        }
+    ]
+}

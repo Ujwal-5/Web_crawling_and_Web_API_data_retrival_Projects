@@ -1,0 +1,1003 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--%@ page import="hn.sinap.sure.regpropiedad.regmercantil.RMAnotacionesBean" %-->
+
+
+
+
+
+
+<!--%@ page import="hn.sinap.sure.regpropiedad.regmercantil.RMOrigenBean" %-->
+
+
+
+
+
+<!-- %@ include file="/checkSesionConsulta.jsp" %-->
+
+<html>
+<head>
+<title>Registro Mercantil</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<link rel="stylesheet" href="/compartido/hurakan.css" type="text/css">
+</head>
+
+
+<script language="JavaScript">
+  
+  function verTransaccion(idTransaccion) {
+    var direccion;
+    direccion = "publicTransaccion.jsp?popup=true&numEmpresa=0000007863&idxEmpresa=00000" +
+      "&idTransaccion=" + idTransaccion;
+    window.open(direccion, 'transaccion', 'scrollbars=yes,resizable=yes,width=600,height=600').focus();
+  }
+
+  function derechosAntecedentes(idDerechos) {
+    var direccion = "derechosRMAntecedentes.jsp?idDerechos=" + idDerechos;
+    window.open(direccion, "derechosRMAntecedentes", "scrollbars=yes,resizable=yes,width=700,height=400").focus();
+  }
+
+  function gwImagen(cr, tipoLibro, tomo, inscripcion) {
+    location.href = "/compartido/gwImagenes.jsp?cr=" + cr + "&tipoLibro=" + tipoLibro + "&tomo=" + tomo + "&inscripcion=" + inscripcion;
+  }
+  
+  function gwInscripcion(cr, tipoLibro, tomo, inscripcion) {
+    location.href = "/consultas/foliopersonal/gwInscripcion.jsp?CR=" + cr + "&tipoLibro=" + tipoLibro + "&tomo=" + tomo + "&inscripcion=" + inscripcion;
+  }
+  
+  function presentacion(numPresentacion, CR) {
+    location.href = "publicRMPresentacion.jsp?numPresentacion=" + numPresentacion + "&CR="+CR;
+  }
+
+  function persona(codPersona) {
+    location.href = "/consultas/personas/persona.jsp?codPersona=" + codPersona;
+  }
+
+  function empresa(numEmpresa, idxEmpresa) {
+    location.href = "publicEmpresa.jsp?numEmpresa=" + numEmpresa + "&idxEmpresa=" + idxEmpresa;
+  }
+
+  function derechoPersona(idDerechos) {
+    var direccion = "derechoPersona.jsp?idDerechos=" + idDerechos;
+    window.open(direccion, "derechoPersona", "scrollbars=yes,resizable=yes,width=600,height=450").focus();
+  }
+
+  function relacionesAsientoIns(correlativoAsientoIns) {
+    var direccion = "relacionesAsientoIns.jsp?numEmpresa=0000007863" +
+      "&idxEmpresa=00000&correlativoAsientoIns=" + correlativoAsientoIns;
+
+    window.open(direccion, "relacionesAsientoIns", "scrollbars=yes,resizable=yes,width=600,height=310").focus();
+  }
+  
+  function verRestriccionDerecho(numEmpresa, idxEmpresa, correlativoRestric) {
+	    var direccion = "restriccionDerecho.jsp?numEmpresa=" + numEmpresa+ "&idxEmpresa=" + idxEmpresa 
+	    				+ "&correlativoRestric="+ correlativoRestric;
+	    window.open(direccion, "restriccionDerecho", "scrollbars=yes,resizable=yes,width=600,height=450").focus();
+  }
+
+  function mostrarAsientosNoIns() {
+    location.replace("publicEmpresa.jsp?numEmpresa=0000007863&idxEmpresa=00000" +
+      "&tabIndex=0&todoDerecho=false&todoGravamen=false" +
+      "&todaAnotacion=false&ordenIns=ASC&anchor=asientosPresentacion");
+  }
+
+  function mostrarTodoAsiento() {
+    location.replace("publicEmpresa.jsp?todoAsiento=true&numEmpresa=0000007863" +
+      "&idxEmpresa=00000&tabIndex=0&todoDerecho=false" +
+      "&todoGravamen=false&todaAnotacion=false&ordenIns=ASC&anchor=asientosPresentacion");
+  }
+
+  function asientosInsDesc() {
+    location.replace("publicEmpresa.jsp?ordenIns=ASC&numEmpresa=0000007863" +
+      "&idxEmpresa=00000&tabIndex=0&todoDerecho=false" +
+      "&todoGravamen=false&todaAnotacion=false&todoAsiento=false&anchor=asientosInscripcion");
+  }
+
+  function asientosInsAsc() {
+    location.replace("publicEmpresa.jsp?ordenIns=ASC&numEmpresa=0000007863" +
+      "&idxEmpresa=00000&tabIndex=0&todoDerecho=false" +
+      "&todoAsiento=false&todoGravamen=false&todaAnotacion=false&anchor=asientosInscripcion");
+  }
+
+  function mostrarDerechosActivos() {
+    location.replace("publicEmpresa.jsp?numEmpresa=0000007863&idxEmpresa=00000" +
+      "&tabIndex=0&todoAsiento=false&todoGravamen=false" +
+      "&todaAnotacion=false&ordenIns=ASC&anchor=derechos");
+  }
+
+  function mostrarTodoDerecho() {
+    location.replace("publicEmpresa.jsp?todoDerecho=true&numEmpresa=0000007863" +
+      "&idxEmpresa=00000&tabIndex=0&todoAsiento=false" +
+      "&todoGravamen=false&todaAnotacion=false&ordenIns=ASC&anchor=derechos");
+  }
+
+  function mostrarGravamenesActivos() {
+    location.replace("publicEmpresa.jsp?numEmpresa=0000007863&idxEmpresa=00000" +
+      "&tabIndex=0&todoAsiento=false&todoDerecho=false" +
+      "&todaAnotacion=false&ordenIns=ASC&anchor=gravamenes");
+  }
+
+  function mostrarTodoGravamen() {
+    location.replace("publicEmpresa.jsp?todoGravamen=true&numEmpresa=0000007863" +
+      "&idxEmpresa=00000&tabIndex=0&todoAsiento=false" +
+      "&todaAnotacion=false&todoDerecho=false&ordenIns=ASC&anchor=gravamenes");
+  }
+  /*
+  function mostrarAnotacionesActivas() {
+	    location.replace("publicEmpresa.jsp?numEmpresa=< %= numEmpresa %>&idxEmpresa=< %= idxEmpresa %>" +
+	      "&tabIndex=< %= tabIndex %>&todoAsiento=< %= todoAsiento %>&todoDerecho=< %= todoDerecho %>" +
+	      "&todoGravamen=< %= todoGravamen %>&ordenIns=< %= ordenIns %>&anchor=gravamenes");
+	  }
+
+  function mostrarTodaAnotacion() {
+    location.replace("publicEmpresa.jsp?todaAnotacion=true&numEmpresa=< %= numEmpresa %>" +
+      "&idxEmpresa=< %= idxEmpresa %>&tabIndex=< %= tabIndex %>&todoAsiento=< %= todoAsiento %>" +
+      "&todoGravamen=< %= todoGravamen %>&todoDerecho=< %= todoDerecho %>&ordenIns=< %= ordenIns %>&anchor=gravamenes");
+  }*/
+
+  function go(anchor) {
+    location.href = "#" + anchor;
+  }
+
+  function cerrarVentana() {
+    window.opener.focus();
+    window.close();
+  }
+
+  function sendDocSize() {
+		var size;
+		size = document.body.scrollHeight;
+		window.parent.ajustarAreaTrabajo(size);
+		//window.parent.setDocSize(size);
+		return size;
+	}
+/*
+   function setIFrameUrl(idParcela){
+     var direccion = "/consultas/folioadministrativo/fichaCatastral.jsp?caller=FR&idParcela=" + idParcela;
+     //document.all.mainArea.contentWindow.document.location.replace(direccion);
+     document.all.mainArea.src = direccion;
+     document.all.mainArea.style.display = "block";
+   }*/
+   
+   function historialCapital(tipoComerciante, tipoCapital) {
+	    var direccion = "/consultas/registromercantil/capitalHist.jsp?popup=true&numEmpresa=" +
+	      "0000007863&idxEmpresa=00000&tipoComerciante="+ tipoComerciante+"&tipoCapital="+tipoCapital+"&CR=FG";
+	    window.open(direccion, "capitalHist", "scrollbars=yes,resizable=no,width=400,height=250");
+  }
+
+   function historialSucursal(idSucursal) {
+	    var direccion = "/consultas/registromercantil/sucursalesHist.jsp?popup=true&numEmpresa=" +
+	      "0000007863&idxEmpresa=00000&idSucursal="+ idSucursal+"&CR=FG";
+	    window.open(direccion, "sucursalesHist", "scrollbars=yes,resizable=no,width=750,height=300");
+  }
+   
+   function historialPoder(idRepresentante) {
+	    var direccion = "/consultas/registromercantil/poderesHist.jsp?popup=true&numEmpresa=" +
+	      "0000007863&idxEmpresa=00000&idRepresentante="+ idRepresentante+"&CR=FG";
+	    window.open(direccion, "poderesHist", "scrollbars=yes,resizable=no,width=750,height=300");
+  }
+</script>
+
+
+<body
+	onload="javascript:go(''); ">
+
+	
+	
+
+
+<script language="JavaScript" type="text/javascript">
+function ayuda() {
+  window.open("/compartido/ayuda.jsp?modulo=consultas&pantalla=registromercantil/publicEmpresa.jsp", 'ayuda', 'scrollbars=yes,resizable=yes,width=800,height=600');
+}
+</script>
+<br>
+<div align="center">
+  <a href="javascript:ayuda()"><img src="/compartido/images/help_screen.png" alt="Ayuda" border="0"></a>
+</div>
+
+
+
+	
+	<h3 align="center">
+		Empresa Matr&iacute;cula No.
+		0000007863
+		-
+		00000
+		
+		
+
+	</h3>
+
+	<!-- j sp: p aram name="tabs" value="Mapa"/>
+  <j sp: p aram name="tabs" value="Información Catastral"/-->
+
+	<!--j sp: p aram name="URLs" value='< %= java.net.URLEncoder.encode("publicEmpresa.jsp?tabIndex=1&numEmpresa=" + numEmpresa + "&idxEmpresa=" + idxEmpresa, "UTF-8") %>'/>
+	<j sp: p aram name="URLs" value='< %= java.net.URLEncoder.encode("publicEmpresa.jsp?tabIndex=2&numEmpresa=" + numEmpresa + "&idxEmpresa=" + idxEmpresa, "UTF-8") %>'/-->
+
+	
+
+<script language="JavaScript" type="text/javascript">
+  function toURL(url) {
+    location.replace(url);
+  }
+
+  /*function setClass(t, c) {
+    t.class.value = c;
+  }*/
+</script>
+
+
+<table align="center" cellspacing="0" cellpadding="0" border="0">
+  <tr>
+
+    <th nowrap width="150" class="tabSelected">Información General</th>
+
+  </tr>
+  <tr>
+
+    <th colspan="1" height="5"></th>
+  </tr>
+  <tr>
+    <td colspan="1" height=""></td>
+  </tr>
+</table>
+
+
+	<br>
+	
+
+
+	<table border="0" align="center" width="70%">
+		<tr>
+			
+		</tr>
+
+	</table>
+
+	<table border="1" align="center" width="70%">
+		<tr>
+			<th class="vertical">Circunscripci&oacute;n Registral:</th>
+			<td>CORTES / SAN PEDRO SULA&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Ubicaci&oacute;n de la Empresa:</th>
+			<td>SAN PEDRO SULA, CORTES&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Tipo de Comerciante:</th>
+			<td>SOCIEDAD DE RESPONSABILIDAD LIMITADA SRL&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Tipo de Capital:</th>
+			<td>-&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<th class="vertical">Raz&oacute;n Social:</th>
+			<td>TRANSPORTES AMY ARELY, SOCIEDAD DE RESPONSABILIDAD LIMITADA&nbsp;</td>
+		</tr>
+		
+		<tr>
+			<th class="vertical">Nombre Comercial:</th>
+			<td>-&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Siglas:</th>
+			<td>-&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Direcci&oacute;n de la Empresa:</th>
+			<td>SAN PEDRO SULA, DEPARTAMENTO DE CORTES&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Domicilio:</th>
+			<td>EL DOMICILIO DEL A SOCIEDAD SERA EN ESTA CIUDAD DE SAN PEDRO SULA,DEPARTAMENTO DE CORTES, PERO LA SOCIEDAD CUANDO LO CONSIDERE OPORTUNO Y NECESARIO PODRA ESTABLECER SUCURSALES Y AGENCIAS EN OTROS LUGARES DEL PAIS ASI COMO EN EL EXTRANJERO.&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Objeto Social de la Empresa:</th>
+			<td>-&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Vigencia:</th>
+			<td>22/12/2010&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Inscrito CCI:</th>
+			<td>-&nbsp;</td>
+		</tr>
+		<tr>
+			<th class="vertical">Finalidad:</th>
+			<td>LA FINALIDAD DE LA SOCIEDAD SERAN: LA PRESTACION DE LOS SERVICIOS DE TRANSPORTE CONTRATADO, PUBLICO DE PERSONAS, DE CARGA EN GENERAL, TRANSPORTE PRIVADO, TRANSPORTE LIVIANO Y TRANSPORTE PESADO, COMPRA, IMPORTACION Y VENTA DE TODO TIPO DE VEHICULAS NUEVOS Y USADOS, SUS ACCESORIOS Y REPUESTOS, REPRESENTACION DE CASAS COMERCIALES NACIONALES E INTERNACIONALES, IMPORTACION, COMPRA Y VENTA DE MERCADERIA EN GENERAL; Y A CUALQUIER OTRA ACTIVIDAD DE LICITO COMERCIO PERMITIDO POR LAS LEYES DE HONDURAS.&nbsp;</td>
+		</tr>
+
+		<tr>
+			<th class="vertical">Estado:</th>
+			<td
+				
+				>
+				EN FORMACION&nbsp;
+			</td>
+		<tr>
+			<th class="vertical" valign="top">Observaciones:</th>
+			<td>CAPITAL FIJO&nbsp;</td>
+		</tr>
+
+	</table>
+
+	
+	<br>
+	<br>
+	<h3 align="center">
+		Antecedentes
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<table border="1" align="center" width="90%">
+		<tr>
+			<th>Antecedente</th>
+		</tr>
+		
+		<tr>
+			<td>
+				<table border="0" align="center" width="100%">
+					
+					<tr>
+						<th>Tipo Libro</th>
+						<th>Tomo</th>
+						<th>Tomo Bis</th>
+						<th>Libro</th>
+						<th>Libro Bis</th>
+						<th>Ins.</th>
+						<th>Ins. Bis</th>
+						<th>Imagen</th>
+					</tr>
+					<tr>
+						<td>REGISTRO COMERCIANTE SOCIAL</td>
+						<td>657</td>
+						<td>INSCRIPCION BASE</td>
+						<td>LIBRO B</td>
+						<td>INSCRIPCION BASE</td>
+						<td>98</td>
+						<td>INSCRIPCION BASE</td>
+						<td align="center"><a
+							href="javascript:gwImagen('FG','21','657', '98')">
+								<img src="../images/16text.gif" border="0" alt="">
+						</a></td>
+					</tr>
+					
+				</table>
+			</td>
+		</tr>
+		
+	</table>
+	
+
+	
+	<br>
+	<br>
+	<a name="asientosPresentacion"></a>
+	<h3 align="center">
+		Asientos de Presentaci&oacute;n (<a
+			href="javascript:mostrarTodoAsiento()">Mostrar todos</a>)
+		<table width="90%" align="center" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<div align="center">
+		<h5>No se encontraron Asientos de Presentaci&oacute;n no
+			finalizados para este Empresa</h5>
+	</div>
+	
+	<br>
+	<br>
+	<a name="asientosInscripcion"></a>
+	<h3 align="center">
+		Res&uacute;menes (<a href="javascript:asientosInsDesc()">Ordenar
+			Descendentemente</a>)
+		<table width="90%" align="center" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<table border="1" align="center" width="90%">
+		<tr>
+			<th>No. Asiento</th>
+			<th>Inscripci&oacute;n</th>
+			<th>No. Presentaci&oacute;n</th>
+			<th>Clasificaci&oacute;n</th>
+			<th>Transacci&oacute;n</th>
+			<th>Detalle de Transacci&oacute;n</th>
+			<th>Fecha Inscripción</th>
+			<th>Estado</th>
+			<th>Rel.</th>
+		</tr>
+		
+		<tr>
+			<td align="center">1&nbsp;</td>
+			<td align="center">1&nbsp;</td>
+			<td align="center">-&nbsp;
+			</td>
+			
+			<td>INSCRIPCION&nbsp;</td>
+			<td>TRASLADO DE INSCRIPCION&nbsp;</td>
+			<td align="center"><a
+				href="javascript:verTransaccion('38312')">
+					<img src="../images/16text.gif" border="0" width="16" height="16">
+			</a>&nbsp;</td>
+			<td>31/01/2012&nbsp;</td>
+			<td>-&nbsp;</td>
+			<td align="center">-&nbsp;
+			</td>
+		</tr>
+		
+	</table>
+	
+	<br>
+	<br>
+	<a name="derechos"></a>
+	<h3 align="center">
+		Derechos (<a href="javascript:mostrarTodoDerecho()">Mostrar todos</a>)
+		<table width="90%" align="center" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<table border="1" align="center" width="90%">
+		<tr>
+			<th>No. Asiento</th>
+			<th>Nombre Completo</th>
+			<th>Tipo Socio</th>
+			<th>Capital</th>
+			<th>Puesto Directivo</th>
+			<th>Partes Sociales/Acciones</th>
+			<th>Porcentaje Participaci&oacute;n</th>
+			<th>Fecha Constituci&oacute;n</th>
+			<th>Fecha Expiraci&oacute;n</th>
+			
+			<th>Antecedentes</th>
+			<th>Rel.</th>
+		</tr>
+		
+		<tr>
+			<td align="center">1</td>
+			<td>GARCIA PINEDA, YORLENYS ARELY&nbsp;</td>
+			<td>SOCIO CAPITALISTA&nbsp;</td>
+			<td align="center">2500&nbsp;</td>
+			<td align="center">SOCIO CAPITALISTA&nbsp;</td>
+			
+			
+			<td align="center">25&nbsp;</td>
+			
+
+			<td align="center">-&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">-&nbsp;</td>
+			
+			<td align="center"><a href="javascript:derechosAntecedentes('0000010757')"><img
+					src="../images/16text.gif" alt="Ver" width="16" height="16"
+					border="0"></a></td>
+			
+			<td align="center"><a
+				href="javascript:derechoPersona('0000010757')">
+					<img src="../images/documents.gif" width="16" height="16"
+					border="0">
+			</a></td>
+		</tr>
+		
+		<tr>
+			<td align="center">1</td>
+			<td>MALDONADO, ROSMAN WALBERTO&nbsp;</td>
+			<td>SOCIO CAPITALISTA&nbsp;</td>
+			<td align="center">2500&nbsp;</td>
+			<td align="center">MIEMBRO JUNTA DIRECTIVA TITULAR&nbsp;</td>
+			
+			
+			<td align="center">25&nbsp;</td>
+			
+
+			<td align="center">-&nbsp;</td>
+			<td align="center">&nbsp;</td>
+			<td align="center">-&nbsp;</td>
+			
+			<td align="center"><a href="javascript:derechosAntecedentes('0000010755')"><img
+					src="../images/16text.gif" alt="Ver" width="16" height="16"
+					border="0"></a></td>
+			
+			<td align="center"><a
+				href="javascript:derechoPersona('0000010755')">
+					<img src="../images/documents.gif" width="16" height="16"
+					border="0">
+			</a></td>
+		</tr>
+		
+		<tr>
+			<td colspan="10"
+				align="center"><b>* Derechos que contienen relaci&oacute;n</b>
+			</td>
+		</tr>
+	</table>
+	
+
+	<a name="capital"></a>
+	<h3 align="center">
+		Capital
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<table border="1" align="center" width="90%">
+		<tr>
+			
+			<th>Capital SusCrito</th>
+			
+
+			<th>Capital Pagado</th>
+			
+			<th>Historial de Aumentos</th>
+
+		</tr>
+		
+		<tr>
+			
+			<td align="center">5000</td>
+			
+			<td align="center">5000&nbsp;</td>
+			
+			<td align="center"><a
+				href="javascript:historialCapital('SDR','')"><img
+					src="../images/16text.gif" width="16" height="16" border="0"
+					alt="Historial de Aumento de Capital"></a></td>
+
+		</tr>
+		
+	</table>
+	
+	<br />
+	<br />
+
+	
+	<a name="sucursales"></a>
+	<h3 align="center">
+		Sucursales/Establecimiento Mercantil
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+		<div align="center">
+			<h5>No se encontraron Sucursales para esta Empresa</h5>
+		</div>
+		
+	</table>
+
+
+	
+
+	<br />
+	<br />
+
+	
+	<a name="ConsejoAD"></a>
+	<h3 align="center">
+		Representante
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<table border="1" align="center" width="90%">
+		<tr>
+			<th>No.</th>
+			<th>Nombre Miembro</th>
+			<th>Observación</th>
+			<th>Puesto Directivo</th>
+
+		</tr>
+		
+		<tr>
+			<td align="center">1&nbsp;</td>
+			<td align="center">MALDONADO, ROSMAN WALBERTO&nbsp;</td>
+			<td align="center">-&nbsp;</td>
+			<td align="center">GERENTE GENERAL&nbsp;</td>
+
+		</tr>
+		
+
+	</table>
+
+
+	
+	<br />
+
+	<br />
+	<br />
+
+	
+	<a name="asientosinscripcion"></a>
+	<h3 align="center">
+		Poderes
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1" alt=""></th>
+			</tr>
+		</table>
+	</h3>
+
+	<form name="frmRepresentantesLeg"
+		action="RMrepresentanteLegActu.jsp?acceso=gvjPEX53tq1BbX9xlwc6PATKNDMMGz7T6eNMk7erkYk%3D"
+		method="post" onsubmit="javascript:return validar(this)">
+		<input type="hidden" name="accion" value="relacionar"> <input
+			type="hidden" name="popup" value="false"> <input
+			type="hidden" name="numInmueble" value="0000007863"> <input
+			type="hidden" name="idxInmueble" value="00000">
+
+		
+				<div align="center">
+					<h5>No se encontró Representante Legal para esta Empresa</h5>
+				</div>
+				
+			
+			<tr>
+		</table>
+		
+	</form>
+	
+
+	
+	<br />
+	<br />
+	<a name="antecedentes"></a>
+	<h3 align="center">
+		Antecedente Poderes
+		<table align="center" width="90%" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1" alt=""></th>
+			</tr>
+		</table>
+	</h3>
+
+	
+		<div align="center">
+			<h5>No se encontró Antecedente de Poderes para esta Empresa</h5>
+		</div>
+		
+	</table>
+	
+
+	
+
+
+
+	<br />
+	<br />
+	
+	<br>
+	<br>
+	<a name="gravamenes"></a>
+	<h3 align="center">
+		Grav&aacute;menes (<a href="javascript:mostrarTodoGravamen()">Mostrar
+			todos</a>)
+		<table width="90%" align="center" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<div align="center">
+		<h5>No se encontraron Grav&aacute;menes vigentes para este
+			Empresa</h5>
+	</div>
+	
+	<br>
+	<br>
+	<h3 align="center">
+		Restricciones
+		<table width="90%" align="center" border="0" cellspacing="0"
+			cellpadding="0">
+			<tr>
+				<th><img height="5" width="1"></th>
+			</tr>
+		</table>
+	</h3>
+	
+	<div align="center">
+		<h5>No se encontraron Restricciones para este Empresa</h5>
+	</div>
+	
+	<!--br><br>
+<a name="anotaciones"></a>
+<h3 align="center">Anotaciones
+  (<a href="javascript:mostrarAnotacionesActivas()">Mostrar s&oacute;lo las activas</a>)
+  <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <tr><th><img height="5" width="1"></th></tr>
+  </table>
+</h3>
+< %
+      //}
+      else {
+    	  anotacion.loadAnotacionesActivas(numEmpresa, idxEmpresa); 
+%>
+<!--br><br>
+<a name="anotaciones"></a>
+<h3 align="center">Anotaciones
+  (<a href="javascript:mostrarTodaAnotacion()">Mostrar todas</a>)
+  <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <tr><th><img height="5" width="1"></th></tr>
+  </table>
+</h3>
+< %
+      }
+%>
+<br><br>
+
+< %
+      if (!(anotacion.isEOF() && anotacion.isBOF())) {
+%>
+<table border="1" align="center" width="90%">
+  <tr>
+    <th>No. de Asiento</th>
+    <th>Tipo Restricci&oacute;n</th>
+    <th>Permisiva</th>
+    <th>Fecha Inicio</th>
+    <th>Fecha Fin</th>
+    <th>Fecha Demanda</th>
+    <th>Juzgado Emitente</th>
+    <th>Demandante</th>
+    <th>Observaciones</th>
+< %
+        if (todaAnotacion.booleanValue()) {
+%>
+   	<th>Estado</th>
+< %
+        }
+%>
+  </tr>
+< %
+        while (!anotacion.isEOF()) {
+%>
+  <tr>
+    <td align="center">< %= anotacion.getCorrelativoAsiento().equals("")?"-":anotacion.getCorrelativoAsiento() %></td>
+    <td>< %= anotacion.getDesTipoRestriccion() %></td>
+    <td align="center">< %= anotacion.getPermisiva().booleanValue()?
+      "<img src='../images/check.gif' border='0'>":"<img src='../images/cross.gif' border='0'>" %>
+    </td>
+    <td>< %= anotacion.getFechaIniAnotacion().equals("")?"-":anotacion.getFechaIniAnotacion() %></td>
+    <td>< %= anotacion.getFechaFinAnotacion().equals("")?"-":anotacion.getFechaFinAnotacion() %></td>
+    <td>< %= anotacion.getFechaDemanda().equals("")?"-":anotacion.getFechaDemanda() %></td>
+    <td align="center">< %= anotacion.getJuzgadoEmitente().equals("")?"-":anotacion.getJuzgadoEmitente() %></td>
+    <td align="center">< %= anotacion.getDemandante().equals("")?"-":anotacion.getDemandante() %></td>
+    <td>< %= anotacion.getObservacion().equals("")?"-":anotacion.getObservacion() %></td>
+    
+< %
+          if (todaAnotacion.booleanValue()) {
+%>
+    <td>< %= anotacion.getEstado().getDescripcion() %></td>
+< %
+          }
+%>
+    
+  </tr>
+< %
+          anotacion.registroSiguiente();
+        }
+%>
+</table>
+< %
+      }
+      else {
+    	  if (todoGravamen.booleanValue()) {
+		  %>
+		  	<div align="center"><h5>No se encontraron Anotaciones para este Empresa</h5></div>
+		  < %
+          }
+ 		  else {
+   		  %>
+   		  	<div align="center"><h5>No se encontraron Anotaciones vigentes para este Empresa</h5></div>
+   		  < %
+		  }
+      }
+
+      anotacion.close(); 
+      %>
+-->
+
+	<!--
+< %
+      origen.setConexion(logon);
+      origen.loadOrigenes(numEmpresa, idxEmpresa);
+
+      if (!(origen.isBOF() && origen.isEOF())) {
+%>
+<br><br>
+<h3 align="center">Datos de Empresa(s) Origen
+  <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <tr><th><img height="5" width="1"></th></tr>
+  </table>
+</h3>
+
+<table border="1" align="center">
+  <tr>
+    <th>Matr&iacute;cula Empresa</th>
+  </tr>
+< %
+        while (!origen.isEOF()) {
+          href = "javascript:empresa('" + origen.getNumEmpresaOrigen() + "', '" + origen.getIdxEmpresaOrigen() + "')";
+%>
+  <tr>
+    <td align="center">
+      <a href=" < %= href %>">< %= origen.getNumEmpresaOrigen() %> - < %= origen.getIdxEmpresaOrigen() %></a>&nbsp;
+    </td>
+  </tr>
+< %
+          origen.registroSiguiente();
+        }
+%>
+</table>
+< %
+      }
+
+      origen.close();
+
+      origen.loadHijos(numEmpresa, idxEmpresa);
+      if (!(origen.isBOF() && origen.isEOF())) {
+%>
+
+<br><br>
+<h3 align="center">Datos de Empresas Generados
+  <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <tr><th><img height="5" width="1"></th></tr>
+  </table>
+</h3>
+
+<table border="1" align="center">
+  <tr>
+    <th>Matr&iacute;cula Empresa</th>
+  </tr>
+< %
+        while (!origen.isEOF()) {
+          href = "javascript:empresa('" + origen.getNumEmpresa() + "', '" + origen.getIdxEmpresa() + "')";
+%>
+  <tr>
+    <td align="center">
+      <a href="< %= href %>">< %= origen.getNumEmpresa() %> - < %= origen.getIdxEmpresa() %></a>&nbsp;
+    </td>
+  </tr>
+< %
+          origen.registroSiguiente();
+        }
+%>
+</table>
+< %
+      }
+
+      origen.close();
+
+      mejora.setConexion(logon);
+      mejora.loadFRMejoras(numEmpresa, idxEmpresa);
+
+      if (!(mejora.isBOF() && mejora.isEOF())) {
+%>
+<br><br>
+<h3 align="center">Mejoras
+  <table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+    <tr><th><img height="5" width="1"></th></tr>
+  </table>
+</h3>
+
+<table border="1" align="center" width="90%">
+  <tr>
+    <th>Uso</th>
+    <th>Clase</th>
+    <th>Calidad</th>
+    <th>% Bueno</th>
+    <th>&Aacute;rea (m<sup>2</sup>)</th>
+    <th>Frente</th>
+    <th>Fondo</th>
+    <th>Año Construcci&oacute;n</th>
+    <th>Pisos</th>
+    <th>Descripci&oacute;n</th>
+  </tr>
+< %
+        while (!mejora.isEOF()) {
+%>
+  <tr>
+    <td>< %= mejora.getDesUsoMejora().equals("")?"-":mejora.getDesUsoMejora() %>&nbsp;</td>
+    <td>< %= mejora.getDesClaseMejora().equals("")?"-":mejora.getDesClaseMejora() %>&nbsp;</td>
+    <td>< %= mejora.getDesCalidadMejora().equals("")?"-":mejora.getDesCalidadMejora() %>&nbsp;</td>
+    <td align="center">< %= mejora.getPorcentajeBueno().equals("")?"-":mejora.getPorcentajeBueno() %>&nbsp;</td>
+    <td align="center">< %= mejora.getArea().equals("")?"-":"<a href=\"javascript:mostrarConversiones('"+mejora.getArea()+"')\">"+mejora.getArea()+"</a>" %>&nbsp;</td>
+    <td>< %= mejora.getFrente().equals("")?"-":mejora.getFrente() %>&nbsp;</td>
+    <td>< %= mejora.getFondo().equals("")?"-":mejora.getFondo() %>&nbsp;</td>
+    <td>< %= mejora.getAxoConstruccion().equals("")?"-":mejora.getAxoConstruccion() %>&nbsp;</td>
+    <td>< %= mejora.getNumeroPisos().equals("")?"-":mejora.getNumeroPisos() %>&nbsp;</td>
+    <td>< %= mejora.getDescripcion().equals("")?"-":mejora.getDescripcion() %>&nbsp;</td>
+  </tr>
+< %
+          mejora.registroSiguiente();
+        }
+%>
+</table>
+< %
+      }
+
+      mejora.close();
+%>
+-->
+	
+	<br>
+	<div align="center">
+		
+		<a href="javascript:history.back()">P&aacute;gina Anterior</a>
+		
+	</div>
+	
+	<table border="0" align="center" cellpadding="1" cellspacing="3">
+  <tr>
+    <td align="center"><a href="https://soporte.sinap.hn" target="_blank"><img src="/compartido/images/help_sinap.png" width="195" height="35" border="0" /></a></td>
+  </tr>
+  <tr>
+    <td>
+	    <p align="center">
+	      <script>
+				var year = new Date();
+		  </script>
+	      Derechos Reservados IP &copy; 2002/<script>document.write(year.getFullYear())</script>.<br>
+	      Sistema Unificado de Registros - SURE<br>
+	      Prohibido su uso y reproducci&oacute;n para otros fines.<br>
+     	</p>
+     </td>
+  </tr>
+  <tr>
+    <td><br /><div align="center"><a href="https://www.ip.gob.hn/" target="_blank"><img src="/compartido/images/web/logo_ip_2022_large.png" width="240" height="49" ></a></div></td>
+  </tr>
+</table>
+	
+	
+</body>
+</html>

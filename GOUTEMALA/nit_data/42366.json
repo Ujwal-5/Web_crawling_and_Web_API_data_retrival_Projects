@@ -1,0 +1,40 @@
+{
+    "data": {
+        "type": "sesionrtu",
+        "id": "42366",
+        "attributes": {
+            "id": "42366",
+            "datos": {
+                "tipoContribuyente": {
+                    "value": "705",
+                    "valueDesc": "SUCURSAL EMPRESA EXTRANJERA"
+                },
+                "empresa": {
+                    "tipoPersoneria": 705,
+                    "descPersoneria": "SUCURSAL EMPRESA EXTRANJERA",
+                    "razonSocial": "DELTA EXPLORATION COMPANY INC",
+                    "fechaConstitucion": "1899-12-31",
+                    "anioDoctoConstitucion": 1899,
+                    "fechaInscripcion": -2209053600000,
+                    "participacionGremial": false,
+                    "participacionEmpresarial": false,
+                    "marcas": [
+                        {
+                            "codigoMarca": 916,
+                            "nombreCodigoMarca": "NO RATIFICADO",
+                            "estado": 1020,
+                            "fechaEstado": 1388469602000,
+                            "vigenciaDesde": 1388469602000
+                        }
+                    ],
+                    "gremiales": [],
+                    "camarasEmpresariales": [],
+                    "estado": 1020,
+                    "estadoDesc": "ACTIVO"
+                },
+                "representante": [],
+                "caracteristicasEspeciales": []
+            }
+        }
+    }
+}

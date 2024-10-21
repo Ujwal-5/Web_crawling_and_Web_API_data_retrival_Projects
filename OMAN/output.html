@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<script type="text/javascript">
+    var inhibitLoader = false;
+
+    function showLoader() {
+        if (inhibitLoader) {
+            console.log('inhibitLoader: ' + inhibitLoader);
+            return;
+        }
+        let loaderDiv = $('#loader');
+        // additional styling is needed to show loader on top of the modal (if modal is opened)
+        loaderDiv.css( "zIndex", 1051 );
+        loaderDiv.css( "background", "rgba(0,0,0,0.3)" );
+        loaderDiv.modal('show');
+    }
+    function hideLoader() {
+        var loaderDiv = $('#loader');
+        loaderDiv.modal("hide");
+        loaderDiv.remove();
+    };
+
+    function hideLoaderWithoutRemovingFromDOM() {
+        var loaderDiv = $('#loader');
+        loaderDiv.hide();
+    };
+
+    function cancel() {
+        try {
+            window.stop();
+        } catch (e) {
+            document.execCommand('Stop');
+        }
+    }
+</script>
+
+<!-- Modal loader -->
+<div class="modal" id="loader" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-loader">
+        <div class="modal-content">
+            <img height="48px" width="48px" alt="Loading..."
+                 src="/portal/resources/images/loader.gif">
+            <span class="custom-spacer"></span>
+            <p>جار التحميل...</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<html>
+<head>
+    
+
+    <title>Home — الخدمات التجارية الحكومية</title>
+    <link rel="icon" href="/portal/resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/portal/resources/images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Type" charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Nortal"/>
+    <meta name="description" content=""/>
+
+    
+    <link href="/portal/webjars/bootstrap/3.1.1/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/portal/resources/css/bootstrap/3.1.1/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css"/>
+    <link href="/portal/resources/css/bootstrap/3.1.1/datepicker3.css" rel="stylesheet" type="text/css"/>
+    <link href="/portal/resources/css/bootstrap/3.1.1/daterangepicker.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/portal/webjars/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" rel="stylesheet"/>
+    <link href="/portal/resources/css/custom.css" rel="stylesheet" type="text/css"/>
+    <link href="/portal/resources/css/custom-oss.css" rel="stylesheet" type="text/css"/>
+    <link href="/portal/resources/css/select2.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/portal/resources/css/flags/flags.css" rel="stylesheet" type="text/css"/>
+
+    
+
+
+
+    <script src="/portal/webjars/jquery/1.11.0/dist/jquery.js"></script>
+    <script src="/portal/webjars/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="/portal/resources/js/jquery/jquery.placeholder.min.js"></script>
+    <script src="/portal/resources/js/bootstrap/3.1.1/bootstrap-datepicker.js"></script>
+    <script src="/portal/resources/js/custom.js"></script>
+    <script src="/portal/resources/js/common.js"></script>
+    <script src="/portal/resources/js/custom-oss.js"></script>
+    <script src="/portal/resources/js/select2.min.js"></script>
+    <script src="/portal/resources/js/typeahead.min.js"></script>
+
+    <script src="/portal/resources/js/bootstrap/bootstrap3-typeahead.min.js"></script>
+    <script src="/portal/resources/js/bootstrap/3.1.1/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript">
+        function getLocale() {
+            return "ar_OM";
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30208917-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-30208917-2');
+    </script>
+</head>
+
+<body>
+
+<div id="page">
+    <header id="header" class="clearfix">
+        
+
+
+
+
+
+
+
+
+<!-- BEGIN Font Control Script -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#incfont').click(function(){
+            curSize= parseInt($('#content').css('font-size')) + 2;
+            if(curSize<=20)
+                $('#content').css('font-size', curSize);
+        });
+        $('#decfont').click(function(){
+            curSize= parseInt($('#content').css('font-size')) - 2;
+            if(curSize>=12)
+                $('#content').css('font-size', curSize);
+        });
+    });
+</script>
+<!-- END Font Control Script -->
+
+<div class="header-inner">
+    <h1 id="logo">
+        <a href="https://www.business.gov.om/ieasy/wp/ar_OM">
+            <img src="/portal/resources/images/logo.svg" alt="الخدمات التجارية الحكومية">
+        </a>
+    </h1>
+
+    <div class="login-block pull-right">
+        <div class="submenu-line pull-right">
+            <div class="top-links">
+                
+                
+               
+                
+                    
+                    
+                        <a href="/portal/error/500?execution=e56s1&locale=en" class="language-link" data-value="eng">English</a>
+                    
+                
+
+
+
+
+
+
+
+
+
+
+
+                <!-- <a rel="nofollow" class="acc-link" accesskey="L" title="Text reader" href="https://app.readspeaker.com/cgi-bin/rsent?customerid=8028&amp;lang=en_uk&amp;readid=content&amp;url=https%3A%2F%2Fwww.business.gov.om%2Fwps%2Fportal%2F"><span class="fa fa-volume-up">&nbsp;</span></a> -->
+               
+                <!-- <span class="sep">|</span> -->
+                <div class="user-line">
+                    
+        
+                    
+                        
+                        
+                        <a class="btn btn-default btn-sm btn-logout pull-right" href="/portal/cas/login?service=https%3a%2f%2fwww.business.gov.om%2fportal%2flogin%2fcas" title="Login">
+                            <span class="log-text">Log in</span> <span class="log-icon fa fa-sign-in">&nbsp;</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+      
+    </div>
+</div>
+
+    </header>
+    
+    <!-- Breadcrumb -->
+    
+
+
+
+
+
+
+
+
+
+<div id="tools" class="clearfix">
+    <div class="container">
+        <p id="path">
+            <!-- <span class="arrow_right_line arrow_right_line_ar"></span> -->
+            
+                
+                
+                
+            
+        
+            
+        </p>
+    </div>
+</div>
+
+
+    <!-- Content -->
+    <div class="content container">
+        
+
+
+
+
+
+
+<div id="content">
+    <div id="contentError">
+        <div class="inside">
+
+            <div id="page-title" class="clear">
+                <h1>خطأ</h1>
+            </div>
+
+            <div class="message msg-error">
+                <div>
+                    <h2>ظهر خطأ بالنظام</h2>
+                    <p>ظهر خطأ بالنظام.</p>
+                </div>
+            </div>
+
+            <div class="action clear">
+                <p>
+                    <button class="btn btn-sm btn-default"
+                            type="submit"
+                            onclick="location.href='https://www.business.gov.om/ieasy/wp'; return false;">
+                        <span><strong>الرجوع إلى الصفحة الرئيسية</strong></span>
+                    </button>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <div id="modalContainer" style="display: none"></div>
+
+
+    
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<div id="footer" class="footer">
+	<div class="container">
+		<div class="row equal-heights">
+			<div class="col-sm-3 equal-item" style="height: 230px;">
+				<div class="footer-title">الدعم</div>
+				<ul>
+					<li><a href="https://www.business.gov.om/ieasy/wp/ar_OM/pki-activation/">أجهزة الخدمة الذاتية لهيئة تقنية المعلومات</a></li>
+					<li class="font-weight-bold">تواصل معنا</li>
+					<li><a href="tel:+96880000070">+968 80000070</a></li>
+					<li><a href="mailto: info@tejarah.gov.om">Info@tejarah.gov.om</a></li>
+					<li  class="font-weight-bold">ساعات العمل</li>
+					<li>الأحد - الخميس 8:00 صباحًا - 4:00 مساءً</li>
+				</ul>
+			</div>
+			<div class="col-sm-3 equal-item" style="height: 230px;">
+				<div class="footer-title">منصة عُمان للأعمال</div>
+				<ul>
+					<li><a href="https://www.business.gov.om/ieasy/wp/ar_OM/sitemap">خريطة الموقع</a></li>
+					<li><a href="https://www.business.gov.om/ieasy/wp/ar_OM/help">مساعدة</a></li>
+					<li><a href="https://www.business.gov.om/ieasy/wp/ar_OM/legal-notices">ملاحظات قانونية</a></li>
+					<li><a href="https://www.business.gov.om/oss3bo">لموظفي المحطة</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 equal-item" style="height: 230px;">
+				<div class="footer-title">روابط سريعة</div>
+				<ul>
+					<li><a href="/portal/publicAnnouncements">الإعلانات العامة</a></li>
+					<li><a href="https://www.business.gov.om/ieasy/wp/ar_OM/e-newsletter/">لنشرة الاعلامية‎</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-3 equal-item mobile_exception" style="height: 230px;">
+				<div class="footer-title">تطبيقات الهاتف النقال</div>
+				<p class="store_links">
+					<a href="https://apps.apple.com/om/app/oman-business-platform/id6470978218" target="_blank"><img style="
+						max-width: 136px;
+					" class="cat02" src="/portal/resources/images/app_store.svg" alt="IOS Market Icon"></a>
+					<a href="https://play.google.com/store/apps/details?id=com.mociip.omanbusiness.obp" target="_blank"><img style="
+						max-width: 136px;
+					" class="cat01" src="/portal/resources/images/play_store.svg" alt="Android Icon"></a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="copy clearfix">
+		<div class="container">
+			
+			<div class="copy_right_container">
+				<div class="social">
+
+					<a class="social-icon" href="https://twitter.com/Invest_Easy " target="_blank"><img src="/portal/resources/images/social_media/twitter.svg" alt="Twitter"></a>
+
+
+
+					<a class="social-icon" href="https://www.youtube.com/channel/UCWs5MHYbbGMTdfbmrMZDeSg" target="_blank"><img src="/portal/resources/images/social_media/youTube.svg" alt="YouTube"></a>
+					<!-- <a class="social-icon rss" href="https://www.business.gov.om/ieasy/wp/ar_OM/blog-page" target="_blank"><i class="fa fa-rss-square"></i></a> -->
+				</div>
+				<p style="color: #E6E6E6;">
+					حقوق الطبع والنشر © منصة عمان للأعمال. كل الحقوق محفوظة.
+				</p>
+				
+			</div>
+			<!-- <p class="pull-right">
+				<a class="pull-right ml10" href="#" onclick="javascript:window.open('https://sealserver.trustwave.com/cert.php?customerId=&amp;size=105x54&amp;style=normal&amp;baseURL=www.trustwave.com', 'c_TW', 'location=no, toolbar=no, resizable=yes, scrollbars=yes, directories=no, status=no, width=615, height=720'); return false;" target="_blank">
+					<img id="trustwaveSealImage" src="/portal/resources/images/trust-logo.png" class="trustwave" alt="This site is protected by Trustwave's Trusted Commerce program" title="This site is protected by Trustwave's Trusted Commerce program">
+				</a>
+				<a class="pull-right ml10" href="http://www.w3.org/" target="_blank">
+					<img id="w3cImage" src="/portal/resources/images/w3c-logo.png" class="trustwave" alt="W3C" title="W3C">
+				</a>
+				<a class="pull-right" href="http://www.oman.om/" target="_blank">
+					<img id="omanLogo" src="/portal/resources/images/oman-logo.png" class="trustwave" alt="Oman" title="Oman">
+				</a>
+			</p> -->
+		</div>
+	</div>
+</div>
+
+
+</div>
+<script type="text/javascript">
+    $('[data-toggle="popover"]').popover();
+    $('body').on('click', function (e) {
+        $('[data-toggle="popover"]').each(function () {
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                $(this).popover('hide');
+            }
+        });
+    });
+    $(document).on('submit', 'form', function() {
+        var buttonExits = $(this).find("button"), buttonName;
+        if (buttonExits) {
+            buttonName = buttonExits.prop("name").indexOf("download");
+        }
+        if (buttonName === -1) {
+            showLoader();
+        }
+    });
+
+</script>
+</body>
+
+</html>

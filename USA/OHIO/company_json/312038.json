@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "olddetails": []
+    },
+    {
+      "registrant": []
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "B267_1185",
+          "doc_count": 1,
+          "din": "B267_1185",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC ARTICLES/FOR PROFIT",
+          "tran_code": "ARF",
+          "charter_num": "312038",
+          "effect_date": "07/03/1962"
+        },
+        {
+          "processing_id": "000000554063",
+          "doc_count": 2,
+          "din": "000000554063",
+          "img_status": "NO IMAGES",
+          "tran_code_desc": "CANCELLED BY TAX DEPT W/NOTIFICATION",
+          "tran_code": "XTD",
+          "charter_num": "312038",
+          "effect_date": "10/20/1965"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "BEN J. GOLDISH"
+        },
+        {
+          "business_assoc_name": "NELSON G. KARL"
+        },
+        {
+          "business_assoc_name": "CYNTHIA WEDDING"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "B267_1185",
+          "doc_id": "STANDARD",
+          "business_name": "B. P. N. BUILDING AND CONSTRUCTION COMPANY",
+          "business_type": "CORPORATION FOR PROFIT",
+          "corp_status": "Y",
+          "business_locationcountystate": "CLEVELAND HTS.",
+          "business_location_name": "CLEVELAND HTS.",
+          "business_state": "OH",
+          "status": "Cancelled",
+          "tran_code": "ARF",
+          "charter_num": "312038",
+          "expiry_date": "-",
+          "effect_date": "07/03/1962",
+          "county_name": "CUYAHOGA",
+          "state_name": "OHIO"
+        }
+      ]
+    }
+  ]
+}

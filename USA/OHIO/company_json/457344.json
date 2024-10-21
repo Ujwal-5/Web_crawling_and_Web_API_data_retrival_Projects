@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "olddetails": []
+    },
+    {
+      "registrant": []
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "B999_0489",
+          "doc_count": 1,
+          "din": "B999_0489",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC ARTICLES/FOR PROFIT",
+          "tran_code": "ARF",
+          "charter_num": "457344",
+          "effect_date": "08/27/1974"
+        },
+        {
+          "processing_id": "000000465063",
+          "doc_count": 2,
+          "din": "000000465063",
+          "img_status": "NO IMAGES",
+          "tran_code_desc": "CANCELLED BY TAX DEPT W/NOTIFICATION",
+          "tran_code": "XTD",
+          "charter_num": "457344",
+          "effect_date": "05/30/1980"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "GLENN R CAMPBELL"
+        },
+        {
+          "business_assoc_name": "BILL C BRASHEARS"
+        },
+        {
+          "business_assoc_name": "R E PARROTT"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "B999_0489",
+          "doc_id": "STANDARD",
+          "business_name": "BELL BRA, INC.",
+          "business_type": "CORPORATION FOR PROFIT",
+          "corp_status": "Y",
+          "business_locationcountystate": "MARYSVILLE",
+          "business_location_name": "MARYSVILLE",
+          "business_state": "OH",
+          "status": "Cancelled",
+          "tran_code": "ARF",
+          "charter_num": "457344",
+          "expiry_date": "-",
+          "effect_date": "08/27/1974",
+          "county_name": "UNION",
+          "state_name": "OHIO"
+        }
+      ]
+    }
+  ]
+}

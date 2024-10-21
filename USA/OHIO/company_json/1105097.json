@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "olddetails": []
+    },
+    {
+      "registrant": [
+        {
+          "result_count": 1,
+          "charter_num": "1105097",
+          "contact_doc_id": "199925601183",
+          "contact_name": "MARK S. FEUER",
+          "contact_addr1": "10 COURTHOUSE PLZ SW",
+          "contact_addr2": "STE 1100",
+          "contact_city": "DAYTON",
+          "contact_state": "OH",
+          "contact_zip9": "454020000",
+          "effective_date_time": "09/10/1999",
+          "contact_status": "A",
+          "conflict_res_dt": "01/16/2004",
+          "status": "Active"
+        }
+      ]
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "199925601183",
+          "doc_count": 1,
+          "din": "199925601183",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC LLC - ARTICLES OF ORGANIZATION",
+          "tran_code": "LCA",
+          "charter_num": "1105097",
+          "effect_date": "09/10/1999"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "MARK S. FEUER"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "199925601183",
+          "doc_id": "STANDARD",
+          "business_name": "BPN MARKETING GROUP, LLC",
+          "business_type": "DOMESTIC LIMITED LIABILITY COMPANY",
+          "corp_status": "N",
+          "business_locationcountystate": "---",
+          "business_location_name": "-",
+          "business_state": "-",
+          "status": "Active",
+          "tran_code": "LCA",
+          "charter_num": "1105097",
+          "expiry_date": "-",
+          "effect_date": "09/10/1999",
+          "county_name": "-",
+          "state_name": "-"
+        }
+      ]
+    }
+  ]
+}

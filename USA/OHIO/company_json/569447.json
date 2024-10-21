@@ -1,0 +1,153 @@
+{
+  "data": [
+    {
+      "olddetails": [
+        {
+          "charternum": "569447",
+          "effective_date_time": "06/07/1985",
+          "old_name": "SRA ENGINEERING GROUP INC.",
+          "formatted_name": "SRA ENGINEERING GROUP INC",
+          "conflict_res_dt": "01/16/2004"
+        }
+      ]
+    },
+    {
+      "registrant": []
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "E869_1376",
+          "doc_count": 1,
+          "din": "E869_1376",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC ARTICLES/PROFESSIONAL",
+          "tran_code": "ARP",
+          "charter_num": "569447",
+          "effect_date": "02/18/1981"
+        },
+        {
+          "processing_id": "F160_1557",
+          "doc_count": 2,
+          "din": "F160_1557",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC/AGENT RESIGNATION",
+          "tran_code": "AGR",
+          "charter_num": "569447",
+          "effect_date": "11/04/1982"
+        },
+        {
+          "processing_id": "F339_0997",
+          "doc_count": 3,
+          "din": "F339_0997",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC AGENT SUBSEQUENT APPOINTMENT",
+          "tran_code": "AGS",
+          "charter_num": "569447",
+          "effect_date": "10/13/1983"
+        },
+        {
+          "processing_id": "F673_0406",
+          "doc_count": 4,
+          "din": "F673_0406",
+          "img_status": "STANDARD",
+          "tran_code_desc": "ANNUAL REPORT OF PROFESSIONAL CORP",
+          "tran_code": "81A",
+          "charter_num": "569447",
+          "effect_date": "06/07/1985"
+        },
+        {
+          "processing_id": "F673_0406",
+          "doc_count": 5,
+          "din": "F673_0406",
+          "img_status": "STANDARD",
+          "tran_code_desc": "ANNUAL REPORT OF PROFESSIONAL CORP",
+          "tran_code": "82A",
+          "charter_num": "569447",
+          "effect_date": "06/07/1985"
+        },
+        {
+          "processing_id": "F673_0406",
+          "doc_count": 6,
+          "din": "F673_0406",
+          "img_status": "STANDARD",
+          "tran_code_desc": "ANNUAL REPORT OF PROFESSIONAL CORP",
+          "tran_code": "83A",
+          "charter_num": "569447",
+          "effect_date": "06/07/1985"
+        },
+        {
+          "processing_id": "F673_0406",
+          "doc_count": 7,
+          "din": "F673_0406",
+          "img_status": "STANDARD",
+          "tran_code_desc": "ANNUAL REPORT OF PROFESSIONAL CORP",
+          "tran_code": "84A",
+          "charter_num": "569447",
+          "effect_date": "06/07/1985"
+        },
+        {
+          "processing_id": "F673_0413",
+          "doc_count": 8,
+          "din": "F673_0413",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC/AMENDMENT TO ARTICLES",
+          "tran_code": "AMD",
+          "charter_num": "569447",
+          "effect_date": "06/07/1985"
+        },
+        {
+          "processing_id": "G314_1011",
+          "doc_count": 9,
+          "din": "G314_1011",
+          "img_status": "STANDARD",
+          "tran_code_desc": "MERGER/DOMESTIC",
+          "tran_code": "MER",
+          "charter_num": "569447",
+          "effect_date": "12/31/1987"
+        },
+        {
+          "processing_id": "G314_1025",
+          "doc_count": 10,
+          "din": "G314_1025",
+          "img_status": "STANDARD",
+          "tran_code_desc": "MERGED OUT OF EXISTENCE",
+          "tran_code": "MEX",
+          "charter_num": "569447",
+          "effect_date": "12/31/1987"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "DAVID S KORNER"
+        },
+        {
+          "business_assoc_name": "WILLIAM M REEVES"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "E869_1376",
+          "doc_id": "STANDARD",
+          "business_name": "B.R.A. ENGINEERING GROUP, INC.",
+          "business_type": "CORPORATION FOR PROFIT",
+          "corp_status": "Y",
+          "business_locationcountystate": "CINCINNATI",
+          "business_location_name": "CINCINNATI",
+          "business_state": "OH",
+          "status": "Dead",
+          "tran_code": "ARF",
+          "charter_num": "569447",
+          "expiry_date": "-",
+          "effect_date": "02/18/1981",
+          "county_name": "HAMILTON",
+          "state_name": "OHIO"
+        }
+      ]
+    }
+  ]
+}

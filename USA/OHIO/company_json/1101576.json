@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "olddetails": []
+    },
+    {
+      "registrant": []
+    },
+    {
+      "listing": [
+        {
+          "processing_id": "199925601184",
+          "doc_count": 1,
+          "din": "199925601184",
+          "img_status": "STANDARD",
+          "tran_code_desc": "DOMESTIC LLC - ARTICLES OF ORGANIZATION",
+          "tran_code": "LCA",
+          "charter_num": "1101576",
+          "effect_date": "09/10/1999"
+        },
+        {
+          "processing_id": "202313202630",
+          "doc_count": 2,
+          "din": "202313202630",
+          "img_status": "STANDARD",
+          "tran_code_desc": "AGENT RESIGNATION/LIMITED/LIABILITY/PARTNERS",
+          "tran_code": "LAG",
+          "charter_num": "1101576",
+          "effect_date": "05/18/2023"
+        },
+        {
+          "processing_id": "202317243690",
+          "doc_count": 3,
+          "din": "202317243690",
+          "img_status": "STANDARD",
+          "tran_code_desc": "AGENT REQUIREMENT LETTER",
+          "tran_code": "ALT",
+          "charter_num": "1101576",
+          "effect_date": "06/21/2023"
+        },
+        {
+          "processing_id": "202320744404",
+          "doc_count": 4,
+          "din": "202320744404",
+          "img_status": "STANDARD",
+          "tran_code_desc": "CANCELATION FOR FAILURE TO MAINTAIN AN AGENT",
+          "tran_code": "AXA",
+          "charter_num": "1101576",
+          "effect_date": "07/26/2023"
+        }
+      ]
+    },
+    {
+      "details": [
+        {
+          "business_assoc_name": "MARK S. FEUER"
+        }
+      ]
+    },
+    {
+      "firstpanel": [
+        {
+          "processing_id": "199925601184",
+          "doc_id": "STANDARD",
+          "business_name": "BPN PROPERTIES, LLC",
+          "business_type": "DOMESTIC LIMITED LIABILITY COMPANY",
+          "corp_status": "N",
+          "business_locationcountystate": "---",
+          "business_location_name": "-",
+          "business_state": "-",
+          "status": "Held",
+          "tran_code": "LCA",
+          "charter_num": "1101576",
+          "expiry_date": "-",
+          "effect_date": "09/10/1999",
+          "county_name": "-",
+          "state_name": "-"
+        }
+      ]
+    }
+  ]
+}

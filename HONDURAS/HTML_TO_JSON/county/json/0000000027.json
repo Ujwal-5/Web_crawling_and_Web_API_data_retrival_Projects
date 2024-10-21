@@ -1,0 +1,86 @@
+{
+    "FileNumber": "0000000027",
+    "InformaciÃ³n General": [
+        {
+            "Circunscripción Registral": "CORTES / SAN PEDRO SULA ",
+            "Ubicación de la Empresa": "SANTA CRUZ DE YOJOA, CORTES ",
+            "Tipo de Comerciante": "COMERCIANTE INDIVIDUAL ",
+            "Tipo de Capital": "- ",
+            "Razón Social": "IMPORTADORA ALFREDO ",
+            "Denominación Social": null,
+            "Nombre Comercial": "- ",
+            "Siglas": "- ",
+            "Dirección de la Empresa": "SANTA CRUZ DE YOJOA, CORTES ",
+            "Domicilio": "SANTA CRUZ DE YOJOA, CORTES, PERO PODRÃ ESTABLECER AGENCIAS, SUCURSALES U OFICINAS EN CUALQUIER PARTE DE LA REPÃBLICA CUANDO ASÃ LO ESTIME CONVENIENTE. ",
+            "Objeto Social de la Empresa": "- ",
+            "Vigencia": "16/03/2000 ",
+            "Inscrito CCI": "- ",
+            "Finalidad": "LA COMPRA Y VENTA DE MERCADERÃA EN GENERAL; A SU DISTRIBUCIÃN Y COMERCIALIZACIÃN, A SU IMPORTACIÃN Y EXPORTACIÃN; Y A CUALQUIER ACTO DE LICITO COMERCIO. ",
+            "Estado": "EN FORMACION ",
+            "Observaciones": "INSCRITO EL ESTABLECIMIENTO MERCANTIL DENOMINADO IMPORTADORA ALFREDO VA #64 T.95  R.E.M.  S.P.S. 16-3-2000 "
+        }
+    ],
+    "Antecedentes": [
+        {
+            "Tipo Libro": "REGISTRO COMERCIANTE INDIVIDUAL",
+            "Tomo": "161",
+            "Tomo Bis": "INSCRIPCION BASE",
+            "Libro": "LIBRO B",
+            "Libro Bis": "INSCRIPCION BASE",
+            "Inscripción": "99",
+            "Inscripción Bis": "INSCRIPCION BASE"
+        }
+    ],
+    "Asientos de Presentación": null,
+    "Resúmenes": [
+        {
+            "No. Asiento": "1 ",
+            "Inscripción": "1 ",
+            "No. Presentación": "- ",
+            "Clasificación": "INSCRIPCION ",
+            "Transacción": "TRASLADO DE INSCRIPCION ",
+            "Fecha InscripciÃ³n": "01/03/2012 ",
+            "Estado": "- ",
+            "Rel": "- "
+        }
+    ],
+    "Derechos": null,
+    "Capital": [
+        {
+            "Capital MÃanimo": "5000",
+            "Capital Maximus": null,
+            "Capital SusCrit": null,
+            "Capital Suscrito": null,
+            "Capital Pagado": null,
+            "Valor Nominal": null,
+            "Historial de Aumentos": null
+        }
+    ],
+    "Sucursales/Establecimiento Mercantil": [
+        {
+            "CÃ³digo": "8479 ",
+            "Nombre Sucursal": "IMPORTADORA ALFREDO ",
+            "UbicaciÃ³n": "SANTA CRUZ DE YOJOA, CORTES ",
+            "DirecciÃ³n": "SANTA CRUZ DE YOJOA, CORTES ",
+            "Encargado": "YANES RECARTE, DANIEL ALFREDO ",
+            "Capital Sucursal": "- ",
+            "Giro Principal": "- "
+        }
+    ],
+    "Representante": null,
+    "Poderes": null,
+    "Antecedente Poderes": null,
+    "Gravámenes": null,
+    "Restricciones": [
+        {
+            "No. de Asiento": "",
+            "Tipo de Restricción": null,
+            "Fecha de Inicio": null,
+            "Fecha de Fin": null,
+            "Plazo": null,
+            "Sobre Derechos": null,
+            "Observaciones": null,
+            "Estado": null
+        }
+    ]
+}

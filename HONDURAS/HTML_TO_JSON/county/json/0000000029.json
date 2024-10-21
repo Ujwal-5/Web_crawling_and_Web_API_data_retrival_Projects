@@ -1,0 +1,76 @@
+{
+    "FileNumber": "0000000029",
+    "InformaciÃ³n General": [
+        {
+            "Circunscripción Registral": "CORTES / SAN PEDRO SULA ",
+            "Ubicación de la Empresa": "SAN PEDRO SULA, CORTES ",
+            "Tipo de Comerciante": "COMERCIANTE INDIVIDUAL ",
+            "Tipo de Capital": "- ",
+            "Razón Social": "INVERSIONES GAMONEDA ",
+            "Denominación Social": null,
+            "Nombre Comercial": "- ",
+            "Siglas": "- ",
+            "Dirección de la Empresa": "SAN PEDRO SULA, CORTES ",
+            "Domicilio": "SAN PEDRO SULA, CORTES, PUDIENDO ESTABLECER SUCURSALES EN TODO EL PAÃS ",
+            "Objeto Social de la Empresa": "- ",
+            "Vigencia": "30/03/2001 ",
+            "Inscrito CCI": "- ",
+            "Finalidad": "LA CONSTRUCCIÃN, PRESTACIÃN DE SERVICIOS DE ACARREO DE MATERIALES DE CONSTRUCCIÃN Y CUALQUIER OTRO TIPO DE MATERIALES, ASÃ COMO TODAS AQUELLAS ACTIVIDADES DE LICITO COMERCIO, PODRÃ IMPORTAR Y EXPORTAR CUALQUIER TIPO DE MERCADERÃAS, YA SEA QUE TENGA RELACIÃN DIRECTA O INDIRECTA CON EL GIRO PRINCIPAL DE LA MISMA ",
+            "Estado": "EN FORMACION ",
+            "Observaciones": "- "
+        }
+    ],
+    "Antecedentes": [
+        {
+            "Tipo Libro": "REGISTRO COMERCIANTE INDIVIDUAL",
+            "Tomo": "182",
+            "Tomo Bis": "INSCRIPCION BASE",
+            "Libro": "LIBRO A",
+            "Libro Bis": "INSCRIPCION BASE",
+            "Inscripción": "9",
+            "Inscripción Bis": "INSCRIPCION BASE"
+        }
+    ],
+    "Asientos de Presentación": null,
+    "Resúmenes": [
+        {
+            "No. Asiento": "1 ",
+            "Inscripción": "1 ",
+            "No. Presentación": "- ",
+            "Clasificación": "INSCRIPCION ",
+            "Transacción": "TRASLADO DE INSCRIPCION ",
+            "Fecha InscripciÃ³n": "05/03/2012 ",
+            "Estado": "- ",
+            "Rel": "- "
+        }
+    ],
+    "Derechos": null,
+    "Capital": [
+        {
+            "Capital MÃanimo": "5000",
+            "Capital Maximus": null,
+            "Capital SusCrit": null,
+            "Capital Suscrito": null,
+            "Capital Pagado": null,
+            "Valor Nominal": null,
+            "Historial de Aumentos": null
+        }
+    ],
+    "Sucursales/Establecimiento Mercantil": null,
+    "Representante": null,
+    "Poderes": null,
+    "Antecedente Poderes": null,
+    "Gravámenes": null,
+    "Restricciones": [
+        {
+            "No. de Asiento": "",
+            "Tipo de Restricción": null,
+            "Fecha de Inicio": null,
+            "Fecha de Fin": null,
+            "Plazo": null,
+            "Sobre Derechos": null,
+            "Observaciones": null,
+            "Estado": null
+        }
+    ]
+}

@@ -1,0 +1,1307 @@
+{
+    "pageProps": {
+        "_nextI18Next": {
+            "initialI18nStore": {
+                "de": {
+                    "common": {
+                        "meta": {
+                            "description": "Auf wirtschaft.at finden Sie einfach und rasch Informationen zu \u00f6sterreichischen Unternehmen."
+                        },
+                        "user": {
+                            "login": "Einloggen",
+                            "register": "Registrieren",
+                            "logout": "Ausloggen",
+                            "myProfile": "Mein Profil",
+                            "mySubscriptions": "Folge ich",
+                            "feed": "Updates"
+                        },
+                        "generic": {
+                            "loadingData": "Daten werden geladen...",
+                            "copiedToClipboard": "Erfolgreich in die Zwischenablage kopiert!",
+                            "andNMore": "Und <b>{{n, localeNumber}}</b> weitere"
+                        },
+                        "aria": {
+                            "share": {
+                                "copy": "Link in die Zwischenablage kopieren",
+                                "facebook": "Link auf Facebook teilen",
+                                "whatsapp": "Link auf WhatsApp teilen",
+                                "linkedin": "Link auf LinkedIn teilen",
+                                "xing": "Link auf XING teilen"
+                            },
+                            "quicksearch": {
+                                "results": "Suchergebnisse"
+                            }
+                        },
+                        "actions": {
+                            "viewAll": "Alle anzeigen",
+                            "viewMore": "Mehr anzeigen ({{count, localeNumber}})",
+                            "viewDetails": "Details anzeigen",
+                            "details": "Details",
+                            "showRows_one": "{{count, localeNumber}} Zeile anzeigen",
+                            "showRows_other": "{{count, localeNumber}} Zeilen anzeigen",
+                            "back": "zur\u00fcck",
+                            "backToDashboard": "Zur\u00fcck zur Startseite",
+                            "share": "Teilen auf:",
+                            "goToTop": "TOP",
+                            "goToTopLabel": "Zur\u00fcck nach oben",
+                            "dismissHint": "Ausblenden"
+                        },
+                        "premium": {
+                            "cta": "Schlie\u00dfen Sie jetzt <plus>wirtschaft.at PLUS</plus> ab und nutzen Sie das <b>volle Potential</b> von wirtschaft.at.",
+                            "button": "Mehr dazu erfahren",
+                            "st\u00f6rer": "2 Monate gratis",
+                            "legal": "*Im Fall eines Jahresabos erhalten Sie zwei 2 Monate davon gratis."
+                        },
+                        "cookies": {
+                            "legal": "wirtschaft.at verwendet Cookies, um Ihnen den bestm\u00f6glichen Service zu bieten. F\u00fcr eine technisch uneingeschr\u00e4nkte und sichere Nutzung unserer Webseite werden notwendige Cookies eingesetzt. Analyse-Cookies f\u00fcr die weitere Verbesserung der Webseite werden nur nach Ihrer Einwilligung verwendet. Ihre Einwilligung bezieht sich auch auf die Verarbeitung personenbezogener Daten durch Dienstleister in den USA. Nach einer Entscheidung des EuGH gew\u00e4hrleisten die USA kein ausreichendes Datenschutzniveau. Ihre Einwilligung k\u00f6nnen Sie jederzeit unter \"Cookie Einstellungen\" am Seitenende widerrufen. N\u00e4here Informationen finden Sie in unserer <legal>Datenschutzerkl\u00e4rung</legal>.",
+                            "more": "Mehr Informationen zu Cookies",
+                            "declineAll": "Alle ablehnen",
+                            "acceptAll": "Alle akzeptieren"
+                        },
+                        "footer": {
+                            "faq": "FAQ",
+                            "blog": "Blog",
+                            "termsAndConditions": "AGB",
+                            "imprint": "Impressum",
+                            "legal": "Datenschutz",
+                            "cookiePolicy": "Cookie Policy",
+                            "products": "Preise",
+                            "cookieSettings": "Cookie Einstellungen",
+                            "plattformFrom": "Eine Plattform der",
+                            "otherServices": "Weitere Online-Services der Mediengruppe Wiener Zeitung:",
+                            "facebook": "Facebook",
+                            "linkedIn": "LinkedIn"
+                        },
+                        "header": {
+                            "search": "Suche",
+                            "hideSearch": "Suche ausblenden"
+                        },
+                        "profiles": {
+                            "noBirthdate": "Kein Geburtsdatum",
+                            "status": {
+                                "Unbekannt": "Unbekannt",
+                                "Aktiv": "Aktiv",
+                                "Gel\u00f6scht": "Gel\u00f6scht",
+                                "Gel\u00f6schtMit": "Gel\u00f6scht mit {{date, intlDate}}",
+                                "InLiquidation": "In Liq."
+                            }
+                        }
+                    },
+                    "search": {
+                        "label": "<b>PLUS</b> Suche",
+                        "tabs": {
+                            "quicksearch": "Schnellsuche",
+                            "detail": "Unternehmen"
+                        },
+                        "quick": {
+                            "label": "Finden Sie <b>einfach</b> und <b>schnell</b> relevante Informationen zu <b>\u00f6sterreichischen Unternehmen</b>.",
+                            "placeholder": "Suchen Sie nach Firmenname, Firmenbuchnummer oder Person",
+                            "creatingSuggestions": "<b>Vorschl\u00e4ge</b> werden erstellt...",
+                            "suggestionsForTerm_zero": "Mit der Eingabe \"{{term}}\" konnten keine (0) Vorschl\u00e4ge zu aktiven Firmen oder Personen erstellt werden.",
+                            "suggestionsForTerm_one": "{{count, localeNumber}} <b>Vorschlag</b> zu Ihrer Eingabe",
+                            "suggestionsForTerm_other": "{{count, localeNumber}} <b>Vorschl\u00e4ge</b> zu Ihrer Eingabe",
+                            "noSuggestions": "Ihre Eingabe \"{{term}}\" liefert keine <b>Vorschl\u00e4ge</b>",
+                            "searchForTerm": "<b>In allen Daten</b> nach \"<secondary>{{term}}</secondary>\" suchen:",
+                            "searchUnternehmen": "Nach Unternehmen suchen",
+                            "searchUnternehmen_interval": "(0-4)[Nach Unternehmen suchen ({{count, localeNumber}})];(5-inf)[Nach Unternehmen suchen (ca. {{count, localeNumber}})]",
+                            "searchPersonen": "Nach Personen suchen",
+                            "searchPersonen_interval": "(0-4)[Nach Personen suchen ({{count, localeNumber}})];(5-inf)[Nach Personen suchen (ca. {{count, localeNumber}})]",
+                            "searchError": "Bei der Suche ist ein Fehler aufgetreten."
+                        },
+                        "search": {
+                            "heading": "Suchergebnisse",
+                            "resultCountUnternehmen_one": "Zu Ihrer Suche \"{{term}}\" wurde {{count, localeNumber}} Unternehmen gefunden",
+                            "resultCountUnternehmen_other": "Zu Ihrer Suche \"{{term}}\" wurden {{count, localeNumber}} Unternehmen gefunden",
+                            "resultCountPersonen_one": "Zu Ihrer Suche \"{{term}}\" wurde {{count, localeNumber}} Person gefunden",
+                            "resultCountPersonen_other": "Zu Ihrer Suche \"{{term}}\" wurden {{count, localeNumber}} Personen gefunden",
+                            "meta": {
+                                "title": "Suche nach \"{{term}}\""
+                            }
+                        },
+                        "wizard": {
+                            "heading": "Ihre Suchergebnisse",
+                            "cta": "Durchsuchen Sie <b>alle verf\u00fcgbaren Daten</b> von <b>\u00f6sterreichischen Unternehmen</b>.",
+                            "description": "Bitte mindestens <b>ein Feld</b> ausf\u00fcllen um zu suchen.",
+                            "filters": {
+                                "noFilter": "alle"
+                            },
+                            "actions": {
+                                "select": "- Bitte ausw\u00e4hlen -",
+                                "minimize": "Suche ausblenden",
+                                "maximize": "Suche einblenden",
+                                "search": "Jetzt suchen",
+                                "reset": "Eingaben l\u00f6schen",
+                                "showDetails": "Details"
+                            },
+                            "unternehmen": {
+                                "filterText": "Ihre Suche nach <b>Unternehmen</b> mit dem <b>Wortlaut</b> <filter>{{wortlaut}}</filter>, der <b>Nummer</b> <filter>{{fbNr}}</filter>, der <b>Rechtsform</b> <filter>{{rechtsform}}</filter>, dem <b>Status</b> <filter>{{status}}</filter> und einer <b>Adresse in</b> <filter>{{adresse}}</filter> brachte <b>{{results, localeNumber}} Treffer</b> in <b>{{categories, localeNumber}} Kategorie(n)</b>.",
+                                "filterTextLoading": "Ihre Suche nach <b>Unternehmen</b> mit dem <b>Wortlaut</b> <filter>{{wortlaut}}</filter>, der <b>Nummer</b> <filter>{{fbNr}}</filter>, der <b>Rechtsform</b> <filter>{{rechtsform}}</filter>, dem <b>Status</b> <filter>{{status}}</filter> und einer <b>Adresse in</b> <filter>{{adresse}}</filter> wird ausgef\u00fchrt.",
+                                "tabs": {
+                                    "unternehmen": {
+                                        "label": "Unternehmen",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "FBNR",
+                                            "Adresse",
+                                            "Status",
+                                            ""
+                                        ]
+                                    },
+                                    "personen": {
+                                        "label": "Personen",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "Name",
+                                            "Funktion",
+                                            ""
+                                        ]
+                                    },
+                                    "marken": {
+                                        "label": "Marken",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "Markenname",
+                                            "Art der Marke",
+                                            "Status",
+                                            ""
+                                        ]
+                                    },
+                                    "patente": {
+                                        "label": "Patente",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "Patenttitel",
+                                            "Art des Patents",
+                                            "Status",
+                                            ""
+                                        ]
+                                    },
+                                    "gewerbe": {
+                                        "label": "Gewerbe",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "Gewerbebezeichnung",
+                                            "Gisa-Zahl",
+                                            "Gewerberechtl. GF",
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "name": {
+                                    "label": "Unternehmen",
+                                    "placeholder": "Firmenname"
+                                },
+                                "fbNr": {
+                                    "label": "Firmenbuchnummer",
+                                    "placeholder": "Firmenbuchnummer"
+                                },
+                                "rechtsform": {
+                                    "label": "Rechtsform"
+                                },
+                                "status": {
+                                    "label": "Aktueller Firmenstatus"
+                                },
+                                "address": {
+                                    "label": "Sitz | Adresse"
+                                }
+                            },
+                            "personen": {
+                                "filterText": "Ihre Suche nach <b>Personen</b> mit dem <b>Vornamen</b> <filter>{{vorname}}</filter>, dem <b>Nachnamen</b> <filter>{{nachname}}</filter>, dem <b>Geburtstag</b> <filter>{{geburtsdatumTag}}</filter>, dem <b>Geburtsmonat</b> <filter>{{geburtsdatumMonat}}</filter>, dem <b>Geburtsjahr</b> <filter>{{geburtsdatumJahr}}</filter> und der <b>Funktion</b> <filter>{{funktion}}</filter> brachte <b>{{results, localeNumber}} Treffer</b> in <b>{{categories, localeNumber}} Kategorie(n)</b>.",
+                                "filterTextLoading": "Ihre Suche nach <b>Personen</b> mit dem <b>Vornamen</b> <filter>{{vorname}}</filter>, dem <b>Nachnamen</b> <filter>{{nachname}}</filter>, dem <b>Geburtstag</b> <filter>{{geburtsdatumTag}}</filter>, dem <b>Geburtsmonat</b> <filter>{{geburtsdatumMonat}}</filter>, dem <b>Geburtsjahr</b> <filter>{{geburtsdatumJahr}}</filter> und der <b>Funktion</b> <filter>{{funktion}}</filter> wird ausgef\u00fchrt.",
+                                "tabs": {
+                                    "personen": {
+                                        "label": "Personen",
+                                        "columns": [
+                                            "Vorname",
+                                            "Nachname",
+                                            "Unternehmen",
+                                            "Funktion",
+                                            ""
+                                        ]
+                                    },
+                                    "gewerbe": {
+                                        "label": "Gewerbe",
+                                        "columns": [
+                                            "Vorname",
+                                            "Nachname",
+                                            "Gewerbebezeichnung",
+                                            "Unternehmen",
+                                            "Gisa-Zahl",
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "firstname": {
+                                    "label": "Vorname",
+                                    "placeholder": "Vorname"
+                                },
+                                "lastname": {
+                                    "label": "Nachname",
+                                    "placeholder": "Nachname"
+                                },
+                                "birthdate": {
+                                    "label": "Geburtsdatum"
+                                },
+                                "function": {
+                                    "label": "Funktion"
+                                }
+                            },
+                            "marken": {
+                                "filterText": "Ihre Suche nach <b>Marken</b> mit dem <b>Namen</b> <filter>{{name}}</filter>, dem <b>Inhaber</b> <filter>{{inhaber}}</filter>, der <b>Art</b> <filter>{{art}}</filter>, dem <b>Status</b> <filter>{{status}}</filter>, dem <b>Registrierungsdatum</b> von <filter>{{registerDatumVon, intlDate}}</filter> bis <filter>{{registerDatumBis, intlDate}}</filter> und dem <b>Anmeldedatum</b> von <filter>{{anmeldeDatumVon, intlDate}}</filter> bis <filter>{{anmeldeDatumBis, intlDate}}</filter> brachte <b>{{results, localeNumber}} Treffer</b> in <b>{{categories, localeNumber}} Kategorie(n)</b>.",
+                                "filterTextLoading": "Ihre Suche nach <b>Marken</b> mit dem <b>Namen</b> <filter>{{name}}</filter>, dem <b>Inhaber</b> <filter>{{inhaber}}</filter>, der <b>Art</b> <filter>{{art}}</filter>, dem <b>Status</b> <filter>{{status}}</filter>, dem <b>Registrierungsdatum</b> von <filter>{{registerDatumVon, intlDate}}</filter> bis <filter>{{registerDatumBis, intlDate}}</filter> und dem <b>Anmeldedatum</b> von <filter>{{anmeldeDatumVon, intlDate}}</filter> bis <filter>{{anmeldeDatumBis, intlDate}}</filter> wird ausgef\u00fchrt.",
+                                "tabs": {
+                                    "marken": {
+                                        "label": "Marken",
+                                        "columns": [
+                                            "Markenname",
+                                            "Art",
+                                            "Status",
+                                            "Unternehmen",
+                                            ""
+                                        ]
+                                    },
+                                    "unternehmen": {
+                                        "label": "Unternehmen",
+                                        "columns": [
+                                            "Unternehmensname",
+                                            "Markenname",
+                                            "Art",
+                                            "Status",
+                                            ""
+                                        ]
+                                    }
+                                },
+                                "name": {
+                                    "label": "Markenname",
+                                    "placeholder": "Markenname"
+                                },
+                                "inhaber": {
+                                    "label": "Markeninhaber",
+                                    "placeholder": "Markeninhaber"
+                                },
+                                "type": {
+                                    "label": "Art der Marke"
+                                },
+                                "status": {
+                                    "label": "Status"
+                                },
+                                "registerDatum": {
+                                    "from": {
+                                        "label": "Registrierungsdatum von"
+                                    },
+                                    "to": {
+                                        "label": "Registrierungsdatum bis"
+                                    }
+                                },
+                                "anmeldeDatum": {
+                                    "from": {
+                                        "label": "Anmeldedatum von"
+                                    },
+                                    "to": {
+                                        "label": "Anmeldedatum bis"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "formats": {
+                        "fbNr": "{{value, firmenbuchNummer}}",
+                        "date": "{{value, intlDate}}",
+                        "year": "{{value, intlYear}}",
+                        "dateTime": "{{value, intlDateTime}}",
+                        "statistic": "{{value, germanLocaleNumber}}",
+                        "xOfN": "{{x, localeNumer}} von {{n, localeNumber}}",
+                        "money": "{{value.w\u00e4hrung}} {{value.menge, localeNumber}}",
+                        "stichtag": "{{value, stichtag}}",
+                        "percent": "{{value, percent}}",
+                        "number": "{{value, localeNumber}}",
+                        "searchResultUnternehmen": "{{name}}{{adresse, kurzAdresse}} ({{fbNr, firmenbuchNummer}})",
+                        "warenDienstleistung": "<b>Kl: {{value.klassen}}</b>: {{value.beschreibung}}",
+                        "andNMore": "und {{value, localeNumber}} weitere",
+                        "euro": "{{value, euro}}"
+                    },
+                    "forms": {
+                        "errors": {
+                            "unknown": "Ein Fehler ist aufgetreten.",
+                            "invalidEmail": "Geben Sie bitte eine g\u00fcltige E-Mail-Adresse ein.",
+                            "invalidCredentials": "E-Mail-Adresse oder Passwort falsch.",
+                            "emailInUse": "Ein Konto mit dieser E-Mail-Adresse existiert bereits. Bitte pr\u00fcfen Sie Ihre Angabe oder melden Sie sich an.",
+                            "emailInUseProfile": "Ein Konto mit dieser E-Mail-Adresse existiert bereits.",
+                            "required": "Diese Angabe ist verpflichtend.",
+                            "notEmpty": "Diese Angabe ist verpflichtend.",
+                            "minLength": "Geben Sie bitte mindestens {{value, localeNumber}} Zeichen ein.",
+                            "passwordLength": "Ihr Passwort muss mindestens {{value, localeNumber}} Zeichen umfassen.",
+                            "passwordNotIdentical": "Die Passw\u00f6rter sind nicht ident. Korrigieren Sie bitte Ihre Angabe.",
+                            "coupon": {
+                                "Invalid": "Ung\u00fcltiger Gutschein Code.",
+                                "WrongProduct": "Ung\u00fcltiges Produkt f\u00fcr diesen Code.",
+                                "NotFound": "Ung\u00fcltiger Gutschein Code."
+                            }
+                        },
+                        "address": {
+                            "country": {
+                                "label": "Land",
+                                "suggestions": "Vorschl\u00e4ge",
+                                "all": "Alle L\u00e4nder"
+                            },
+                            "zip": {
+                                "label": "Postleitzahl",
+                                "placeholder": "PLZ"
+                            },
+                            "city": {
+                                "label": "Ort",
+                                "placeholder": "Ort"
+                            },
+                            "address": {
+                                "label": "Adresse",
+                                "placeholder": "Stra\u00dfe, Hausnummer, Stiege, T\u00fcr"
+                            }
+                        },
+                        "date": {
+                            "day": "Tag",
+                            "month": "Monat",
+                            "year": "Jahr",
+                            "months": [
+                                "J\u00e4nner",
+                                "Februar",
+                                "M\u00e4rz",
+                                "April",
+                                "Mai",
+                                "Juni",
+                                "Juli",
+                                "August",
+                                "September",
+                                "Oktober",
+                                "Novemeber",
+                                "Dezember"
+                            ]
+                        }
+                    },
+                    "rechtsformen": {
+                        "list": {
+                            "AG": "Aktiengesellschaft",
+                            "EKM": "Einzelkaufmann",
+                            "EU": "Einzelunternehmer",
+                            "EWI": "Europ\u00e4ische wirtschaftliche Interessenvereinigung",
+                            "GEN": "Erwerbs- und Wirtschaftsgenossenschaft",
+                            "FKG": "Flexible Kapitalgesellschaft",
+                            "GES": "Gesellschaft mit beschr\u00e4nkter Haftung",
+                            "KEG": "Kommandit-Erwerbsgesellschaft",
+                            "KG": "Kommanditgesellschaft",
+                            "OEG": "Offene Erwerbsgesellschaft",
+                            "OG": "Offene Gesellschaft",
+                            "OHG": "Offene Handelsgesellschaft",
+                            "PST": "Privatstiftung",
+                            "SCE": "SCE (Europ\u00e4ische Genossenschaft)",
+                            "SE": "SE (Europ\u00e4ische Gesellschaft)",
+                            "SON": "Sonstiger Rechtstr\u00e4ger",
+                            "SPA": "Sparkasse",
+                            "VER": "Versicherungsverein auf Gegenseitigkeit"
+                        }
+                    },
+                    "profiles": {
+                        "noProfileData": "Zu diesem Profil wurden keine Daten gefunden",
+                        "isDemoProfile": "Bei diesem Profil handelt es sich um ein Demo Profil. Die Daten sind fiktiv und bilden lediglich zur Demonstration dienende Informationen ab, welche keinen reellen Bezug haben.",
+                        "notSpecified": "Keine Angabe",
+                        "previousName": "Vormals: {{name}}",
+                        "currentSince": "Aktuell, seit {{date, intlDate}}",
+                        "lastChange": "Letzte \u00c4nderung",
+                        "noActiveFunctionsSince": " Seit dem {{date, intlDate}} existieren in diesem Bereich keine aktiven Funktionen.",
+                        "address": {
+                            "label": "Adresse",
+                            "showRoute": "Route anzeigen"
+                        },
+                        "plusTeaser": {
+                            "fakeContent": {
+                                "heading1": "PLUS Inhalte",
+                                "text1": "F\u00fcr dieses Profil gibt es zus\u00e4tzliche <b>wirtschaft.at PLUS Inhalte</b> die Sie momentan nicht einsehen k\u00f6nnen. Schalten Sie dieses Profil frei oder loggen Sie sich ein um diese Inhalte zu sehen. wirtschaft.at PLUS Inhalte sind unter anderem Gewerbeberechtigungen, Nationale Marken, Patente, Rechtstatsachen, OTS-Aussendungen, und viele mehr.",
+                                "heading2": "wirtschaft.at PLUS",
+                                "text2": "F\u00fcr dieses Profil gibt es zus\u00e4tzliche <b>wirtschaft.at PLUS Inhalte</b> die Sie momentan nicht einsehen k\u00f6nnen. Schalten Sie dieses Profil frei oder loggen Sie sich ein um diese Inhalte zu sehen."
+                            },
+                            "titleUnternehmen": "Mehr Information \u00fcber dieses Unternehmen?",
+                            "titlePerson": "Mehr Information \u00fcber diese Person?",
+                            "description": "Wenn Sie die <b>wirtschaft.at PLUS Inhalte</b> dieses Profils freischalten, erhalten Sie den <b>werbefreien</b> Zugriff auf folgende zus\u00e4tzliche Informationen:",
+                            "aboCta": "Abo abschlie\u00dfen und PLUS<br></br>Inhalte von allen Profilen sehen",
+                            "aboSt\u00f6rer": "ab<price>\u20ac 29</price>Monat",
+                            "direktkaufCta": "PLUS Inhalte dieses Profils<br></br>f\u00fcr 48 Stunden freischalten",
+                            "direktkaufSt\u00f6rer": "nur<price>\u20ac 3,40</price>",
+                            "list": {
+                                "nationaleMarken": "Nationale Marken",
+                                "patente": "Patente",
+                                "otsAussendungen": "OTS-Aussendungen",
+                                "gewerbeberechtigungen": "Gewerbeberechtigungen",
+                                "rechtstatsachen": "Rechtstatsachen",
+                                "historischeDaten": "Historische Daten",
+                                "\u00e4nderungsliste": "Darstellung im zeitlichen Verlauf",
+                                "geburtsdatum": "Geburtsdatum"
+                            }
+                        },
+                        "beteiligungen": {
+                            "noBeteiligung": "Keine Beteiligung",
+                            "parents": "Eigent\u00fcmer/innen",
+                            "children": "Beteiligungen",
+                            "more": "{{count, localeNumber}} weitere",
+                            "tooltipCutoffParents_one": "1 Gesellschafter wird derzeit nicht angezeigt",
+                            "tooltipCutoffParents_other": "{{count, localeNumber}} Gesellschafter werden derzeit nicht angezeigt",
+                            "tooltipCutoffChildren_one": "1 Beteiligung wird derzeit nicht angezeigt",
+                            "tooltipCutoffChildren_other": "{{count, localeNumber}} Beteiligungen werden derzeit nicht angezeigt"
+                        },
+                        "marken": {
+                            "status": "Status",
+                            "registerDate": "Registrierungsdatum",
+                            "createDate": "Anmeldetag",
+                            "publicationDate": "Publikationsdatum",
+                            "contradiction": "Widerspruch",
+                            "services": "Waren bzw. Dienstleistungen"
+                        },
+                        "gewerbe": {
+                            "label": "Gewerbeberechtigungen",
+                            "gisaNumber": "Gisa-Zahl",
+                            "startDate": "Aktiv seit",
+                            "gewerberechtlicherGesch\u00e4ftsf\u00fchrer": "Gewerberechtliche/r Gesch\u00e4ftsf\u00fchrer/in",
+                            "owner": "Inhaber",
+                            "using": "Verwendet von",
+                            "download": "Gisa-Auszug",
+                            "downloadHistorical": "Gisa-Auszug (historisch)",
+                            "generating": "Ihr amtssigniertes PDF wird generiert. Dies kann einige Sekunden dauern.",
+                            "usedBy": "Von folgenden Unternehmen benutzt"
+                        },
+                        "meta": {
+                            "unternehmen": {
+                                "keywords": "Firmeninformation, Unternehmensinformation, Gesch\u00e4ftsf\u00fchrer, Aufsichtsrat, Gr\u00fcndungsdatum, Verflechtungen von {{name}} in {{address.ort}}",
+                                "info": "Firmeninformationen \u00fcber {{value}}",
+                                "gesch\u00e4ftsf\u00fchrung": "Aktuelle Gesch\u00e4ftsf\u00fchrung: {{value}}",
+                                "adresse": "Adresse: {{value}}"
+                            },
+                            "personen": {
+                                "keywords": "Personeninformation, Verflechtungen von {{name}}",
+                                "info": "Firmenbuchinformationen \u00fcber {{value}}",
+                                "beteiligung": "Aktuelle Firmenbeteiligung: {{value}}",
+                                "keineBeteiligung": "Aktuell keine Firmenbeteiligung",
+                                "funktion": "Funktion: {{value}}",
+                                "geburtsdatum": " (Geb. {{year}})"
+                            },
+                            "daily": "T\u00e4glich Aktualisiert",
+                            "historical": "Historische Daten"
+                        },
+                        "actions": {
+                            "shareProfile": "Teilen auf:",
+                            "subscribe": "Profil folgen",
+                            "unsubscribe": "Nicht mehr folgen",
+                            "goToProfile": "Zum Profil",
+                            "openFullscreen": "Verlauf anzeigen",
+                            "openNetzwerkFullscreen": "Erweiterte Ansicht",
+                            "closeFullscreen": "Ansicht schlie\u00dfen",
+                            "buyDocument": "Jetzt kaufen",
+                            "standardAnsicht": "Standardansicht",
+                            "timelineAnsicht": "Timeline",
+                            "switchToZeitlicherVerlauf": "Timeline",
+                            "switchToStandardansicht": "Standardansicht",
+                            "pinProfile": "Hervorheben",
+                            "showProfile": "Profil anzeigen",
+                            "showNetwork": "Jetzt anzeigen"
+                        },
+                        "inconsistencyDisclaimer": "Nicht alle Firmenbucheintr\u00e4ge zu diesem Profil konnten standardm\u00e4\u00dfig verarbeitet werden. M\u00f6glicherweise bestehen Eintr\u00e4ge, die hier nicht angezeigt werden k\u00f6nnen.",
+                        "unternehmen": {
+                            "insolvencyDisclaimer": "F\u00fcr dieses Unternehmen gibt es einen Eintrag in der Insolvenzdatenbank. Klicken Sie hier, um N\u00e4heres zu erfahren.",
+                            "status": {
+                                "label": "Status",
+                                "scheinunternehmen": "Scheinunternehmen",
+                                "scheinunternehmenTooltip": "Diese Ver\u00f6ffentlichung auf der BMF-Homepage dient als Informationsquelle f\u00fcr Unternehmen und soll diese vor m\u00f6glichen Haftungen f\u00fcr Entgelte im Sinne des \u00a7 9 SBBG sch\u00fctzen. Klicken Sie auf das 'i'-Symbol um mehr zu erfahren."
+                            },
+                            "scheinunternehmen": {
+                                "label": "Scheinunternehmen seit"
+                            },
+                            "eintragungsdatum": {
+                                "label": "Eintragungsdatum"
+                            },
+                            "sitz": {
+                                "label": "Sitz"
+                            },
+                            "stiftungszweck": {
+                                "label": "Stiftungszweck"
+                            },
+                            "vertretungsbefugnis": {
+                                "label": "Vertretungsbefugnis"
+                            },
+                            "rechtsform": {
+                                "label": "Rechtsform"
+                            },
+                            "aktien": {
+                                "label": "Aktie",
+                                "Nennbetragsaktie": "Nennbetragsaktie",
+                                "St\u00fcckaktie_one": "{{count, localeNumber}} St\u00fcckaktie",
+                                "St\u00fcckaktie_other": "{{count, localeNumber}} St\u00fcckaktien"
+                            },
+                            "kapital": {
+                                "label": "Stammkapital",
+                                "labelGAH": "Gesch\u00e4ftsanteilhaftung"
+                            },
+                            "stichtagJab": {
+                                "label": "Stichtag Jahresabschluss"
+                            },
+                            "stichtagKab": {
+                                "label": "Stichtag Konzernabschluss"
+                            },
+                            "wortlaute": {
+                                "label": "Firmenwortlaut",
+                                "change": "Namens\u00e4nderung"
+                            },
+                            "gesch\u00e4ftszweige": {
+                                "label_one": "Gesch\u00e4ftszweig",
+                                "label_other": "Gesch\u00e4ftszweige"
+                            },
+                            "webseiten": {
+                                "label_one": "Webseite",
+                                "label_other": "Webseiten"
+                            },
+                            "leitungsorgane": {
+                                "label": "Personen",
+                                "disclaimer": "Die Vertretung der GmbH & Co KG erfolgt durch die Komplement\u00e4r-GmbH. Diese wird durch den Gesch\u00e4ftsf\u00fchrer gerichtlich und au\u00dfergerichtlich vertreten. Der Gesch\u00e4ftsf\u00fchrer der Komplement\u00e4r-GmbH vertritt nicht nur die GmbH selbst, sondern auch die GmbH & Co KG."
+                            },
+                            "kontrollorgane": {
+                                "label": "Aufsichtsrat"
+                            },
+                            "prokura": {
+                                "label": "Prokura"
+                            },
+                            "netzwerk": {
+                                "label": "Netzwerk"
+                            },
+                            "marken": {
+                                "label": "Nationale Marken"
+                            },
+                            "patente": {
+                                "label": "Patente",
+                                "type": "Art",
+                                "status": "Status",
+                                "registerDate": "Anmeldedatum",
+                                "grantDate": "Erteilungsdatum",
+                                "deletionDate": "L\u00f6schung Eintragungsdatum",
+                                "deletionActualDate": "L\u00f6schung wirksames Datum",
+                                "registerNumber": "Anmeldenummer",
+                                "eNumber": "E-Nummer",
+                                "ipc": "IPC",
+                                "moreIpcs": "Weitere IPCs",
+                                "language": "Sprache",
+                                "inventors": "Erfinder/innen",
+                                "publications": "Publikationen"
+                            },
+                            "insolvenz": {
+                                "label": "Insolvenzverfahren",
+                                "source": "Quelle: Bundesministerium f\u00fcr Justiz",
+                                "aktenzeichen": "Aktenzeichen: {{value}}",
+                                "gericht": "Gericht: {{value}}",
+                                "bekanntmachungsDatum": {
+                                    "label": "Bekannt gemacht am"
+                                },
+                                "beschlussDatum": {
+                                    "label": "Beschluss vom"
+                                }
+                            },
+                            "rechtstatsachen": {
+                                "label": "Rechtstatsachen",
+                                "description": "Unter \"Rechtstatsachen\" versteht man im Firmenbuch weitere Umst\u00e4nde, die sogenannten Rechtstatsachen, die f\u00fcr die Bereiche Unternehmerdaten (auch Zweigniederlassungen), Personendaten und Funktionsdaten gesondert angegeben werden k\u00f6nnen.",
+                                "date": "Eintragungsdatum",
+                                "text": "Eintragungstext"
+                            },
+                            "documents": {
+                                "label": "Bonit\u00e4t & Dokumente",
+                                "jahresabschluss": "Jahresabschluss {{dueDate, intlYear}} (eingereicht am {{submissionDate, intlDate}})",
+                                "fbAuszugAktuell": "Aktueller Firmenbuchauszug",
+                                "fbAuszugHistorisch": "Historischer Firmenbuchauszug",
+                                "viewAll": "alle Dokumente und Berichte anzeigen",
+                                "ksv": {
+                                    "description": "Bonit\u00e4tsauskunft f\u00fcr dieses Unternehmen abfragen",
+                                    "cta": "Jetzt abfragen"
+                                }
+                            },
+                            "aussendungen": {
+                                "label": "Letzte Aussendungen",
+                                "ots": {
+                                    "disclaimer": "Letzte OTS Aussendungen von {{aussender, arrayList}}.",
+                                    "date": "Aussendung vom {{date, intlDate}}"
+                                }
+                            },
+                            "\u00e4hnlicheUnternehmen": {
+                                "label": "Unternehmen in der N\u00e4he"
+                            }
+                        },
+                        "personen": {
+                            "disclaimerLink": "Rechtlicher Hinweis",
+                            "disclaimer": "Die hier angezeigten Informationen basieren auf der Kombination von Namen und Geburtsdatum. wirtschaft.at \u00fcbernimmt keine Garantie f\u00fcr deren Richtigkeit und Vollst\u00e4ndigkeit. Eine eindeutige Identifikation von nat\u00fcrlichen Personen ist auf Basis der Datenquellen \"\u00d6sterreichisches Firmenbuch\" und \"Gewerberegister (GISA)\" leider nicht m\u00f6glich",
+                            "juristischePersonDisclaimer": "Die hier angezeigten Informationen sind jene einer juristischen Person, die nicht im Firmenbuch eingetragen ist.",
+                            "name": {
+                                "label": "Name"
+                            },
+                            "otherNames": {
+                                "label": "Andere Schreibweisen"
+                            },
+                            "addresses": {
+                                "label_one": "Adresse",
+                                "label_other": "Adressen"
+                            },
+                            "birthdate": {
+                                "label": "Geburtsdatum"
+                            },
+                            "netzwerk": {
+                                "label": "Beteiligungen"
+                            },
+                            "leitungsorgane": {
+                                "label": "Funktionen",
+                                "disclaimer": "Die Vertretung der GmbH & Co KG erfolgt durch die Komplement\u00e4r-GmbH. Diese wird durch den Gesch\u00e4ftsf\u00fchrer gerichtlich und au\u00dfergerichtlich vertreten. Der Gesch\u00e4ftsf\u00fchrer der Komplement\u00e4r-GmbH vertritt nicht nur die GmbH selbst, sondern auch die GmbH & Co KG."
+                            },
+                            "kontrollorgane": {
+                                "label": "Kontrollorgan"
+                            },
+                            "weitere": {
+                                "label": "Weitere Profile",
+                                "text": "Nicht die gesuchte Person mit dem Namen \"{{value}}\"? Hier finden Sie weitere Profile mit diesen Namen."
+                            }
+                        },
+                        "hints": {
+                            "followProfile": "Folgen Sie diesem Profil um schneller darauf zuzugreifen oder sich \u00fcber \u00c4nderungen benachrichtigen zu lassen."
+                        },
+                        "navigation": {
+                            "allgemeines": "Allgemeine Informationen",
+                            "aufsichtsrat": "Aufsichtsrat",
+                            "aussendungen": "Aussendungen",
+                            "gewerbeberechtigungen": "Gewerbeberechtigungen",
+                            "gewerberechtlicherGesch\u00e4ftsf\u00fchrer": "Gewerberechtl. Gesch\u00e4ftsf\u00fchrer/in",
+                            "leitungsorgane": "Personen",
+                            "funktionen": "Funktionen",
+                            "marken": "Nationale Marken",
+                            "netzwerk": "Netzwerk",
+                            "kontrollorgan": "Kontrollorgan",
+                            "beteiligungen": "Beteiligungen",
+                            "patente": "Patente",
+                            "prokura": "Prokura",
+                            "rechtstatsachen": "Rechtstatsachen",
+                            "dokumente": "Bonit\u00e4t u. Dokumente",
+                            "insolvenz": "Insolvenz",
+                            "\u00e4nderungen": "\u00c4nderungsliste",
+                            "plusInhalte": "PLUS Inhalte"
+                        },
+                        "filter": {
+                            "basisinformation": "Allgemeine Informationen",
+                            "gesellschafter": "Eigent\u00fcmerstruktur & Beteiligungen",
+                            "jahresabschl\u00fcsse": "Jahresabschl\u00fcsse",
+                            "gewerbeberechtigung": "Gewerbeberechtigungen",
+                            "patente": "Patente",
+                            "marken": "Marken",
+                            "funktionen": "Funktionen",
+                            "aufsichtsrat": "Aufsichtsrat",
+                            "rechtstatsache": "Rechtstatsachen",
+                            "ots": "Aussendungen",
+                            "personenFunktionen": "Funktionen",
+                            "personenGesellschafter": "Gesellschafter",
+                            "personenUnternehmen": "Unternehmensdaten",
+                            "personenGisa": "Gewerbeberechtigungen",
+                            "personenBasisinformationen": "Allgemeine Informationen",
+                            "noResults": "Mit diesen Filtereinstellungen wurden keine Ergebnisse gefunden.",
+                            "showFilter": "Filter anzeigen",
+                            "hideFilter": "Filter ausblenden"
+                        },
+                        "cookies": {
+                            "statisticNeeded": "Um diesen Inhalt zu verwenden, musst du Statistik Cookies erlauben.",
+                            "acceptStatistic": "Statistik Cookies erlauben"
+                        }
+                    },
+                    "funktionen": {
+                        "list": {
+                            "AbwicklerLiquidator": "Abwickler/in / Liquidator/in",
+                            "Alleinaktion\u00e4r": "Alleinaktion\u00e4r/in",
+                            "Aufsichtsperson": "Aufsichtsperson",
+                            "Aufsichtsratsmitglied": "Aufsichtsratsmitglied",
+                            "Ausgleichsverwalter": "Ausgleichsverwalter/in",
+                            "BesondererVerwalter": "Besondere/r Verwalter/in",
+                            "EhemannEhefrau": "Ehemann/frau",
+                            "EinstweiligerVerwalter": "Einstweilige/r Verwalter/in",
+                            "GerichtlicherErwachsenenVertreter": "Gerichtliche/r Erwachsenen Vertreter/in",
+                            "Gesch\u00e4ftsf\u00fchrenderDirektor": "Gesch\u00e4ftsf\u00fchrende/r Direktor/in ",
+                            "Gesch\u00e4ftsf\u00fchrer": "Gesch\u00e4ftsf\u00fchrer/in",
+                            "Gesch\u00e4ftsleiter": "Gesch\u00e4ftsleiter/in",
+                            "Gesellschafter": "Gesellschafter/in",
+                            "GesetzlicherVertreter": "Gesetzliche/r Vertreter/in",
+                            "Hauptbevollm\u00e4chtigter": "Hauptbevollm\u00e4chtigte/r",
+                            "Inhaber": "Inhaber/in",
+                            "Inl\u00e4ndischerVertreter": "Inl\u00e4ndische/r Vertreter/in",
+                            "Insolvenzverwalter": "Insolvenzverwalter/in",
+                            "Kammerkommissar": "Kammerkommissar/in",
+                            "Kommanditist": "Kommanditist",
+                            "Komplement\u00e4r": "Komplement\u00e4r",
+                            "Masseverwalter": "Masseverwalter/in",
+                            "Mitglied": "Mitglied",
+                            "MittlerweiligerStellvertreter": "Mittlerweilige/r Stellvertreter/in",
+                            "None": "",
+                            "Obmann": "Obmann/Obfrau",
+                            "ObmannStellvertreter": "Obmann/Obfrau-Stellvertreter/in",
+                            "Prokurist": "Prokurist/in",
+                            "P\u00e4chter": "P\u00e4chter/in",
+                            "Regierungskommissar": "Regierungskommissar/in",
+                            "Revisionsverband": "Revisionsverband",
+                            "Sachwalter": "Sachwalter/in",
+                            "SachwalterAbgb": "Sachwalter/in nach Abgb",
+                            "Sanierungsverwalter": "Sanierungsverwalter/in",
+                            "Stellvertreter": "Stellvertreter/in",
+                            "StellvertreterDesVorsitzenden": "Stellvertreter/in des/der Vorsitzenden",
+                            "St\u00e4ndigerVertreter": "St\u00e4ndige/r Vertreter/in",
+                            "Treuh\u00e4nder": "Treuh\u00e4nder/in",
+                            "Unbeschr\u00e4nktHaftenderGesellschafter": "Unbeschr\u00e4nkt haftender Gesellschafter",
+                            "Unknown": "",
+                            "Undefined": "",
+                            "VertreterDesRuhendenNachlasses": "Vertreter/in des ruhenden Nachlasses",
+                            "VertretungsbefugtesOrgan": "Vertretungsbefugtes Organ",
+                            "Verwaltungsratsmitglied": "Verwaltungsratsmitglied",
+                            "Vorl\u00e4ufigerVerwalter": "Vorl\u00e4ufige/r Verwalter/in",
+                            "Vorsitzender": "Vorsitzende/r",
+                            "Vorstand": "Vorstand",
+                            "Zwangsverwalter": "Zwangsverwalter/in"
+                        }
+                    },
+                    "marken": {
+                        "status": {
+                            "InAnmeldung": "In Anmeldung",
+                            "Registriert": "Registriert"
+                        },
+                        "list": {
+                            "Wortmarke": "Wortmarke",
+                            "WortBildmarke": "Wort-Bildmarke",
+                            "Bildmarke": "Bildmarke",
+                            "Klangmarke": "Klangmarke",
+                            "Formmarke": "Formmarke",
+                            "Bewegungsmarke": "Bewegungsmarke",
+                            "abstrakteFarbmarke": "abstrakte Farbmarke",
+                            "sonstigeMarke": "sonstigeMarke",
+                            "Mustermarke": "Mustermarke",
+                            "Positionsmarke": "Positionsmarke",
+                            "Hologrammmarke": "Hologrammmarke",
+                            "Multimediamarke": "Multimediamarke"
+                        }
+                    },
+                    "direktkauf": {
+                        "tooltip": "Dieses Profil freischalten (\u20ac 3,40)",
+                        "hint": {
+                            "text": "Brauchen Sie mehr Information?<br/>Schalten Sie dieses Profil frei, um vor\u00fcbergehend alle <b>wirtschaft.at PLUS Inhalte</b> einsehen zu k\u00f6nnen.",
+                            "action": "Jetzt kaufen",
+                            "unlock": "Profil freischalten (\u20ac 3,40)"
+                        },
+                        "banner": {
+                            "Valid": "Mit diesem Link k\u00f6nnen Sie noch <b>{{hours, number}} Stunden</b> alle wirtschaft.at PLUS Inhalte dieses Profils einsehen.",
+                            "Expired": "Dieser Link ist abgelaufen! Um alle Inhalte zu sehen, registrieren Sie sich f\u00fcr <b>wirtschaft.at PLUS</b> oder schalten Sie dieses Profil erneut frei.",
+                            "PaymentFailed": "Dieser Link ist nicht mehr g\u00fcltig, da die Zahlung fehlgeschlagen ist! Bei Fragen wenden Sie sich bitte an <contact>kontakt@wirtschaft.at</contact>."
+                        },
+                        "info": {
+                            "title": "Dieses Profil um \u20ac 3,40 (inkl. USt.) freischalten?",
+                            "description": "Wenn Sie dieses Profil freischalten, erhalten Sie einen speziellen <b>Link</b>, mit dem Sie vor\u00fcbergehend alle <b>wirtschaft.at PLUS Inhalte</b> f\u00fcr dieses Profil einsehen k\u00f6nnen.",
+                            "descriptionEmail": "Der Link ist f\u00fcr <b>48 Stunden</b> g\u00fcltig und wird Ihnen zus\u00e4tzlich <b>per E-Mail zugesendet</b>.",
+                            "next": "Weiter"
+                        },
+                        "buy": {
+                            "title": "Dieses Profil freischalten",
+                            "description": "Bitte geben Sie die folgenden Daten ein. Danach erfolgt die Weiterleitung auf unseren Zahlungsdienstleister Stripe.",
+                            "next": "Weiter"
+                        },
+                        "success": {
+                            "title": "Profil erfolgreich freigeschaltet!",
+                            "description": "Sie k\u00f6nnen nun f\u00fcr <b>48 Stunden</b> alle wirtschaft.at PLUS Inhalte dieses Profils einsehen. Zus\u00e4tzlich erhalten Sie in K\u00fcrze einen Link <b>per E-Mail</b> mit dem Sie wieder zu dieser Seite zur\u00fcckkehren k\u00f6nnen.",
+                            "close": "Jetzt ansehen"
+                        },
+                        "form": {
+                            "email": {
+                                "label": "E-Mail-Adresse",
+                                "placeholder": "E-Mail-Adresse"
+                            }
+                        }
+                    },
+                    "user": {
+                        "generic": {
+                            "yourProfile": "Ihr Profil"
+                        },
+                        "register": {
+                            "heading": "Ihre Auswahl:",
+                            "steps": [
+                                "Ihre Daten",
+                                "Zahlung"
+                            ],
+                            "nextStep": "N\u00e4chster Schritt",
+                            "buyNow": "Jetzt kostenpflichtig bestellen",
+                            "registerNow": "Jetzt registrieren",
+                            "previousStep": "Vorheriger Schritt",
+                            "backToSelection": "Zur\u00fcck zur Auswahl",
+                            "changeSelection": "Auswahl \u00e4ndern",
+                            "stripeLegal": "Per Klick erfolgt die Weiterleitung auf unseren Zahlungsdienstleister Stripe.",
+                            "review": {
+                                "heading": "Zusammenfassung",
+                                "description": "Bitte \u00fcberpr\u00fcfen Sie Ihre Angaben."
+                            },
+                            "cancelled": {
+                                "heading": "Die Registrierung wurde abgebrochen",
+                                "text": "Es wird keine Zahlung durchgef\u00fchrt und Ihr Profil wird binnen 24 Stunden gel\u00f6scht.<br/>Bei Fragen wenden Sie sich bitte an <contact>kontakt@wirtschaft.at</contact>."
+                            }
+                        },
+                        "welcome": {
+                            "heading": "Herzlich Willkommen bei <plus>wirtschaft.at PLUS</plus>",
+                            "paymentSuccessful": "Ihre Zahlung war erfolgreich.",
+                            "paymentError": "Bei der Zahlung ist ein Fehler aufgetreten",
+                            "error": "Bei der Zahlung ist leider ein Fehler aufgetreten und wir konnten kein Profil f\u00fcr sie anlegen.<br/>Bitte probieren Sie es sp\u00e4ter erneut oder wenden Sie sich an <contact>kontakt@wirtschaft.at</contact>.",
+                            "thanks": "Wir freuen uns sehr, dass Sie sich f\u00fcr <plus>wirtschaft.at PLUS</plus> entschieden haben.<br/>Loggen Sie sich gleich ein und entdecken Sie Ihre zahlreichen Vorteile.<br/>Wir w\u00fcnschen Ihnen viel Freude beim Entdecken.<br/><br/>Ihr wirtschaft.at Team",
+                            "meta": {
+                                "title": "Herzlich Willkommen"
+                            }
+                        },
+                        "login": {
+                            "heading": "Einloggen",
+                            "teaser": "Mit <plus>wirtschaft.at PLUS</plus> immer eine Information voraus.",
+                            "email": {
+                                "label": "E-Mail-Adresse",
+                                "placeholder": "E-Mail-Adresse"
+                            },
+                            "password": {
+                                "label": "Passwort",
+                                "placeholder": "Passwort"
+                            },
+                            "button": "Einloggen",
+                            "forgotPassword": "Passwort vergessen?",
+                            "noAccount": "Schlie\u00dfen Sie jetzt <plus>wirtschaft.at PLUS</plus> ab und nutzen Sie das volle Potential von wirtschaft.at. <register>Jetzt registrieren</register>",
+                            "meta": {
+                                "title": "Einloggen"
+                            }
+                        },
+                        "form": {
+                            "kundennummer": "Kundennummer: {{value}}",
+                            "errors": {
+                                "kundennummer": "'Diese Email ist bereits mit einer anderen Kundennummer verkn\u00fcpft. Wenden Sie sich bitte an den Support."
+                            },
+                            "usage": {
+                                "heading": "Wie m\u00f6chten Sie <plus>wirtschaft.at PLUS</plus> nutzen?",
+                                "private": "Als Privatperson",
+                                "company": "Als Unternehmen"
+                            },
+                            "companyData": {
+                                "heading": "Ihre Unternehmensdaten",
+                                "noFbNr": "Keine Firmenbuchnummer vorhanden",
+                                "autoComplete": "Daten anhand FN erg\u00e4nzen",
+                                "fbNr": {
+                                    "label": "Firmenbuchnummer",
+                                    "placeholder": "Firmenbuchnummer"
+                                },
+                                "name": {
+                                    "label": "Unternehmen",
+                                    "placeholder": "Firmenname und Rechtsform"
+                                },
+                                "uid": {
+                                    "label": "Umsatzsteueridentifikation (optional)",
+                                    "placeholder": "Umsatzsteueridentifikation (UID-Nummer)"
+                                }
+                            },
+                            "contactData": {
+                                "heading": "Ihre Kontaktdaten",
+                                "salution": {
+                                    "label": "Anrede",
+                                    "values": {
+                                        "NotSelected": "Bitte ausw\u00e4hlen",
+                                        "Firma": "Firma",
+                                        "Herr": "Herr",
+                                        "Frau": "Frau",
+                                        "Divers": "Divers",
+                                        "KeineAngabe": "Keine Angabe"
+                                    }
+                                },
+                                "firstname": {
+                                    "label": "Vorname",
+                                    "placeholder": "Vorname"
+                                },
+                                "lastname": {
+                                    "label": "Nachname",
+                                    "placeholder": "Nachname"
+                                },
+                                "email": {
+                                    "label": "E-Mail-Adresse",
+                                    "placeholder": "E-Mail-Adresse"
+                                }
+                            },
+                            "billingAddress": {
+                                "heading": "Ihre Rechnungsadresse",
+                                "useBillingAddress": "Rechnungsadresse angeben (optional)",
+                                "salution": {
+                                    "label": "Anrede (optional)",
+                                    "values": {
+                                        "NotSelected": "Bitte ausw\u00e4hlen",
+                                        "Firma": "Firma",
+                                        "Herr": "Herr",
+                                        "Frau": "Frau",
+                                        "Divers": "Divers",
+                                        "KeineAngabe": "Keine Angabe"
+                                    }
+                                },
+                                "recipient": {
+                                    "label": "Rechnungsempf\u00e4nger/in (optional)",
+                                    "labelDirektkauf": "Name",
+                                    "placeholder": "Rechnungsempf\u00e4nger/in",
+                                    "placeholderDirektkauf": "Vor- und Nachname oder Firmenname"
+                                },
+                                "email": {
+                                    "label": "E-Mail-Adresse (optional)",
+                                    "placeholder": "E-Mail-Adresse f\u00fcr Rechnungsversand"
+                                },
+                                "internalReference": {
+                                    "label": "Ihre interne Referenz (optional)",
+                                    "placeholder": "z.B. Ihre SAP-Nummer"
+                                }
+                            },
+                            "credentials": {
+                                "heading": "Ihre Zugangsdaten",
+                                "password": {
+                                    "label": "Passwort",
+                                    "placeholder": "Passwort"
+                                },
+                                "passwordRepeat": {
+                                    "label": "Passwort wiederholen",
+                                    "placeholder": "Passwort"
+                                },
+                                "showPassword": "Passwort anzeigen",
+                                "hidePassword": "Passwort ausblenden",
+                                "passwordStrength": {
+                                    "weak": "Passwortst\u00e4rke: <b>Schwach</b>",
+                                    "medium": "Passwortst\u00e4rke: <b>Mittel</b>",
+                                    "strong": "Passwortst\u00e4rke: <b>Stark</b>"
+                                }
+                            },
+                            "price": {
+                                "heading": "Ihre Kosten",
+                                "coupon": {
+                                    "validInMonths_one": "<b>G\u00fcltig bis zum Gutscheinende ({{count, localeNumber}} Monat)</b>",
+                                    "validInMonths_other": "<b>G\u00fcltig bis zum Gutscheinende ({{count, localeNumber}} Monate)</b>",
+                                    "discountForever": "{{discountPercentage, percent}} Erm\u00e4\u00dfigung",
+                                    "discountInMonths_one": "{{discountPercentage, percent}} Erm\u00e4\u00dfigung f\u00fcr {{count, localeNumber}} Monat",
+                                    "discountInMonths_other": "{{discountPercentage, percent}} Erm\u00e4\u00dfigung f\u00fcr {{count, localeNumber}} Monate",
+                                    "redeem": "Anwenden"
+                                },
+                                "breakdown": {
+                                    "netto": "wirtschaft.at PLUS - {{productName}}",
+                                    "tax": "Umsatzsteuer ({{taxRate, percent}})",
+                                    "coupon": "Gutschein Code",
+                                    "total": "Heute f\u00e4llige Gesamtsumme"
+                                }
+                            },
+                            "newsletter": {
+                                "heading": "Newsletter",
+                                "label": "Ich m\u00f6chte von wirtschaft.at regelm\u00e4\u00dfig per E-Mail \u00fcber Produktneuerungen sowie universelle Erweiterungen bzw. \u00c4nderungen bei Unternehmens- und Personenprofilen informiert werden und stimme zu, dass die Wiener Zeitung Digitale Publikationen GmbH meine E-Mail-Adresse zu diesem Zweck speichert und verarbeitet. Hinweise zur Datenerfassung und -verarbeitung finden sich in der <legal>Datenschutzerkl\u00e4rung</legal>. Die Zustimmung kann jederzeit widerrufen werden."
+                            },
+                            "legal": {
+                                "heading": "Ihre Zustimmung",
+                                "termsAndConditions": "Ich stimme den aktuellen <terms>AGB</terms> und der <legal>Datenschutzerkl\u00e4rung</legal> der Wiener Zeitung Digitale Publikationen GmbH sowie der Verarbeitung meiner Zahlungsdaten durch Stripe Inc. im Zuge des Bezahlvorgangs zu."
+                            },
+                            "actions": {
+                                "edit": "Daten \u00e4ndern",
+                                "save": "Speichern",
+                                "cancel": "Abbrechen"
+                            }
+                        },
+                        "payment": {
+                            "heading": "Zahlungsdaten",
+                            "errorLoadingData": "Ihre momentanen Zahlungsdaten konnten nicht geladen werden.",
+                            "errorOpenPortal": "Das Stripe Portal konnte nicht ge\u00f6ffnet werden.",
+                            "currentPaymentMethod": "Aktuell hinterlegt ({{type}}):",
+                            "nextPayment": "N\u00e4chste Zahlung erfolgt am {{date, intlDate}}.",
+                            "dataDisclaimer": "Ihre Zahlungsdaten werden in Stripe verwaltet. Um diese zu \u00e4ndern klicken Sie bitte hier.",
+                            "changeData": "Daten in Stripe \u00e4ndern",
+                            "invalidPayment": "Eine oder mehrere Abbuchungen mit der folgenden Zahlungsmethode haben nicht funktioniert.",
+                            "noPaymentMethodProvided": "Um wirtschaft.at PLUS zu verwenden, geben Sie bitte Ihre Zahlungsdaten an.",
+                            "firstPaymentRequired": "Ihr Gutschein Code ist abgelaufen. Um wirtschaft.at PLUS weiterhin zu verwenden, geben Sie bitte einen neuen Gutschein Code oder Ihre Zahlungsdaten an.",
+                            "aboCanceled": "Ihr Abo ist ausgelaufen. Um wirtschaft.at PLUS wieder zu verwenden, geben Sie bitte Ihre Zahlungsdaten an.",
+                            "continueSubscription": "Abonnement verl\u00e4ngern"
+                        },
+                        "passwordReset": {
+                            "request": {
+                                "heading": "Passwort vergessen?",
+                                "button": "Passwort zur\u00fccksetzen",
+                                "description": "Sie k\u00f6nnen Ihr Passwort in zwei Schritten zur\u00fccksetzen."
+                            },
+                            "reset": {
+                                "heading": "Passwort zur\u00fccksetzen",
+                                "button": "Passwort \u00e4ndern",
+                                "description": "Geben Sie das neue Passwort f\u00fcr Ihr wirtschaft.at Konto ein."
+                            },
+                            "toasts": {
+                                "requested": "Es wurde eine E-Mail an die angegebene E-Mail-Adresse versandt.",
+                                "success": "Ihr Passwort wurde erfolgreich ge\u00e4ndert.",
+                                "error": "Ihr Passwort konnte nicht ge\u00e4ndert werden."
+                            }
+                        },
+                        "premiumAboInfo": {
+                            "heading": "Ihr Premium Abo",
+                            "currentAbo": "Aktuelles Abo: <b>{{abo}}</b>",
+                            "aboSince": "Abo-Laufzeit seit: <b>{{date, intlDate}}</b>",
+                            "aboUntil": "Abo-Laufzeit bis: <b>{{date, intlDate}}</b>",
+                            "closeAccount": "Um Ihr Premium Abo \"{{abo}}\" zum n\u00e4chstm\u00f6glichen Zeitpunkt zu k\u00fcndigen, nehmen Sie bitte Kontakt mit unserem Kundenservice auf und halten Sie bitte Ihre Kundennummer (<b>{{kundennummer}}</b>) bereit.",
+                            "contact": "Sie erreichen unseren Kundenservice Montag bis Freitag in der Zeit 8:00 bis 17:30 unter <contact>kontakt@wirtschaft.at</contact> oder +43 1 417 0 429.",
+                            "manageAccountViaStripe": "Premium Abo verwalten oder k\u00fcndigen"
+                        },
+                        "feed": {
+                            "heading": "Ihre pers\u00f6nlichen Updates",
+                            "item": {
+                                "title": "{{name}} (Update: {{date, intlDate}})"
+                            },
+                            "noContent": "Sie haben noch keine pers\u00f6nlichen Updates. Folgen Sie Unternehmen oder Personen, um bei \u00c4nderungen ein Update zu erhalten.",
+                            "error": "Ihre pers\u00f6nlichen Updates konnten nicht geladen werden."
+                        },
+                        "subscriptions": {
+                            "heading": "Gefolgte Unternehmen / Personen",
+                            "description": "Hier finden Sie alle <b>Unternehmen</b> und <b>Personen</b> denen Sie aktuell folgen.",
+                            "descriptionWithEmail": "Hier finden Sie alle <b>Unternehmen</b> und <b>Personen</b> denen Sie aktuell folgen. Sofern Sie die E-Mail-Benachrichtigungen aktiviert haben, werden Sie proaktiv \u00fcber etwaige \u00c4nderungen bzw. Erg\u00e4nzungen bei Ihren abonnierten Profilen informiert.",
+                            "noData": "Sie folgen noch keinen Unternehmen oder Personen.",
+                            "unternehmen": {
+                                "label": "Unternehmen ({{count, localeNumber}})",
+                                "columns": [
+                                    "Firmenname",
+                                    "Adresse",
+                                    "Aktionen",
+                                    ""
+                                ],
+                                "noData": "W\u00e4hlen Sie \"Jetzt folgen\" auf Unternehmensprofilen Ihrer Wahl, um sie hier angezeigt zu bekommen. Bei \u00c4nderungen informieren wir Sie dar\u00fcber per E-Mail, sofern die Benachrichtigungsfunktion aktiviert ist."
+                            },
+                            "personen": {
+                                "label": "Personen ({{count, localeNumber}})",
+                                "columns": [
+                                    "Name",
+                                    "Geburtsdatum",
+                                    "Aktionen",
+                                    ""
+                                ],
+                                "noData": "W\u00e4hlen Sie \"Jetzt folgen\" auf Personenprofilen Ihrer Wahl, um sie hier angezeigt zu bekommen. Bei \u00c4nderungen informieren wir Sie dar\u00fcber per E-Mail, sofern die Benachrichtigungsfunktion aktiviert ist."
+                            },
+                            "actions": {
+                                "enableNotifications": "E-Mail-Benachrichtigungen aktivieren",
+                                "disableNotifications": "E-Mail-Benachrichtigungen deaktivieren",
+                                "unsubscribe": "nicht mehr folgen",
+                                "goToProfile": "Details anzeigen"
+                            }
+                        }
+                    }
+                }
+            },
+            "initialLocale": "de",
+            "ns": [
+                "common",
+                "search",
+                "formats",
+                "forms",
+                "rechtsformen",
+                "profiles",
+                "funktionen",
+                "marken",
+                "direktkauf",
+                "user"
+            ],
+            "userConfig": null
+        },
+        "unternehmen": {
+            "rechtstatsachen": 7,
+            "eigeneGewerbe": 0,
+            "nutzendeGewerbe": 0,
+            "patente": 0,
+            "otsAussendungen": 0,
+            "nationaleMarken": 0,
+            "fbNr": "183991a",
+            "wortlaute": [
+                {
+                    "zeitpunkt": "1999-07-03",
+                    "item": {
+                        "fullName": "Tierpark Betriebs GmbH",
+                        "shortName": "Tierpark Betriebs",
+                        "rechtsform": "GMBH",
+                        "isCoKg": false
+                    }
+                },
+                {
+                    "zeitpunkt": "1999-10-02",
+                    "item": {
+                        "fullName": "Safari- und Abenteuerpark G\u00e4nserndorf GmbH",
+                        "shortName": "Safari- und Abenteuerpark G\u00e4nserndorf",
+                        "rechtsform": "GMBH",
+                        "isCoKg": false
+                    }
+                }
+            ],
+            "name": "Safari- und Abenteuerpark G\u00e4nserndorf GmbH",
+            "fbInconsistency": false,
+            "status": "Gel\u00f6scht",
+            "statusSeit": "2010-09-21",
+            "rechtsform": {
+                "code": "GES",
+                "bezeichnung": "Gesellschaft mit beschr\u00e4nkter Haftung"
+            },
+            "eintragungsdatum": "1999-07-03",
+            "stichtagJab": "12-31",
+            "stichtagKab": null,
+            "adresse": {
+                "stra\u00dfe": "Siebenbrunner Stra\u00dfe, Parzelle 1314/2",
+                "plz": "2230",
+                "ort": "G\u00e4nserndorf",
+                "l\u00e4nderCode": "AUT",
+                "full": "Siebenbrunner Stra\u00dfe, Parzelle 1314/2, 2230 G\u00e4nserndorf",
+                "geolocation": null
+            },
+            "sitz": "G\u00e4nserndorf",
+            "kapital": {
+                "w\u00e4hrung": "EUR",
+                "menge": 35000
+            },
+            "aktie": null,
+            "auslandsInfo": null,
+            "webseiten": [],
+            "gesch\u00e4ftszweige": "Betrieb eines Tierparks",
+            "stiftungszweck": null,
+            "vertretungsbefugnis": "Die Generalversammlung bestimmt, wenn mehrere Gesch\u00e4fts f\u00fchrer bestellt sind, deren Vertretungsbefugnis.",
+            "jahresabschl\u00fcsse": [
+                {
+                    "dueDate": "2001-12-30T23:00:00Z",
+                    "submissionDate": "2002-12-19T23:00:00Z"
+                },
+                {
+                    "dueDate": "2000-12-30T23:00:00Z",
+                    "submissionDate": "2002-01-30T23:00:00Z"
+                },
+                {
+                    "dueDate": "1999-12-30T23:00:00Z",
+                    "submissionDate": "2000-09-10T22:00:00Z"
+                }
+            ],
+            "insolvenzen": [],
+            "scheinunternehmenSeit": null,
+            "kontrollorgane": null,
+            "leitungsorgane": {
+                "date": "2010-09-21",
+                "items": []
+            },
+            "prokuraorgane": null,
+            "netzwerk": {
+                "2010-09-21": {
+                    "gesellschafter": [],
+                    "beteiligungen": []
+                }
+            },
+            "isIndexed": false,
+            "\u00e4hnlicheUnternehmen": [
+                {
+                    "ref": {
+                        "isIndexed": true,
+                        "id": "056656v",
+                        "name": "Marchfelder Bank eG",
+                        "type": "Unternehmen",
+                        "$type": "ReferenzDto"
+                    },
+                    "adresse": {
+                        "stra\u00dfe": "Marchfelder-Platz 1-2",
+                        "plz": "2230",
+                        "ort": "G\u00e4nserndorf",
+                        "l\u00e4nderCode": "AUT",
+                        "full": "Marchfelder-Platz 1-2, 2230 G\u00e4nserndorf",
+                        "geolocation": null
+                    },
+                    "gemeinde": {
+                        "bundesland": "Nieder\u00f6sterreich",
+                        "politischerBezirk": "G\u00e4nserndorf",
+                        "gkz": "30817",
+                        "verbesserteGkz": "30817"
+                    }
+                },
+                {
+                    "ref": {
+                        "isIndexed": true,
+                        "id": "604197a",
+                        "name": "TEKIN Dach-Fassade u. Abdichtungen OG",
+                        "type": "Unternehmen",
+                        "$type": "ReferenzDto"
+                    },
+                    "adresse": {
+                        "stra\u00dfe": "Bockflie\u00dferweg 19/34",
+                        "plz": "2230",
+                        "ort": "G\u00e4nserndorf",
+                        "l\u00e4nderCode": "AUT",
+                        "full": "Bockflie\u00dferweg 19/34, 2230 G\u00e4nserndorf",
+                        "geolocation": null
+                    },
+                    "gemeinde": {
+                        "bundesland": "Nieder\u00f6sterreich",
+                        "politischerBezirk": "G\u00e4nserndorf",
+                        "gkz": "30817",
+                        "verbesserteGkz": "30817"
+                    }
+                },
+                {
+                    "ref": {
+                        "isIndexed": true,
+                        "id": "599040t",
+                        "name": "Jobfalke - Personalvermittlung e.U.",
+                        "type": "Unternehmen",
+                        "$type": "ReferenzDto"
+                    },
+                    "adresse": {
+                        "stra\u00dfe": "Quellengasse 58",
+                        "plz": "2230",
+                        "ort": "G\u00e4nserndorf",
+                        "l\u00e4nderCode": "AUT",
+                        "full": "Quellengasse 58, 2230 G\u00e4nserndorf",
+                        "geolocation": null
+                    },
+                    "gemeinde": {
+                        "bundesland": "Nieder\u00f6sterreich",
+                        "politischerBezirk": "G\u00e4nserndorf",
+                        "gkz": "30817",
+                        "verbesserteGkz": "30817"
+                    }
+                },
+                {
+                    "ref": {
+                        "isIndexed": true,
+                        "id": "611099a",
+                        "name": "smarthome4you PT e.U.",
+                        "type": "Unternehmen",
+                        "$type": "ReferenzDto"
+                    },
+                    "adresse": {
+                        "stra\u00dfe": "Heinestrasse 61",
+                        "plz": "2231",
+                        "ort": "Strasshof",
+                        "l\u00e4nderCode": "AUT",
+                        "full": "Heinestrasse 61, 2231 Strasshof",
+                        "geolocation": null
+                    },
+                    "gemeinde": {
+                        "bundesland": "Nieder\u00f6sterreich",
+                        "politischerBezirk": "G\u00e4nserndorf",
+                        "gkz": "30817",
+                        "verbesserteGkz": "30817"
+                    }
+                },
+                {
+                    "ref": {
+                        "isIndexed": true,
+                        "id": "601511a",
+                        "name": "F&F Photovoltaik-Montagen GmbH",
+                        "type": "Unternehmen",
+                        "$type": "ReferenzDto"
+                    },
+                    "adresse": {
+                        "stra\u00dfe": "Industriestra\u00dfe 10",
+                        "plz": "2230",
+                        "ort": "G\u00e4nserndorf",
+                        "l\u00e4nderCode": "AUT",
+                        "full": "Industriestra\u00dfe 10, 2230 G\u00e4nserndorf",
+                        "geolocation": null
+                    },
+                    "gemeinde": {
+                        "bundesland": "Nieder\u00f6sterreich",
+                        "politischerBezirk": "G\u00e4nserndorf",
+                        "gkz": "30817",
+                        "verbesserteGkz": "30817"
+                    }
+                }
+            ]
+        }
+    },
+    "__N_SSG": true
+}

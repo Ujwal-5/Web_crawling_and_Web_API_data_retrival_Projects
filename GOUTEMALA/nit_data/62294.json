@@ -1,0 +1,40 @@
+{
+    "data": {
+        "type": "sesionrtu",
+        "id": "62294",
+        "attributes": {
+            "id": "62294",
+            "datos": {
+                "tipoContribuyente": {
+                    "value": "746",
+                    "valueDesc": "PATRIMONIO HEREDITARIO INDIVISO"
+                },
+                "empresa": {
+                    "tipoPersoneria": 746,
+                    "descPersoneria": "PATRIMONIO HEREDITARIO INDIVISO",
+                    "razonSocial": "VENANCIO WOC SUCESORES",
+                    "fechaConstitucion": "1899-12-31",
+                    "anioDoctoConstitucion": 1899,
+                    "fechaInscripcion": -2209053600000,
+                    "participacionGremial": false,
+                    "participacionEmpresarial": false,
+                    "marcas": [
+                        {
+                            "codigoMarca": 916,
+                            "nombreCodigoMarca": "NO RATIFICADO",
+                            "estado": 1020,
+                            "fechaEstado": 1388469602000,
+                            "vigenciaDesde": 1388469602000
+                        }
+                    ],
+                    "gremiales": [],
+                    "camarasEmpresariales": [],
+                    "estado": 1020,
+                    "estadoDesc": "ACTIVO"
+                },
+                "representante": [],
+                "caracteristicasEspeciales": []
+            }
+        }
+    }
+}
