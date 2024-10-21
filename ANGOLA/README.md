@@ -1,10 +1,4 @@
-<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->---
-name: ANGOLA Web Crawling and API Data Retrieval
-description: A robust and scalable solution for web crawling and data extraction from REST and GraphQL APIs, tailored for Angola-specific data needs. This project includes custom scripts, automation tools, and monitoring capabilities.
-author: Your Name
-tags: [web crawling, API integration, data extraction, Python, automation, data pipeline, AWS]
----
-
+<!-- ⚠️ This README has been generated from the file(s) "blueprint.md" ⚠️-->
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#angola-web-crawling-and-api-data-retrieval)
 
@@ -35,32 +29,31 @@ ANGOLA Web Crawling and API Data Retrieval is a comprehensive project designed t
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#project-structure)
 
 ## ➤ Project Structure
-ANGOLA:
-│   .env
-│   angola_crawling_local.py
-│   angola_nif_extraction_old.py
-│   blueprint.md
-│   custom_request.py
-│   database.py
-│   data_extract.py
-│   env_setup.bat
-│   folder.py
-│   moniter.py
-│   nif_extraction.py
-│   nif_extraction.spec
-│   nif_extraction_v2.exe
-│   nif_moniter.json
-│   package-lock.json
-│   package.json
-│   requirements.txt
-│   s3_move.py
-│   save_file.py
-│   settings.py
-│   start_crawler.bat
-│
-└───xml
 
-
+    ANGOLA:
+    │   .env
+    │   angola_crawling_local.py
+    │   angola_nif_extraction_old.py
+    │   blueprint.md
+    │   custom_request.py
+    │   database.py
+    │   data_extract.py
+    │   env_setup.bat
+    │   folder.py
+    │   moniter.py
+    │   nif_extraction.py
+    │   nif_extraction.spec
+    │   nif_extraction_v2.exe
+    │   nif_moniter.json
+    │   package-lock.json
+    │   package.json
+    │   requirements.txt
+    │   s3_move.py
+    │   save_file.py
+    │   settings.py
+    │   start_crawler.bat
+    │
+    └───xml
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#key-features)
 
 ## ➤ Key Features
