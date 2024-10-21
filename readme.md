@@ -64,18 +64,6 @@ This repository contains a comprehensive suite of web crawlers and data extracti
 - Requests / aiohttp
 - Database systems (Various)
 
-## 📦 Project Structure
-
-```
-Web_crawling_Projects
-├── Country_Name/
-│   ├── crawler.py
-│   ├── settings.py
-│   ├── database.py
-│   ├── monitor.py
-│   └── README.md
-```
-
 ## 🔥 Key Features by Region
 
 ### USA
@@ -142,9 +130,9 @@ results = crawler.fetch_company_details("12345")
 ## 📞 Contact
 
 For business inquiries or technical questions, please reach out:
-Whatsapp number : 9148366605
-Gmail : ujwal.s.freelancer@gmail.com
-Linkedin : www.linkedin.com/in/ujwal-s-472a321b9
+ - Whatsapp number : 9148366605
+ - Gmail : ujwal.s.freelancer@gmail.com
+ - Linkedin : www.linkedin.com/in/ujwal-s-472a321b9
 
 
 ## ⚖️ Legal Notice
