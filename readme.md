@@ -81,36 +81,8 @@ This repository contains a comprehensive suite of web crawlers and data extracti
 - Advanced anti-bot bypass techniques
 - High-volume data processing
 
-## 📝 Usage Example
-
-```python
-# Example for basic crawler usage
-from crawlers.us.delaware import DelawareCrawler
-
-crawler = DelawareCrawler(
-    credentials=YOUR_CREDENTIALS,
-    output_path="./data"
-)
-
-results = crawler.fetch_company_details("12345")
-```
-
-## 🔧 Setup
-
-1. Clone the repository
-2. Install requirements:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Configure environment variables:
-   ```bash
-   cp .env.example .env
-   # Edit .env with your credentials
-   ```
-4. Run the crawler:
-   ```bash
-   python start_crawler.bat
-   ```
+## 📝 Important Note:
+ - The above scripts are straightforward, standalone implementations tailored to the specified needs. If required, I can develope a well-organized, class-based solution, complete with clear and user-friendly comments to ensure ease of understanding and maintenance.
 
 ## 📈 Performance
 
@@ -123,8 +95,7 @@ results = crawler.fetch_company_details("12345")
 
 - Custom crawler development
 - Data extraction solutions
-- API integration
-- Maintenance and monitoring
+- Web API Data retrival
 - Technical support
 
 ## 📞 Contact
@@ -134,10 +105,3 @@ For business inquiries or technical questions, please reach out:
  - Gmail : ujwal.s.freelancer@gmail.com
  - Linkedin : www.linkedin.com/in/ujwal-s-472a321b9
 
-
-## ⚖️ Legal Notice
-
-This tool is designed for legitimate business purposes only. Users are responsible for ensuring compliance with local laws and regulations regarding web scraping and data collection.
-
----
-*Note: Some features may require additional configuration or licensing.*
